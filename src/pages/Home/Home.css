@@ -1,0 +1,513 @@
+/* header  */
+.container {
+  /* border: 3px solid black; */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-image: #fefbf2;
+}
+
+/* .first_half .second_half {
+} */
+
+/* .first_half {
+  border: 2px solid red;
+}
+
+.second_half {
+  border: 2px solid blue;
+} */
+
+.text h1 {
+  font-size: 3.8rem;
+  font-family: "biennalesemibold";
+  color: #00028a;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+.text h1::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../assets/images/3stick.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  left: -20px;
+  top: -10px;
+}
+.text span:first-child {
+  background: -webkit-linear-gradient(yellow, red);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text span:last-child {
+  background: -webkit-linear-gradient(
+    180deg,
+    rgb(0, 121, 255) 20%,
+    rgb(0, 187, 225)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+.text span:last-child::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../assets/images/line.svg");
+  background-size: contain;
+  width: 200px;
+  height: 12px;
+  bottom: 0px;
+  right: -10px;
+}
+
+.text div:last-child {
+  color: #6b6b6a;
+  font-family: "biennalemedium";
+  font-size: 1.5rem;
+}
+.btn {
+  padding: 10px;
+  background-image: linear-gradient(rgb(255, 161, 0), rgb(255, 84, 0));
+  font-size: 1rem;
+  font-family: "biennalemedium";
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 0px #d11f00;
+  margin-top: 2rem;
+}
+.btn:active {
+  box-shadow: 0 1px 0px #d11f00;
+}
+
+.ilustrate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* carousel css  */
+.graduation {
+  background-image: url("../../assets/images/confetti.png");
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+  font-family: "biennalesemibold";
+  font-size: 1.5rem;
+  color: #d6a100;
+}
+.arrows {
+  width: 60px;
+  aspect-ratio: 1/1;
+  position: absolute;
+  top: 60%;
+}
+.graduation p {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+}
+.graduation span {
+  position: relative;
+}
+.graduation span::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../assets/images/line.svg");
+  background-size: cover;
+  width: 320px;
+  height: 10px;
+  bottom: -5px;
+  right: 0px;
+}
+.arrows:first-child {
+  left: 150px;
+}
+.arrows:last-child {
+  right: 150px;
+}
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 70vw;
+}
+.slider-img {
+  height: 450px;
+  margin: 10px 10px 3rem 10px;
+  border: 5px solid white;
+  border-radius: 20px;
+  box-shadow: 2px 2px 30px 5px rgb(233, 233, 233);
+}
+.carousel img:is(:first-child, :last-child) {
+  height: 400px;
+}
+
+/* about us section  */
+.About-us {
+  width: 100vw;
+  height: 700px;
+  display: flex;
+}
+.ilustrate-2 {
+  background-image: url("../../assets/images/About-background.png");
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 6rem;
+  background-size: cover;
+}
+.ilustrate-2 img {
+  width: 450px;
+}
+.text2 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding-left: 8rem;
+  font-family: "biennalemedium";
+}
+.text2 h1 {
+  font-family: "biennalesemibold";
+  font-size: 4rem;
+  padding-bottom: 1.2rem;
+  color: #e34c00;
+  position: relative;
+}
+.text2 h1::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../assets/images/lines.jpg");
+  background-size: contain;
+  width: 90px;
+  height: 20px;
+  bottom: 14px;
+  right: 100px;
+}
+
+.text2 h1 span {
+  background-image: -webkit-linear-gradient(
+    135deg,
+    rgb(0, 121, 255) 20%,
+    rgb(0, 187, 255)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text2 p {
+  font-size: 1.3rem;
+  color: rgb(0 0 0/0.6);
+  font-weight: 500;
+}
+.text2 .btn,
+.text3 .btn {
+  font-size: 0.8rem;
+  padding: 8px;
+}
+
+/* benefits  */
+.benefits {
+  width: 100vw;
+  height: 500px;
+  display: flex;
+}
+.text3,
+.ilustrate-3 {
+  width: 50%;
+  padding: 2rem;
+}
+.text3 h1 {
+  padding: 1rem 5rem 0 15rem;
+  font-size: 3.1rem;
+  font-family: "biennalesemibold";
+  color: #00028a;
+  line-height: 3.7rem;
+}
+.text3 span {
+  background: -webkit-linear-gradient(180deg, red, rgb(255, 112, 0));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.text3 p {
+  padding: 1rem 4rem 0 15rem;
+  font-size: 1.3rem;
+  font-family: "biennalemedium";
+  opacity: 0.6;
+}
+.text3 .btn {
+  margin: 1rem 5rem 0 15rem;
+}
+
+.text3 h1 span::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../assets/images/line.svg");
+  background-size: contain;
+  width: 210px;
+  height: 12px;
+  bottom: 0px;
+  right: -10px;
+}
+
+.ilustrate-3 {
+  background-image: url("../../assets/images/benefits-back.png");
+  width: 40%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-right: 4rem;
+  background-size: contain;
+}
+.ilustrate-3 img {
+  width: 450px;
+}
+
+/* Qoutes  */
+.qoute {
+  width: 100vw;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  font-size: 5rem;
+  font-family: "biennalelight";
+}
+.main-q {
+  width: 68vw;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  text-align: center;
+}
+.main-q p {
+  background: -webkit-linear-gradient(135deg, red, rgb(255, 150, 0) 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 3rem;
+}
+
+/* features  */
+
+.feature {
+  width: 100vw;
+  height: 1000px;
+  display: grid;
+  place-items: center;
+}
+.feature p {
+  font-family: "biennalemedium";
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 5rem;
+  color: #ff5400;
+}
+.feature p span {
+  background-image: -webkit-linear-gradient(
+    135deg,
+    rgb(0, 121, 255) 50%,
+    rgb(0, 187, 255)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+.feature p span::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../assets/images/line.svg");
+  background-size: contain;
+  width: 200px;
+  height: 12px;
+  bottom: -10px;
+  right: -10px;
+}
+
+.course-container {
+  width: 70vw;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 0px 40px;
+}
+.course-container img {
+  width: 325px;
+  margin: 10px;
+}
+
+/* Teams  */
+
+.team {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.team p {
+  font-family: "biennalemedium";
+  font-size: 3rem;
+  padding: 4rem;
+  color: #00028a;
+  position: relative;
+}
+.team p::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../assets/images/3stick.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 40px;
+}
+.team p span {
+  background: -webkit-linear-gradient(135deg, red, rgb(255, 150, 0) 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 3rem;
+  position: relative;
+}
+.team p span::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../assets/images/line.svg");
+  background-size: contain;
+  width: 150px;
+  height: 10px;
+  bottom: -10px;
+  right: -10px;
+}
+
+/* testimonial  */
+.testimonial {
+  width: 100vw;
+  background-image: url("../../assets/images/Testimonaial.jpg");
+  height: 700px;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text4 {
+  display: grid;
+  place-items: center;
+}
+.text4 p:first-child {
+  color: #ffde00;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "biennalesemibold";
+  padding-top: 4rem;
+}
+.text4 p:last-child {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  font-family: "biennalemedium";
+  padding: 1rem 0 3rem 0;
+}
+.text4 p span {
+  position: relative;
+}
+.text4 p span::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../assets/images/line.svg");
+  background-size: contain;
+  width: 160px;
+  height: 10px;
+  bottom: 0px;
+  right: 10px;
+}
+.testcard {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.tweet-img {
+  width: 80%;
+}
+.ilustrate-4 .arrows:first-child {
+  left: 250px;
+}
+.ilustrate-4 .arrows:last-child {
+  right: 250px;
+}
+
+/* footer  */
+
+.footer {
+  width: 100vw;
+  height: 350px;
+  background-color: #03045e;
+  padding: 8rem;
+  font-family: "biennalelight";
+}
+.footer .icons {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+}
+
+.social-icons {
+  font-size: 2.2rem;
+  color: white;
+}
+.social-icons i {
+  margin: 5px;
+}
+
+.footer .links {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+}
+.links .nav-links {
+  display: flex;
+  list-style-type: none;
+  font-weight: 600;
+}
+.links .nav-links li {
+  padding-right: 2.2rem;
+  position: relative;
+}
+.nav-links li:not(:last-child)::after {
+  content: "";
+  height: 10px;
+  border: 1px solid;
+  position: absolute;
+  right: 15px;
+  bottom: 4px;
+  color: #3280ff;
+}
+
+@media screen and (max-width: 960px) {
+  .text {
+    display: none;
+  }
+}

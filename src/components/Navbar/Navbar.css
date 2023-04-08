@@ -1,0 +1,152 @@
+/* navbar */
+/* .navbar {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+  border-bottom: 4px solid #00a0ff;
+}
+.navbar-list a {
+  text-decoration: none;
+  color: rgba(0 0 0/0.8);
+  font-family: "biennalesemibold";
+  font-size: 1.4rem;
+  padding: 20px;
+  cursor: default;
+} */
+
+.logo {
+  padding-left: 20px;
+}
+
+.navbar {
+  font-family: "biennalesemibold";
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  border-bottom: 4px solid #00a0ff;
+  background-color: white;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* max-width: 1500px; */
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 60vw;
+  margin-right: 2rem;
+  justify-content: end;
+}
+
+.nav-item {
+  width: auto !important;
+  height: 80px;
+}
+
+.nav-links {
+  color: rgba(0 0 0/0.8);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 105px;
+    right: -120%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    margin-top: 0;
+  }
+
+  .nav-menu.active {
+    right: 0;
+    padding-right: 30px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    margin-top: 0;
+  }
+
+  .nav-links {
+    text-align: right;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+    background-color: white;
+  }
+
+  .nav-links:hover {
+    background-color: #fff;
+    color: #242424;
+    border-radius: 0;
+  }
+
+  .menu-icon {
+    display: block;
+    padding-right: 20px;
+    /* transform: translate(-150%, 60%); */
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: #fff;
+    padding: 14px 20px;
+    border: 1px solid #fff;
+    transition: all 0.3s ease-out;
+  }
+
+  .nav-links-mobile:hover {
+    background: #fff;
+    color: #242424;
+    transition: 250ms;
+  }
+
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1500px;
+  }
+}
