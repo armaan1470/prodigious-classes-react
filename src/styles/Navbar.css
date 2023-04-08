@@ -1,0 +1,17 @@
+/* navbar */
+.navbar {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+  border-bottom: 4px solid #00a0ff;
+}
+.navbar-list a {
+  text-decoration: none;
+  color: rgba(0 0 0/0.8);
+  font-family: "biennalesemibold";
+  font-size: 1.4rem;
+  padding: 20px;
+  cursor: default;
+}
