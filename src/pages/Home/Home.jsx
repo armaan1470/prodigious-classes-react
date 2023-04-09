@@ -36,56 +36,58 @@ function Home() {
   return (
     <>
       <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/#" exact></Route>
-        </Routes>
-        <div className="container">
-          <div className="first_half text">
-            <div>
-              <h1>
-                Let's <span> Learn </span>
-                <br />
-                at the Comfort
-                <br />
-                of our
-                <span> Home </span>
-              </h1>
+        <div className="body">
+          <Navbar />
+          <Routes>
+            <Route path="/#" exact></Route>
+          </Routes>
+          <div className="hero_container">
+            <div className="textnill_container">
+              <div className="first_half text">
+                <div>
+                  <h1>
+                    Let's <span> Learn </span>
+                    <br />
+                    at the Comfort
+                    <br />
+                    of our
+                    <span> Home </span>
+                  </h1>
+                </div>
+                <div>
+                  <p>
+                    Private group tution at your door step.
+                    <br />
+                    We provide a flexible learning solution that
+                    <br />
+                    makes learning easy and convinient
+                  </p>
+                  <button className="btn">Book A Demo Class</button>
+                </div>
+              </div>
+              <div className="second_half ilustrate">
+                <img src={illustration1} alt="ilustrate" width="80%" />
+              </div>
             </div>
-            <div>
-              <p>
-                Private group tution at your door step.
-                <br />
-                We provide a flexible learning solution that
-                <br />
-                makes learning easy and convinient
-              </p>
-              <button className="btn">Book A Demo Class</button>
+            <Counter />
+          </div>
+
+          {/* <div className="graduation">
+            <p>
+              Our <span> International </span>Graduates
+            </p>
+            <div className="wrapper">
+              <img src={prevbtn1} className="arrows" alt="" />
+              <div className="carousel">
+                <img src={igrad1} className="slider-img" alt="" />
+                <img src={igrad2} className="slider-img" alt="" />
+                <img src={igrad3} className="slider-img" alt="" />
+              </div>
+              <img src={nextbtn1} className="arrows" alt="" />
             </div>
-          </div>
-          <div className="second_half ilustrate">
-            <img src={illustration1} alt="ilustrate" width="80%" />
-          </div>
-        </div>
+          </div> */}
 
-        <Counter />
-
-        <div className="graduation">
-          <p>
-            Our <span> International </span>Graduates
-          </p>
-          <div className="wrapper">
-            <img src={prevbtn1} className="arrows" alt="" />
-            <div className="carousel">
-              <img src={igrad1} className="slider-img" alt="" />
-              <img src={igrad2} className="slider-img" alt="" />
-              <img src={igrad3} className="slider-img" alt="" />
-            </div>
-            <img src={nextbtn1} className="arrows" alt="" />
-          </div>
-        </div>
-
-        <div className="About-us">
+          {/* <div className="About-us">
           <div className="ilustrate-2">
             <img src={illustration2} alt="" />
           </div>
@@ -105,9 +107,9 @@ function Home() {
               <button className="btn">Book A Demo className</button>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="benefits">
+          {/* <div className="benefits">
           <div className="text3">
             <h1>
               Learning at
@@ -128,9 +130,9 @@ function Home() {
           <div className="ilustrate-3">
             <img src={illustration3} alt="" />
           </div>
-        </div>
+        </div> */}
 
-        <div className="qoute">
+          {/* <div className="qoute">
           <div className="main-q">
             <img src={leftcomma} width="9%" alt="" />
             <p>
@@ -140,11 +142,11 @@ function Home() {
             <img src={rightcomma} width="9%" alt="" />
           </div>
           <div className="deco">
-            <img src={decor} alt="" />
+            <img src={decor} className="deco_img" alt="" />
           </div>
-        </div>
+        </div> */}
 
-        <div className="feature">
+          {/* <div className="feature">
           <p>
             Featured <span> Courses</span> at Prodigious
           </p>
@@ -156,8 +158,8 @@ function Home() {
             <img src={course5} alt="" />
             <img src={course6} alt="" />
           </div>
-        </div>
-        <div className="team">
+        </div> */}
+          {/* <div className="team">
           <p>
             Our Prodigious <span> Team </span>
           </p>
@@ -170,9 +172,9 @@ function Home() {
             </div>
             <img src={nextbtn2} className="arrows" alt="" />
           </div>
-        </div>
+        </div> */}
 
-        <div className="testimonial">
+          {/* <div className="testimonial">
           <div className="text4">
             <p>testimonials</p>
             <p>
@@ -190,8 +192,8 @@ function Home() {
               <img src={nextbtn3} className="arrows" alt="" />
             </div>
           </div>
-        </div>
-        <div className="footer">
+        </div> */}
+          {/* <div className="footer">
           <div className="icons">
             <div className="white-logo">
               <img src={whitelogo} alt="" width="200px" />
@@ -214,6 +216,7 @@ function Home() {
             </ul>
             <b>&copy; 2023 All Rights Reserved.</b>
           </div>
+        </div> */}
         </div>
       </Router>
     </>

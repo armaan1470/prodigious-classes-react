@@ -3,7 +3,7 @@ import "./Counter.css";
 
 function Counter() {
   return (
-    <div className="Counter">
+    <>
       <div className="counter-div">
         <div className="n1 lp1">
           <p>1000</p>
@@ -22,7 +22,7 @@ function Counter() {
           <p>Emerging Students</p>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

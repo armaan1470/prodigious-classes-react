@@ -1,10 +1,15 @@
 /* counter  */
 .counter-div {
-  width: 75%;
+  /* border: 3px solid blue; */
+  width: 80%;
   display: flex;
   justify-content: space-around;
   box-shadow: 10px 10px 93px -39px rgba(173, 173, 173, 0.75);
   border-radius: 5px;
+  background-color: white;
+  max-width: 1200px;
+  position: relative;
+  top: 200px;
 }
 .counter-div .n1 {
   padding: 1.7rem;
@@ -19,7 +24,7 @@
 .n1:not(:last-child)::before {
   content: "";
   width: 1px;
-  height: 100px;
+  height: 60%;
   background-color: black;
   position: absolute;
   right: 0;
@@ -91,4 +96,104 @@
 .counter-div p:last-child {
   font-family: "biennalemedium";
   font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1065px) {
+  .counter-div {
+    /* border: 3px solid blue; */
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 10px 10px 93px -39px rgba(173, 173, 173, 0.75);
+    border-radius: 5px;
+    background-color: white;
+    max-width: 1000px;
+    position: relative;
+    top: 40px;
+  }
+
+  .counter-div .n1 > p:first-child {
+    font-size: 4rem !important;
+  }
+
+  .counter-div .n1 > p:last-child {
+    font-size: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 829px) {
+  .counter-div {
+    /* border: 3px solid blue; */
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 10px 10px 93px -39px rgba(173, 173, 173, 0.75);
+    border-radius: 5px;
+    background-color: white;
+    max-width: 1000px;
+    position: relative;
+    top: 30px;
+  }
+
+  .counter-div .n1 > p:first-child {
+    font-size: 3.2rem !important;
+  }
+
+  .counter-div .n1 > p:last-child {
+    font-size: 0.7rem !important;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .counter-div {
+    /* border: 3px solid blue; */
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 10px 10px 93px -39px rgba(173, 173, 173, 0.75);
+    border-radius: 5px;
+    background-color: white;
+    max-width: 1000px;
+    position: relative;
+    top: 30px;
+  }
+
+  .counter-div .n1 > p:first-child {
+    font-size: 3rem !important;
+  }
+
+  .counter-div .n1 > p:last-child {
+    font-size: 0.7rem !important;
+  }
+
+  /* :root {
+    font-size: 30%;
+  } */
+}
+
+@media screen and (max-width: 400px) {
+  .counter-div {
+    /* border: 3px solid blue; */
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 10px 10px 93px -39px rgba(173, 173, 173, 0.75);
+    border-radius: 5px;
+    background-color: white;
+    max-width: 1000px;
+    position: relative;
+    top: 30px;
+  }
+
+  .counter-div .n1 > p:first-child {
+    font-size: 2rem !important;
+  }
+
+  .counter-div .n1 > p:last-child {
+    font-size: 0.5rem !important;
+  }
+
+  /* :root {
+    font-size: 30%;
+  } */
 }
