@@ -99,7 +99,7 @@ function Home() {
                 <span>About </span> Us
               </h1>
               <p>
-                We at Prodigious Career Institute <br />
+                We at Philomathean Career Institute <br />
                 understand that education is the most <br />
                 powerful weapon to help bring the <br />
                 desired change in our society and to <br />
@@ -117,7 +117,7 @@ function Home() {
 
           <div className="course_container">
             <p>
-              Featured <span> Courses</span> at Prodigious
+              Featured <span> Courses</span> at Philomathean
             </p>
             <div className="courses">
               <img src={course1} alt="" />
@@ -130,16 +130,16 @@ function Home() {
           </div>
 
           <div className="benefits_container text_img_container">
-            <div className="first_half text3">
+            <div className="first_half text3" style={{ flex: "50%" }}>
               <h1>
                 Learning at
                 <br />
-                Prodigious has
+                Philomathean has
                 <br />
                 many <span>benefits</span>
               </h1>
               <p>
-                Students at Prodigious Career Institute <br />
+                Students at Philomathean Career Institute <br />
                 are given personal attention. We help
                 <br />
                 them improve their overall performance.
@@ -147,7 +147,7 @@ function Home() {
               </p>
               <button className="btn">Book A Demo</button>
             </div>
-            <div className="second_half ilustrate-3">
+            <div className="second_half ilustrate-3" style={{ flex: "50%" }}>
               <img src={illustration3} alt="" />
             </div>
           </div>
@@ -168,7 +168,7 @@ function Home() {
 
           {/* <div className="team">
           <p>
-            Our Prodigious <span> Team </span>
+            Our Philomathean <span> Team </span>
           </p>
           <div className="wrapper">
             <img src={prevbtn2} className="arrows" alt="" />
