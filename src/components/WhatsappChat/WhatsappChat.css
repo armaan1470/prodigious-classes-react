@@ -1,0 +1,11 @@
+.whatsAppContainer {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  position: sticky;
+  bottom: 20px;
+}
+
+.whatsAppIcon {
+  display: flex;
+}

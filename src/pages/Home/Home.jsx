@@ -29,10 +29,18 @@ import nextbtn2 from "../../assets/images/slider button 3.png";
 import prevbtn3 from "../../assets/images/slider button 4.png";
 import nextbtn3 from "../../assets/images/slider button 4.png";
 import whitelogo from "../../assets/images/Logo (White).png";
+import WhatsappChat from "../../components/WhatsappChat/WhatsappChat";
+import Carousel from "../../components/Carousel/Carousel";
+import Slider from "../../components/Slider/Slider";
 
 function Home() {
   const [count, setCount] = useState(0);
 
+  const slides = [
+    <img src={igrad1} className="slider-img" alt="" />,
+    <img src={igrad2} className="slider-img" alt="" />,
+    <img src={igrad3} className="slider-img" alt="" />,
+  ];
   return (
     <>
       <Router>
@@ -42,49 +50,42 @@ function Home() {
             <Route path="/#" exact></Route>
           </Routes>
           <div className="hero_container">
-            <div className="textnill_container">
+            <div className="text_img_container">
               <div className="first_half text">
                 <div>
                   <h1>
                     Let's <span> Learn </span>
                     <br />
                     at the Comfort
-                    <br />
-                    of our
+                    <br /> of our
                     <span> Home </span>
                   </h1>
                 </div>
                 <div>
                   <p>
-                    Private group tution at your door step.
-                    <br />
-                    We provide a flexible learning solution that
-                    <br />
-                    makes learning easy and convinient
+                    Private group tution at your door step. <br /> We provide a
+                    flexible learning solution that <br /> makes learning easy
+                    and convinient
                   </p>
                   <button className="btn">Book A Demo Class</button>
                 </div>
               </div>
-              <div className="second_half ilustrate">
-                <img src={illustration1} alt="ilustrate" width="80%" />
+              <div className="second_half ">
+                <img src={illustration1} alt="ilustrate" className="illustrate" width="70%" />
               </div>
             </div>
             <Counter />
           </div>
+          {/*    */}
+
+
+
 
           {/* <div className="graduation">
             <p>
               Our <span> International </span>Graduates
             </p>
-            <div className="wrapper">
-              <img src={prevbtn1} className="arrows" alt="" />
-              <div className="carousel">
-                <img src={igrad1} className="slider-img" alt="" />
-                <img src={igrad2} className="slider-img" alt="" />
-                <img src={igrad3} className="slider-img" alt="" />
-              </div>
-              <img src={nextbtn1} className="arrows" alt="" />
-            </div>
+            <Slider />
           </div> */}
 
           {/* <div className="About-us">
@@ -109,56 +110,61 @@ function Home() {
           </div>
         </div> */}
 
-          {/* <div className="benefits">
-          <div className="text3">
-            <h1>
-              Learning at
-              <br />
-              Prodigious has
-              <br />
-              many <span>benefits</span>
-            </h1>
-            <p>
-              Students at Prodigious Career Institute <br />
-              are given personal attention. We help
-              <br />
-              them improve their overall performance.
-              <br />
-            </p>
-            <button className="btn">Book A Demo className</button>
-          </div>
-          <div className="ilustrate-3">
-            <img src={illustration3} alt="" />
-          </div>
-        </div> */}
 
-          {/* <div className="qoute">
-          <div className="main-q">
-            <img src={leftcomma} width="9%" alt="" />
-            <p>
-              We are committed <br />
-              to providing the best education possible
-            </p>
-            <img src={rightcomma} width="9%" alt="" />
-          </div>
-          <div className="deco">
-            <img src={decor} className="deco_img" alt="" />
-          </div>
-        </div> */}
 
-          {/* <div className="feature">
-          <p>
-            Featured <span> Courses</span> at Prodigious
-          </p>
-          <div className="course-container">
-            <img src={course1} alt="" />
-            <img src={course2} alt="" />
-            <img src={course3} alt="" />
-            <img src={course4} alt="" />
-            <img src={course5} alt="" />
-            <img src={course6} alt="" />
+
+
+          <div className="course_container">
+            <p>
+              Featured <span> Courses</span> at Prodigious
+            </p>
+            <div className="courses">
+              <img src={course1} alt="" />
+              <img src={course2} alt="" />
+              <img src={course3} alt="" />
+              <img src={course4} alt="" />
+              <img src={course5} alt="" />
+              <img src={course6} alt="" />
+            </div>
           </div>
-        </div> */}
+
+          <div className="benefits_container text_img_container">
+            <div className="first_half text3">
+              <h1>
+                Learning at
+                <br />
+                Prodigious has
+                <br />
+                many <span>benefits</span>
+              </h1>
+              <p>
+                Students at Prodigious Career Institute <br />
+                are given personal attention. We help
+                <br />
+                them improve their overall performance.
+                <br />
+              </p>
+              <button className="btn">Book A Demo</button>
+            </div>
+            <div className="second_half ilustrate-3">
+              <img src={illustration3} alt="" />
+            </div>
+          </div>
+
+          <div className="qoute_container">
+            <div className="main-q">
+              <img src={leftcomma} width="9%" alt="" />
+              <p>
+                We are committed <br />
+                to providing the best education possible
+              </p>
+              <img src={rightcomma} width="9%" alt="" />
+            </div>
+            <div className="deco">
+              <img src={decor} className="deco_img" alt="" />
+            </div>
+          </div>
+
           {/* <div className="team">
           <p>
             Our Prodigious <span> Team </span>
