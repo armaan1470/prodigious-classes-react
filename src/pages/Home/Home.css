@@ -53,7 +53,7 @@
   padding: clamp(10px, 3vw, 1.25rem) 0;
   position: relative;
 }
-/* .text h1::before {
+.text h1::before {
   content: "";
   position: absolute;
   background-image: url("../../assets/images/3stick.png");
@@ -62,8 +62,8 @@
   width: 30px;
   height: 30px;
   left: -20px;
-  top: -10px;
-} */
+  top: 14px;
+}
 .text span:first-child {
   background: -webkit-linear-gradient(yellow, red);
   background-clip: text;
@@ -81,16 +81,16 @@
   -webkit-text-fill-color: transparent;
   position: relative;
 }
-/* .text span:last-child::after {
+.text span:last-child::after {
   content: "";
   position: absolute;
   background-image: url("../../assets/images/line.svg");
   background-size: contain;
-  width: 200px;
+  width: 180px;
   height: 12px;
-  bottom: 0px;
+  bottom: -3px;
   right: -10px;
-} */
+}
 
 .text div:last-child {
     color: #6b6b6a;
@@ -135,7 +135,7 @@
 .arrows {
   width: 60px;
   aspect-ratio: 1/1;
-  position: absolute;
+  /* position: absolute; */
   top: 60%;
 }
 .graduation p {
@@ -155,12 +155,12 @@
   bottom: -5px;
   right: 0px;
 }
-.arrows:first-child {
+/* .arrows:first-child {
   left: 150px;
 }
 .arrows:last-child {
   right: 150px;
-}
+} */
 .carousel {
   display: flex;
   align-items: center;
@@ -279,9 +279,9 @@
   position: absolute;
   background-image: url("../../assets/images/line.svg");
   background-size: contain;
-  width: 210px;
+  width: 235px;
   height: 12px;
-  bottom: 0px;
+  bottom: -3px;
   right: -10px;
 }
 
@@ -316,6 +316,8 @@
   justify-content: center;
   text-align: center;
 }
+
+
 .main-q p {
   background: -webkit-linear-gradient(135deg, red, rgb(255, 150, 0) 80%);
   background-clip: text;
@@ -324,9 +326,29 @@
   margin-bottom: 3rem;
 }
 
+
+
+
+.main-q img{
+  animation: blink 3s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .deco_img {
   width: 100%;
-  animation: rotate-vertically 3s linear infinite;
+  animation: rotate-vertically 3s linear infinite alternate;
+  
 }
 
 @keyframes rotate-vertically {
@@ -335,6 +357,7 @@
   }
   100% {
     transform: rotateX(360deg);
+
   }
 }
 
@@ -345,7 +368,7 @@
 
 .course_container {
   max-width: 1200px;
-  padding-top: 10rem;
+  padding-top: 5rem;
   width: 100%;
   display: grid;
   place-items: center;
@@ -445,16 +468,24 @@
 }
 
 /* testimonial  */
-.testimonial {
+.testimonial_container {
+  margin-top: 10rem;
   width: 100%;
   background-image: url("../../assets/images/Testimonaial.jpg");
-  height: 700px;
   background-size: cover;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+.testimonials{
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .text4 {
   display: grid;
   place-items: center;
@@ -495,39 +526,67 @@
 .tweet-img {
   width: 80%;
 }
-.ilustrate-4 .arrows:first-child {
-  left: 250px;
+
+.ilustrate-4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  padding-bottom: 5rem;
+}
+
+/* .ilustrate-4 .arrows:first-child {
+
 }
 .ilustrate-4 .arrows:last-child {
-  right: 250px;
+
+} */
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 /* footer  */
 
-.footer {
+.footer_container {
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 350px;
-  background-color: #03045e;
+  background-color: #f2f2f2;
   font-family: "biennalelight";
 }
-.footer .icons {
+.footer_container .icons {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 3rem;
+  padding: 6.8rem 0 3rem 0;
+}
+
+.footer{
+
+  width: 100%;
+  max-width: 1200px;
 }
 
 .social-icons {
   font-size: 2.2rem;
   color: white;
-}
-.social-icons i {
-  margin: 5px;
+
 }
 
-.footer .links {
+.each_icon{
+  margin  : 5px;
+}
+
+
+
+.footer_container .links {
   display: flex;
   justify-content: space-between;
-  color: white;
+  color: #6b6b6b;
   padding: 2rem 0;
   font-size: 0.9rem;
 }
@@ -547,7 +606,7 @@
   position: absolute;
   right: 15px;
   bottom: 4px;
-  color: #3280ff;
+  color: #6b6b6b;
 }
 
 @media screen and (min-width: 1024px) {

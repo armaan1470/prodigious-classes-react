@@ -28,10 +28,11 @@ import prevbtn2 from "../../assets/images/slider button 2.png";
 import nextbtn2 from "../../assets/images/slider button 3.png";
 import prevbtn3 from "../../assets/images/slider button 4.png";
 import nextbtn3 from "../../assets/images/slider button 4.png";
-import whitelogo from "../../assets/images/Logo (White).png";
+import greylogo from "../../assets/images/logo-grey.png";
 import WhatsappChat from "../../components/WhatsappChat/WhatsappChat";
-import Carousel from "../../components/Carousel/Carousel";
+import Slides from "../../components/Slides/Slides";
 import Slider from "../../components/Slider/Slider";
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 function Home() {
   const [count, setCount] = useState(0);
@@ -180,49 +181,55 @@ function Home() {
           </div>
         </div> */}
 
-          {/* <div className="testimonial">
-          <div className="text4">
-            <p>testimonials</p>
-            <p>
-              What Our Students/Parents
-              <br />
-              are <span> saying </span>about us?
-            </p>
-          </div>
-          <div className="ilustrate-4">
-            <div className="wrapper">
-              <img src={prevbtn3} className="arrows" alt="" />
-              <div className="testcard">
-                <img src={illustration4} className="tweet-img" alt="" />
+          <div className="testimonial_container">
+            <div className="testimonials">
+              <div className="text4">
+                <p>testimonials</p>
+                <p>
+                  What Our Students/Parents
+                  <br />
+                  are <span> saying </span>about us?
+                </p>
               </div>
-              <img src={nextbtn3} className="arrows" alt="" />
+              <div className="ilustrate-4">
+                <div className="wrapper">
+                  <img src={prevbtn3} className="arrows" alt="" />
+                  <div className="testcard">
+                    <img src={illustration4} className="tweet-img" alt="" />
+                  </div>
+                  <img src={nextbtn3} className="arrows" alt="" />
+                </div>
+              </div>
             </div>
+
           </div>
-        </div> */}
-          {/* <div className="footer">
-          <div className="icons">
-            <div className="white-logo">
-              <img src={whitelogo} alt="" width="200px" />
+          <div className="footer_container">
+            <div className="footer">
+              <div className="icons">
+                <div className="white-logo">
+                  <img src={greylogo} alt="" width="100%" />
+                </div>
+                <div className="social-icons border">
+                  <FaFacebook size={30} color="#6b6b6b" className="each_icon" />
+                  <FaTwitter size={30} color="#6b6b6b" className="each_icon" />
+                  <FaInstagram size={30} color="#6b6b6b" className="each_icon" />
+                  <FaLinkedin size={30} color="#6b6b6b" className="each_icon" />
+                </div>
+              </div>
+              <hr />
+              <div className="links">
+                <ul className="nav-links">
+                  <li>Terms & Condition</li>
+                  <li>Privacy Policy</li>
+                  <li>About Us </li>
+                  <li>Courses</li>
+                  <li>Conatact US</li>
+                </ul>
+                <b>&copy; 2023 All Rights Reserved.</b>
+              </div>
             </div>
-            <div className="social-icons border">
-              <i className="fa-brands fa-facebook"></i>
-              <i className="fa-brands fa-twitter"></i>
-              <i className="fa-brands fa-instagram"></i>
-              <i className="fa-brands fa-linkedin"></i>
-            </div>
+
           </div>
-          <hr />
-          <div className="links">
-            <ul className="nav-links">
-              <li>Terms & Condition</li>
-              <li>Privacy Policy</li>
-              <li>About Us </li>
-              <li>Courses</li>
-              <li>Conatact US</li>
-            </ul>
-            <b>&copy; 2023 All Rights Reserved.</b>
-          </div>
-        </div> */}
         </div>
       </Router>
     </>

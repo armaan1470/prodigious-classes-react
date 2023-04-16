@@ -45,7 +45,7 @@
 }
 
 .slider-img {
-  height: 350px;
+  height: 400px;
   margin: 30px;
   border: 5px solid white;
   border-radius: 20px;
@@ -62,10 +62,7 @@
   transition: all 0.3s ease-in-out;
 } */
 
-.splide__slide.is-visible.is-active > .slider-img {
-  height: 450px;
-  transition: all 0.2s ease-in-out;
-}
+
 
 /* .splide__slide.is-active:not(.is-visible) + .splide__slide > .slider-img,
     .splide__slide.is-active:not(.is-visible)
