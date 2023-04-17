@@ -81,12 +81,12 @@ function Home() {
 
 
 
-          {/* <div className="graduation">
+          <div className="graduation">
             <p>
               Our <span> International </span>Graduates
             </p>
-            <Slider />
-          </div> */}
+            <Carousel imgs={[igrad1,igrad2,igrad3]} btn={[prevbtn1,nextbtn1]}/>
+          </div>
 
           {/* <div className="About-us">
           <div className="ilustrate-2">

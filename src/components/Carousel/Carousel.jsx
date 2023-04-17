@@ -1,69 +1,59 @@
-import React from "react";
+import React, { useEffect, useState } from 'react'
 import "./Carousel.css";
-import { useRef, useEffect } from "react";
+import img1 from "../../assets/images/Int. Graduate 1.jpg"
+import img2 from "../../assets/images/Int. Graduate 2.jpg"
+import img3 from "../../assets/images/Int. Graduate.jpg"
 
-import igrad1 from "../../assets/images/Int. Graduate.jpg";
-import igrad2 from "../../assets/images/Int. Graduate 1.jpg";
-import igrad3 from "../../assets/images/Int. Graduate 2.jpg";
-import prevbtn from "../../assets/images/slider button.png";
-import nextbtn from "../../assets/images/slider button 1.png";
-import { register } from 'swiper/element/bundle';
-import 'swiper/css';
-import { Swiper, Navigation, Pagination } from 'swiper';
-
-
-
-// register Swiper custom elements
-register();
-
-function Carousel() {
-
-  const swiperElRef = useRef(null);
-
-  useEffect(() => {
-    // listen for Swiper events using addEventListener
-    swiperElRef.current.addEventListener('progress', (e) => {
-      const [swiper, progress] = e.detail;
-      console.log(progress);
-    });
-
-    swiperElRef.current.addEventListener('slidechange', (e) => {
-      console.log('slide changed');
-    });
-  }, []);
+export default function Carousel({imgs,btn}) {
+  const [index,setIndex] = useState(0)
+  const card = []
+  for (let i =0; i <imgs.length;i++){
+    card.push({id:i,image:imgs[i]})
+  }
 
 
-  const items = [
-    <img src={igrad1} role="presentation" />,
-    <img src={igrad2} role="presentation" />,
-    <img src={igrad3} role="presentation" />,
-  ];
 
+  const mod =(n,m)=>{
+    let result = n % m
+    return result >=0 ? result: result + m 
+  }
+
+
+  const changeSlideL = ()=>{
+    let m = (index - 1)%card.length
+    setIndex(m >=0 ? m: m+ card.length)
+  }
+  const changeSlideR = ()=>{
+    setIndex((index + 1)%card.length)
+  }
   return (
-    <div className="carousel_container">
-      <swiper-container
-        ref={swiperElRef}
-        slides-per-view={3}
-        navigation={true}
-        loop={true}
-        centeredSlides={true}
-        swiper-navigation={true}
-      >
-        <swiper-slide>
-          <img src={igrad1} className="slider-img" role="presentation" />
-        </swiper-slide>
-        <swiper-slide>
-          <img src={igrad2} className="slider-img" role="presentation" />
-        </swiper-slide>
-        <swiper-slide>
-          <img src={igrad3} className="slider-img" role="presentation" />
-        </swiper-slide>
+    <div>
+      <div className="carousel">
+        {
+          card.map((item,i)=>{
+            const left = mod(index - 1 , card.length)
+            const right = mod(index + 1 , card.length)
 
-      </swiper-container>
-    </div >
-
-
-  );
+            let className = ""
+            if (i === index){
+              className = "card card--active";
+            }
+            else if (i === right){
+              className = "card card--right"
+            }
+            else if(i=== left){
+              className = "card card--left"
+            }
+            else{
+              className = "card"
+            }
+            console.log(left,right,index,card.length)
+            return <img src={item.image} alt="img" key={item.id} className={className}/>
+          })
+        }
+      <button className='btn-cars btn-cars-left' onClick={changeSlideL}><img src={btn[0]} alt="" /></button>
+      <button className='btn-cars btn-cars-right' onClick={changeSlideR}><img src={btn[1]} alt="" /></button>
+      </div>
+    </div>
+  )
 }
-
-export default Carousel;
