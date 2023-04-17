@@ -2,7 +2,16 @@ import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./Home.css";
 import Navbar from "../../components/Navbar/Navbar";
-import illustration1 from "../../assets/images/Boy with elements.png";
+import illustration1 from "../../assets/images/illustration-ani.png";
+import apple from "../../assets/images/apple.png"
+import box from "../../assets/images/box.png"
+import bulb from "../../assets/images/bulb.png"
+import pie from "../../assets/images/pie.png"
+import rings from "../../assets/images/rings.png"
+import scale from "../../assets/images/scale.png"
+import calculator from "../../assets/images/calculator.png"
+import target from "../../assets/images/target.png"
+import hexagon from "../../assets/images/hexagon.png"
 import illustration2 from "../../assets/images/About Us.png";
 import illustration3 from "../../assets/images/benefits.png";
 import illustration4 from "../../assets/images/testimonials.png";
@@ -71,8 +80,18 @@ function Home() {
                   <button className="btn">Book A Demo Class</button>
                 </div>
               </div>
-              <div className="second_half ">
+              <div className="second_half ill_position">
                 <img src={illustration1} alt="ilustrate" className="illustrate" width="70%" />
+                <img src={apple} alt="apple" className="apple" />
+                <img src={box} alt="box" className="box" />
+                <img src={rings} alt="rings" className="rings" />
+                <img src={target} alt="target" className="target" />
+                <img src={pie} alt="pie" className="pie" />
+                <img src={bulb} alt="bulb" className="bulb" />
+                <img src={calculator} alt="calculator" className="calculator" />
+                <img src={hexagon} alt="hexagon" className="hexagon" />
+                <img src={scale} alt="scale" className="scale" />
+
               </div>
             </div>
             <Counter />
