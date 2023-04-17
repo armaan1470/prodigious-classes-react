@@ -12,6 +12,8 @@ import nextbtn1 from "../../assets/images/slider button 1.png";
 import igrad1 from "../../assets/images/Int. Graduate.jpg";
 import igrad2 from "../../assets/images/Int. Graduate 1.jpg";
 import igrad3 from "../../assets/images/Int. Graduate 2.jpg";
+import igrad4 from "../../assets/images/Int. Graduate 3.jpg";
+import igrad5 from "../../assets/images/Int. Graduate 4.jpg";
 import leftcomma from "../../assets/images/Apostrophe left.png";
 import rightcomma from "../../assets/images/Apostrophe right.png";
 import decor from "../../assets/images/Lines.png";
@@ -27,11 +29,13 @@ import tutor3 from "../../assets/images/Tutor-3.jpg";
 import prevbtn2 from "../../assets/images/slider button 2.png";
 import nextbtn2 from "../../assets/images/slider button 3.png";
 import prevbtn3 from "../../assets/images/slider button 4.png";
-import nextbtn3 from "../../assets/images/slider button 4.png";
+import nextbtn3 from "../../assets/images/slider button 5.png";
 import whitelogo from "../../assets/images/Logo (White).png";
 import WhatsappChat from "../../components/WhatsappChat/WhatsappChat";
 import Carousel from "../../components/Carousel/Carousel";
-import Slider from "../../components/Slider/Slider";
+// import Slider from "../../components/Slider/Slider";
+import testi from "../../assets/images/testimonials.png"
+import SingleSlider from "../../components/Slider/Slider";
 
 function Home() {
   const [count, setCount] = useState(0);
@@ -85,7 +89,7 @@ function Home() {
             <p>
               Our <span> International </span>Graduates
             </p>
-            <Carousel imgs={[igrad1,igrad2,igrad3]} btn={[prevbtn1,nextbtn1]}/>
+            <Carousel imgs={[igrad1,igrad2,igrad3,igrad4,igrad5]} btn={[prevbtn1,nextbtn1]} numVisible={3}/>
           </div>
 
           {/* <div className="About-us">
@@ -180,7 +184,7 @@ function Home() {
           </div>
         </div> */}
 
-          {/* <div className="testimonial">
+          <div className="testimonial">
           <div className="text4">
             <p>testimonials</p>
             <p>
@@ -190,15 +194,9 @@ function Home() {
             </p>
           </div>
           <div className="ilustrate-4">
-            <div className="wrapper">
-              <img src={prevbtn3} className="arrows" alt="" />
-              <div className="testcard">
-                <img src={illustration4} className="tweet-img" alt="" />
-              </div>
-              <img src={nextbtn3} className="arrows" alt="" />
-            </div>
+              <SingleSlider imgs={[testi]} btn={[prevbtn3,nextbtn3]}/>
           </div>
-        </div> */}
+        </div>
           {/* <div className="footer">
           <div className="icons">
             <div className="white-logo">

@@ -448,7 +448,7 @@
 .testimonial {
   width: 100%;
   background-image: url("../../assets/images/Testimonaial.jpg");
-  height: 700px;
+  height: 900px;
   background-size: cover;
   position: relative;
   display: flex;
@@ -487,20 +487,7 @@
   bottom: 0px;
   right: 10px;
 }
-.testcard {
-  padding-top: 3rem;
-  display: flex;
-  justify-content: center;
-}
-.tweet-img {
-  width: 80%;
-}
-.ilustrate-4 .arrows:first-child {
-  left: 250px;
-}
-.ilustrate-4 .arrows:last-child {
-  right: 250px;
-}
+
 
 /* footer  */
 

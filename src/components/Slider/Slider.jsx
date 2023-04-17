@@ -1,54 +1,70 @@
-import React, { useEffect, useRef } from "react";
+import React, { useState } from 'react';
 import "./Slider.css";
-import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
-import "@splidejs/react-splide/css";
-import "@splidejs/splide/dist/css/splide.min.css";
-import igrad1 from "../../assets/images/Int. Graduate.jpg";
-import igrad2 from "../../assets/images/Int. Graduate 1.jpg";
-import igrad3 from "../../assets/images/Int. Graduate 2.jpg";
-import prevbtn1 from "../../assets/images/slider button.png";
-import nextbtn1 from "../../assets/images/slider button 1.png";
 
-const Slider = () => {
+export default function SingleSlider({ imgs, btn, visibleImages = 1 }) {
+  const [index, setIndex] = useState(0);
+  const card = [];
+  for (let i = 0; i < imgs.length; i++) {
+    card.push({ id: i, image: imgs[i] });
+  }
+
+  const mod = (n, m) => {
+    let result = n % m;
+    return result >= 0 ? result : result + m;
+  };
+
+  const changeSlideL = () => {
+    let m = (index - 1) % card.length;
+    setIndex(m >= 0 ? m : m + card.length);
+  };
+
+  const changeSlideR = () => {
+    setIndex((index + 1) % card.length);
+  };
+
+  const getClassName = (i) => {
+    const first = mod(index - Math.floor(visibleImages / 2), card.length);
+    const left = mod(first - 1, card.length);
+    const right = mod(first + visibleImages, card.length);
+  
+    if (i === index) {
+      return "card card--active";
+    } else if (i === left) {
+      return "card card--left";
+    } else if (i === right) {
+      return "card card--right";
+    } else if (i < left || i > right) {
+      return "card card--hidden";
+    } else {
+      return "card";
+    }
+  };
+  
+
   return (
-    <Splide
-      hasTrack={false}
-      options={{
-        perPage: 3,
-        focus: "center",
-        type: "loop",
-        pagination: false,
-        speed: 1000,
-        interval: 3000,
-        pauseOnHover: true,
-        pauseOnFocus: true,
-      }}
-      aria-label="Graduate Students"
-    >
-      <SplideTrack>
-        <SplideSlide>
-          <img src={igrad1} className="slider-img" alt="Image 1" />
-        </SplideSlide>
-
-        <SplideSlide>
-          <img src={igrad2} className="slider-img" alt="Image 2" />
-        </SplideSlide>
-
-        <SplideSlide>
-          <img src={igrad3} className="slider-img" alt="Image 3" />
-        </SplideSlide>
-      </SplideTrack>
-
-      <div class="splide__arrows">
-        <button class="splide__arrow splide__arrow--prev">
-          <img src={prevbtn1} className="arrow_img" alt="Previous" />
+    <div>
+      <div className="carousel">
+        {card.map((item, i) => {
+          console.log(index, visibleImages);
+          if (i < index || i >= index + visibleImages) {
+            return null;
+          }
+          return (
+            <img
+              src={item.image}
+              alt="img"
+              key={item.id}
+              className={getClassName(i)}
+            />
+          );
+        })}
+        <button className="btn-cars btn-cars-left" onClick={changeSlideL}>
+          <img src={btn[0]} alt="" />
         </button>
-        <button class="splide__arrow  splide__arrow--next">
-          <img src={nextbtn1} className="arrow_img" alt="Next" />
+        <button className="btn-cars btn-cars-right" onClick={changeSlideR}>
+          <img src={btn[1]} alt="" />
         </button>
       </div>
-    </Splide>
+    </div>
   );
-};
-
-export default Slider;
+}
