@@ -40,6 +40,10 @@
   stroke-width: 4rem;
 }
 
+.splide__arrow{
+  background: transparent !important  ;
+}
+
 .splide__arrow--next svg {
   transform: scaleX(-1);
 }
@@ -75,7 +79,7 @@
 .splide {
   display: flex;
   justify-content: center;
-  width: 100rem;
+  width: 90rem;
   height: 500px;
   align-items: center;
 }
@@ -93,5 +97,5 @@
 
 .arrow_img {
   display: flex;
-  width: 3rem;
+  width: 5rem;
 }

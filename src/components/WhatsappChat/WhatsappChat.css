@@ -2,8 +2,10 @@
   /* display: flex;
   justify-content: center;
   align-items: center; */
-  position: sticky;
+  position: fixed;
   bottom: 20px;
+  right:20px;
+  z-index: 999;
 }
 
 .whatsAppIcon {

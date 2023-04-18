@@ -44,6 +44,7 @@ import greylogo from "../../assets/images/logo-grey.png";
 import WhatsappChat from "../../components/WhatsappChat/WhatsappChat";
 import Carousel from "../../components/Carousel/Carousel";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import Slider from "../../components/Slider/Slider";
 
 function Home() {
   const [count, setCount] = useState(0);
@@ -199,11 +200,7 @@ function Home() {
             </div>
             <div className="ilustrate-4">
               <div className="wrapper">
-                <img src={prevbtn3} className="arrows" alt="" />
-                <div className="testcard">
-                  <img src={illustration4} className="tweet-img" alt="" />
-                </div>
-                <img src={nextbtn3} className="arrows" alt="" />
+                <Slider />
               </div>
             </div>
           </div>
@@ -236,6 +233,7 @@ function Home() {
           </div>
 
         </div>
+        <WhatsappChat />
       </div>
 
     </>
