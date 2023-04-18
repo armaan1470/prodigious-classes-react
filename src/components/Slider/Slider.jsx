@@ -3,9 +3,9 @@ import "./Slider.css";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import "@splidejs/splide/dist/css/splide.min.css";
-import igrad1 from "../../assets/images/Int. Graduate.jpg";
-import igrad2 from "../../assets/images/Int. Graduate 1.jpg";
-import igrad3 from "../../assets/images/Int. Graduate 2.jpg";
+import igrad1 from "../../assets/images/Int Result-1.jpg";
+import igrad2 from "../../assets/images/Int Result-2.jpg";
+import igrad3 from "../../assets/images/Int Result-3.jpg";
 import prevbtn1 from "../../assets/images/slider button.png";
 import nextbtn1 from "../../assets/images/slider button 1.png";
 

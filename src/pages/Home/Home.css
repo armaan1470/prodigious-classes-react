@@ -125,15 +125,17 @@
   width: 4%;
   bottom: 260px;
   right: 250px;
-  animation: apple-rotate 0.5s infinite alternate;
+  animation: apple-rotate 5s infinite alternate;
  
 }
 
 @keyframes apple-rotate {
   0%{
-    transform: rotate(350deg);
+    transform: translateX(0px);
+    rotate: 0deg;
   }100%{
-    transform: rotate(290deg);
+    transform: translateY(-10px);
+    rotate: -20deg;
   }
   
 }
@@ -143,18 +145,19 @@
   width: 7.5%;
   bottom: 300px;
   right: 140px;
-  animation: box-rotate 4s infinite 0s;
+  animation: box-rotate 20s infinite 0s alternate;
 
  
 }
 
 @keyframes box-rotate {
   0%{
-    transform: rotate(0deg);
+    transform: translateY(20px);
+    rotate: 0deg;
   }100%{
-    transform: rotate(360deg);
+    transform: translateY(0px);
+    rotate: 120deg;
   }
-  
 }
 
 .scale{
@@ -162,17 +165,18 @@
   width: 6%;
   bottom: 160px;
   right: 440px;
-  animation: scale-rotate 1s infinite alternate;
+  animation: scale-rotate 5s infinite alternate;
  
 }
 
 @keyframes scale-rotate {
   0%{
-    transform: rotate(360deg);
+    transform: translateX(0px);
+
   }100%{
-    transform: rotate(290deg);
+    transform: translateY(-20px);
+
   }
-  
 }
 
 .target{
@@ -180,17 +184,21 @@
   width: 6.5%;
   bottom: 300px;
   right: 330px;
-  animation: target-rotate 2s infinite;
+  animation: target-rotate 5s infinite alternate;
  
 }
 
 @keyframes target-rotate {
   0%{
-    transform: rotate(360deg);
+    transform: translateX(0px);
+    rotate: 0deg;
+
   }100%{
-    transform: rotate(0deg);
+    transform: translateX(20px);
+    transform: translateY(-10px);
+    rotate: 30deg;
+
   }
-  
 }
 
 .pie{
@@ -198,17 +206,18 @@
   width: 7.5%;
   bottom: 190px;
   right: 110px;
-  animation: pie-rotate 5s infinite;
+  animation: pie-rotate 3.5s infinite alternate;
  
 }
 
 @keyframes pie-rotate {
   0%{
-    transform: rotate(0deg);
+    transform: translateY(0px);
+
   }100%{
-    transform: rotate(360deg);
+    transform: translateY(-10px);
+
   }
-  
 }
 
 .rings{
@@ -216,15 +225,17 @@
   width: 5.8%;
   bottom: 75px;
   right: 390px;
-  animation: rings-rotate 1.5s infinite;
+  animation: rings-rotate 30s infinite alternate;
  
 }
 
 @keyframes rings-rotate {
   0%{
-    transform: rotate(0deg);
+    rotate: 0deg;
+    transform: translateY(0px);
   }100%{
-    transform: rotate(360deg);
+    rotate: 360deg;
+    transform: translateY(-10px);
   }
   
 }
@@ -234,15 +245,16 @@
   width: 6.5%;
   bottom: 70px;
   right: 80px;
-  animation: bulb-rotate 0.3s infinite alternate ;
+  animation: bulb-rotate 3s infinite alternate ;
  
 }
 
 @keyframes bulb-rotate {
   0%{
-    transform: rotate(0deg);
+    transform: translateX(0px);
   }100%{
-    transform: rotate(-40deg);
+    transform: translateX(10px);
+    transform: translateY(-10px);
   }
   
 }
@@ -252,15 +264,17 @@
   width: 10%;
   bottom:200px;
   right: 340px;
-  animation: calculator-rotate 1.5s infinite alternate;
+  animation: calculator-rotate 5s infinite alternate;
  
 }
 
 @keyframes calculator-rotate {
   0%{
-    transform: rotate(360deg);
+    transform: translateY(10px);
+    rotate: 0deg;
   }100%{
-    transform: rotate(290deg);
+    transform: translateY(-5px);
+    rotate: -20deg;
   }
   
 }
@@ -270,15 +284,17 @@
   width: 10%;
   bottom: 140px;
   right: 5px;
-  animation: hexagon-rotate 3s infinite;
+  animation: hexagon-rotate 30s infinite alternate;
  
 }
 
 @keyframes hexagon-rotate {
   0%{
-    transform: rotate(360deg);
+    transform: translateY(0px);
+    rotate: 360deg;
   }100%{
-    transform: rotate(0deg);
+    transform: translateY(-20px);
+    rotate: 0deg;
   }
   
 }
@@ -486,6 +502,7 @@
   align-items: start;
   justify-content: center;
   text-align: center;
+  position: relative;
 }
 
 
@@ -495,6 +512,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 3rem;
+  width: 800px;
 }
 
 
@@ -503,6 +521,8 @@
 .main-q img{
   animation: blink 3s infinite;
 }
+
+
 
 @keyframes blink {
   0% {
@@ -518,11 +538,11 @@
 
 .deco_img {
   width: 100%;
-  animation: rotate-vertically 3s linear infinite alternate;
+  /* animation: rotate-vertically 3s linear infinite alternate; */
   
 }
 
-@keyframes rotate-vertically {
+/* @keyframes rotate-vertically {
   0% {
     transform: rotateX(0deg);
   }
@@ -530,7 +550,7 @@
     transform: rotateX(360deg);
 
   }
-}
+} */
 
 
 
@@ -587,7 +607,7 @@
 
 .courses img:hover {
   transform: scale(1.1);
-
+  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
 }
 
 /* Teams  */

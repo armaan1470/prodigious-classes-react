@@ -1,58 +1,55 @@
 import React, { useEffect, useState } from 'react'
 import "./Carousel.css";
-import img1 from "../../assets/images/Int. Graduate 1.jpg"
-import img2 from "../../assets/images/Int. Graduate 2.jpg"
-import img3 from "../../assets/images/Int. Graduate.jpg"
 
-export default function Carousel({imgs,btn}) {
-  const [index,setIndex] = useState(0)
+export default function Carousel({ imgs, btn }) {
+  const [index, setIndex] = useState(0)
   const card = []
-  for (let i =0; i <imgs.length;i++){
-    card.push({id:i,image:imgs[i]})
+  for (let i = 0; i < imgs.length; i++) {
+    card.push({ id: i, image: imgs[i] })
   }
 
 
 
-  const mod =(n,m)=>{
+  const mod = (n, m) => {
     let result = n % m
-    return result >=0 ? result: result + m 
+    return result >= 0 ? result : result + m
   }
 
 
-  const changeSlideL = ()=>{
-    let m = (index - 1)%card.length
-    setIndex(m >=0 ? m: m+ card.length)
+  const changeSlideL = () => {
+    let m = (index - 1) % card.length
+    setIndex(m >= 0 ? m : m + card.length)
   }
-  const changeSlideR = ()=>{
-    setIndex((index + 1)%card.length)
+  const changeSlideR = () => {
+    setIndex((index + 1) % card.length)
   }
   return (
     <div>
       <div className="carousel">
         {
-          card.map((item,i)=>{
-            const left = mod(index - 1 , card.length)
-            const right = mod(index + 1 , card.length)
+          card.map((item, i) => {
+            const left = mod(index - 1, card.length)
+            const right = mod(index + 1, card.length)
 
             let className = ""
-            if (i === index){
+            if (i === index) {
               className = "card card--active";
             }
-            else if (i === right){
+            else if (i === right) {
               className = "card card--right"
             }
-            else if(i=== left){
+            else if (i === left) {
               className = "card card--left"
             }
-            else{
+            else {
               className = "card"
             }
-            console.log(left,right,index,card.length)
-            return <img src={item.image} alt="img" key={item.id} className={className}/>
+            console.log(left, right, index, card.length)
+            return <img src={item.image} alt="img" key={item.id} className={className} />
           })
         }
-      <button className='btn-cars btn-cars-left' onClick={changeSlideL}><img src={btn[0]} alt="" /></button>
-      <button className='btn-cars btn-cars-right' onClick={changeSlideR}><img src={btn[1]} alt="" /></button>
+        <button className='btn-cars btn-cars-left' onClick={changeSlideL}><img src={btn[0]} alt="" /></button>
+        <button className='btn-cars btn-cars-right' onClick={changeSlideR}><img src={btn[1]} alt="" /></button>
       </div>
     </div>
   )
