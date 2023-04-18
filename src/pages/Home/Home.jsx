@@ -183,7 +183,7 @@ function Home() {
             Our Philomathean <span> Team </span>
           </p>
           <div className="wrapper">
-            <Carousel imgs={[tut1, tut2, tut3, tut4, tut5]} btn={[prevbtn2, nextbtn2]} />
+            <Carousel imgs={[tut1, tut2, tut3, tut4, tut5]} btn={[prevbtn2, nextbtn2]} className="team_carousel" />
           </div>
         </div>
 

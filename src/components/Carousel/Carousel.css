@@ -1,6 +1,6 @@
 .carousel{
   max-width: 1200px;
-  height:600px;
+  height:400px;
   position:relative;
 }
 
@@ -12,6 +12,9 @@
   object-fit: cover;
   opacity:0;
   transition: 500ms;
+  border: 4px solid white;
+  border-radius: 20px;
+  box-shadow: 2px 2px 30px 5px rgb(233, 233, 233);
 }
 
 .card--active{
@@ -23,12 +26,12 @@
 .card--left{
   transform: translateX(-125%) scale(.8);
   transition:500ms;
-  opacity:0.5;
+  opacity:1;
 }
 .card--right{
   transform: translateX(125%) scale(.8);
   transition:500ms;
-  opacity:0.5;
+  opacity:1;
 }
 .btn-cars{
   width:50px;
@@ -48,4 +51,8 @@
 }
 .btn-cars-right{
   right:20px;
+}
+
+.blue_shadow{
+  background-image: url("../../assets/images/Team background.png");
 }
