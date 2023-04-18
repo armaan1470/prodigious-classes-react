@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Aboutus.css"
-import about_us_illustrate from "../../assets/images/illustration-4.png";
+import illustration4 from "../../assets/images/Illustration-4.png";
 import director from "../../assets/images/director image.jpg";
 import tut1 from "../../assets/images/Team-1.jpg";
 import tut2 from "../../assets/images/Team-2.jpg";
@@ -33,7 +33,7 @@ function Aboutus() {
             <div className='about_us'>
                 <div className="about_us_hero">
                     <div className='hero_img'>
-                        <img src={about_us_illustrate} alt="about_us_illustrate" className='about_us_illustrate' />
+                        <img src={illustration4} alt="illustration4" className='illustration4' />
                     </div>
                     <div className="hero_text">
                         <div className="hero_text_heading"><span>About</span> <span>Us</span></div>
