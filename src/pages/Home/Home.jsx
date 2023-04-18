@@ -12,7 +12,6 @@ import target from "../../assets/images/target.png"
 import hexagon from "../../assets/images/hexagon.png"
 import illustration2 from "../../assets/images/About Us.png";
 import illustration3 from "../../assets/images/benefits.png";
-import illustration4 from "../../assets/images/testimonials.png";
 import Counter from "../../components/Counter/Counter";
 import prevbtn1 from "../../assets/images/slider button.png";
 import nextbtn1 from "../../assets/images/slider button 1.png";
