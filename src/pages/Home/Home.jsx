@@ -131,7 +131,7 @@ function Home() {
           <p>
             Featured <span> Courses</span> at Philomathean
           </p>
-          <div className="courses">
+          <div className="courses_home">
             <img src={course1} alt="" />
             <img src={course2} alt="" />
             <img src={course3} alt="" />

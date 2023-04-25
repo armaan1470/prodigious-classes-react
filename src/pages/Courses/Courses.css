@@ -1,0 +1,145 @@
+
+.courses{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.courses_container{
+    /* border: 2px solid black; */
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 150px;
+}
+
+
+.courses_card{
+    /* border: 3px solid #F56D3B; */
+    width: 874px;
+    /* height: 477px; */
+    border-radius: 15px;
+    margin-top: 95px;
+    font-family: "biennalemedium";
+    font-weight: 500;
+}
+
+
+.courses_card_heading{
+    /* border: 3px solid blue; */
+    height: 86px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+    font-size: 59.3796px;
+    line-height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.course_head1{
+    background-image: -webkit-linear-gradient(
+        110deg,
+        rgb(242, 92, 56) 40%,
+        rgb(250, 169, 63) 80%
+      );
+}
+
+.course_head2{
+    background-image: -webkit-linear-gradient(
+        110deg,
+        rgb(0, 185, 241) 40%,
+        rgb(0, 236, 170) 80%
+      );
+}
+
+.course_head3{
+    background-image: -webkit-linear-gradient(
+        110deg,
+        rgb(179, 0, 225) 40%,
+        rgb(216, 0, 255) 80%
+      );
+}
+
+.course_head4{
+    background-image: -webkit-linear-gradient(
+        110deg,
+        rgb(238, 42, 123) 40%,
+        rgb(255, 125, 184) 80%
+      );
+}
+
+.course_head5{
+    background-image: -webkit-linear-gradient(
+        110deg,
+        rgb(251, 177, 63) 40%,
+        rgb(254, 227, 12) 80%
+      );
+}
+
+.courses_card_text{
+    text-align: justify;
+    padding: 20px 35px;
+    font-size: 18.7px;
+    line-height: 26px;
+    border: 3px solid transparent;
+
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.course_border1{
+    background: linear-gradient(to right, white, white), linear-gradient(282deg, rgb(242, 92, 56) , rgb(250, 169, 63));
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+.course_border2{
+    background: linear-gradient(to right, white, white), linear-gradient(282deg, rgb(0, 185, 241) , rgb(0, 236, 170));
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+.course_border3{
+    background: linear-gradient(to right, white, white), linear-gradient(282deg, rgb(179, 0, 225) , rgb(216, 0, 255));
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+.course_border4{
+    background: linear-gradient(to right, white, white), linear-gradient(282deg, rgb(238, 42, 123) , rgb(255, 125, 184));
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+.course_border5{
+    background: linear-gradient(to right, white, white), linear-gradient(282deg, rgb(251, 177, 63) , rgb(254, 227, 12));
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+.card_para{
+    text-align: justify;
+    margin: 10px 0;
+    color: #6c6c6a;
+}
+
+.card_heading_text{
+    flex: 1.6;
+    color: #FFFFFF;
+}
+
+.courses_card_heading img{
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    
+}

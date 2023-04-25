@@ -596,19 +596,19 @@
   right: -10px;
 }
 
-.courses {
+.courses_home {
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 0px 40px;
 }
-.courses img {
+.courses_home img {
   border-radius: 12px;
   width: 19.1rem;
   margin: 1.4rem;
   transition: all 0.3s ease-in-out;
 }
 
-.courses img:hover {
+.courses_home img:hover {
   transform: scale(1.1);
   box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
 }
@@ -752,6 +752,7 @@
   height: 350px;
   background-color: #f2f2f2;
   font-family: "biennalelight";
+
 }
 .footer_container .icons {
   display: flex;
