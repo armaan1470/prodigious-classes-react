@@ -39,11 +39,10 @@ import prevbtn2 from "../../assets/images/slider button 2.png";
 import nextbtn2 from "../../assets/images/slider button 3.png";
 import prevbtn3 from "../../assets/images/slider button 4.png";
 import nextbtn3 from "../../assets/images/slider button 4.png";
-import greylogo from "../../assets/images/logo-grey.png";
 import WhatsappChat from "../../components/WhatsappChat/WhatsappChat";
 import Carousel from "../../components/Carousel/Carousel";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Slider from "../../components/Slider/Slider";
+import Footer from "../../components/Footer/Footer";
 
 function Home() {
   const [count, setCount] = useState(0);
@@ -205,33 +204,7 @@ function Home() {
           </div>
 
         </div>
-        <div className="footer_container">
-          <div className="footer">
-            <div className="icons">
-              <div className="white-logo">
-                <img src={greylogo} alt="" width="100%" />
-              </div>
-              <div className="social-icons border">
-                <FaFacebook size={30} color="#6b6b6b" className="each_icon" />
-                <FaTwitter size={30} color="#6b6b6b" className="each_icon" />
-                <FaInstagram size={30} color="#6b6b6b" className="each_icon" />
-                <FaLinkedin size={30} color="#6b6b6b" className="each_icon" />
-              </div>
-            </div>
-            <hr />
-            <div className="links_footer">
-              <ul className="nav_links_footer">
-                <li>Terms & Condition</li>
-                <li>Privacy Policy</li>
-                <li>About Us </li>
-                <li>Courses</li>
-                <li>Conatact US</li>
-              </ul>
-              <b>&copy; 2023 All Rights Reserved.</b>
-            </div>
-          </div>
-
-        </div>
+        <Footer />
         <WhatsappChat />
       </div>
 

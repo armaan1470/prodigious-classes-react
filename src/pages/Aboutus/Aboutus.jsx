@@ -24,8 +24,7 @@ import stories4 from "../../assets/images/success stories-4.png"
 import stories5 from "../../assets/images/success stories-5.png"
 import stories6 from "../../assets/images/success stories-6.png"
 import line from "../../assets/images/underline_about us.png"
-import greylogo from "../../assets/images/logo-grey.png";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import Footer from '../../components/Footer/Footer';
 import WhatsappChat from "../../components/WhatsappChat/WhatsappChat";
 
 function Aboutus() {
@@ -176,34 +175,7 @@ function Aboutus() {
                 </div>
 
 
-
-                <div className="footer_container">
-                    <div className="footer">
-                        <div className="icons">
-                            <div className="white-logo">
-                                <img src={greylogo} alt="" width="100%" />
-                            </div>
-                            <div className="social-icons border">
-                                <FaFacebook size={30} color="#6b6b6b" className="each_icon" />
-                                <FaTwitter size={30} color="#6b6b6b" className="each_icon" />
-                                <FaInstagram size={30} color="#6b6b6b" className="each_icon" />
-                                <FaLinkedin size={30} color="#6b6b6b" className="each_icon" />
-                            </div>
-                        </div>
-                        <hr />
-                        <div className="links">
-                            <ul className="nav-links">
-                                <li>Terms & Condition</li>
-                                <li>Privacy Policy</li>
-                                <li>About Us </li>
-                                <li>Courses</li>
-                                <li>Conatact US</li>
-                            </ul>
-                            <b>&copy; 2023 All Rights Reserved.</b>
-                        </div>
-                    </div>
-
-                </div>
+                <Footer />
                 <WhatsappChat />
             </div>
 
