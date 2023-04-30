@@ -7,6 +7,21 @@ import { Link } from "react-router-dom";
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
+  
+
+
+
+  useEffect(() => {
+    const navLinks = document.querySelectorAll('.nav-links');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.forEach(link => link.classList.remove('active'));
+        link.classList.add('active');
+      });
+    });
+  }, []);
+  
+
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);

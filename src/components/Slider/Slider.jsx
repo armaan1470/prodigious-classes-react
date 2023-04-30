@@ -32,11 +32,11 @@ const Slider = () => {
         </SplideSlide>
       </SplideTrack>
 
-      <div class="splide__arrows">
-        <button class="splide__arrow splide__arrow--prev">
+      <div className="splide__arrows">
+        <button className="splide__arrow splide__arrow--prev">
           <img src={prevbtn3} className="arrow_img" alt="Previous" />
         </button>
-        <button class="splide__arrow  splide__arrow--next">
+        <button className="splide__arrow  splide__arrow--next">
           <img src={nextbtn3} className="arrow_img" alt="Next" />
         </button>
       </div>

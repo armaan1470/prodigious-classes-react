@@ -26,6 +26,7 @@ import stories6 from "../../assets/images/success stories-6.png"
 import line from "../../assets/images/underline_about us.png"
 import greylogo from "../../assets/images/logo-grey.png";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import WhatsappChat from "../../components/WhatsappChat/WhatsappChat";
 
 function Aboutus() {
     return (
@@ -203,7 +204,7 @@ function Aboutus() {
                     </div>
 
                 </div>
-
+                <WhatsappChat />
             </div>
 
         </>

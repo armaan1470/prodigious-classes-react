@@ -4,6 +4,7 @@ import bgdesign1 from "../../assets/images/bg design.png"
 import bgdesign from "../../assets/images/bg design 1.png"
 import greylogo from "../../assets/images/logo-grey.png";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import WhatsappChat from "../../components/WhatsappChat/WhatsappChat";
 
 
 function Courses() {
@@ -106,7 +107,7 @@ function Courses() {
                     </div>
 
                 </div>
-
+                <WhatsappChat />
             </div>
         </>
     )

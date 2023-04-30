@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@coreui/icons": "^3.0.1",
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
@@ -20,6 +21,7 @@
     "react-bootstrap": "^2.7.4",
     "react-bootstrap-carousel": "^4.1.1",
     "react-dom": "^18.2.0",
+    "react-floating-whatsapp": "^5.0.8",
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.10.0",
     "react-slick": "^0.29.0",

@@ -219,8 +219,8 @@ function Home() {
               </div>
             </div>
             <hr />
-            <div className="links">
-              <ul className="nav-links">
+            <div className="links_footer">
+              <ul className="nav_links_footer">
                 <li>Terms & Condition</li>
                 <li>Privacy Policy</li>
                 <li>About Us </li>

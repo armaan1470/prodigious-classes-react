@@ -30,6 +30,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  
   /* border: 2px solid black; */
   /* max-width: 80%; */
   /* font-size: clamp(15px, 10vw + 1rem, 20%) !important; */
@@ -48,10 +49,12 @@
 
 .text h1 {
   font-size: clamp(2rem, 5vw + 1rem, 3.4rem);
-  font-family: "biennalesemibold";
+  line-height: 65px;
+  font-family: "biennalemedium";
   color: #00028a;
   padding: clamp(10px, 3vw, 1.25rem) 0;
   position: relative;
+  font-weight: 500 !important;
 }
 .text h1::before {
   content: "";
@@ -62,13 +65,15 @@
   width: 30px;
   height: 30px;
   left: -20px;
-  top: 14px;
+  top: 11px;
 }
 .text span:first-child {
   background: -webkit-linear-gradient(yellow, red);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "biennalesemibold";
+  font-weight: 600 !important;
 }
 .text span:last-child {
   background: -webkit-linear-gradient(
@@ -80,6 +85,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
+  font-family: "biennalesemibold";
+  font-weight: 600 !important;
 }
 .text span:last-child::after {
   content: "";
@@ -264,7 +271,7 @@
   width: 10%;
   bottom:200px;
   right: 340px;
-  animation: calculator-rotate 5s infinite alternate;
+  animation: calculator-rotate 4s infinite alternate;
  
 }
 
@@ -610,8 +617,9 @@
 
 .courses_home img:hover {
   transform: scale(1.1);
-  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
 }
+
 
 /* Teams  */
 
@@ -795,6 +803,35 @@
   position: relative;
 }
 .nav-links li:not(:last-child)::after {
+  content: "";
+  height: 10px;
+  border: 1px solid;
+  position: absolute;
+  right: 15px;
+  bottom: 4px;
+  color: #6b6b6b;
+}
+
+
+.links_footer{
+  display: flex;
+  justify-content: space-between;
+  color: #6b6b6b;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+}
+
+.links_footer .nav_links_footer {
+  display: flex;
+  list-style-type: none;
+  font-weight: 600;
+}
+.links_footer .nav_links_footer li {
+  padding-right: 2.2rem;
+  position: relative;
+}
+
+.nav_links_footer li:not(:last-child)::after{
   content: "";
   height: 10px;
   border: 1px solid;
