@@ -131,7 +131,7 @@ function Contact() {
             </div>
 
             <div className="contact_form_container">
-                <div className="contact_form_heading">Book a Demo/Enquiry</div>
+                <div className="contact_form_heading">Book a Demo / Enquiry</div>
                 <form onSubmit={handleSubmit} className='form_container'>
 
                     <div className="form_input_container">
