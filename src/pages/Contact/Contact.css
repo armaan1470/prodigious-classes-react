@@ -127,7 +127,10 @@
     justify-content: center;
     height: 40px;
     margin-bottom: 15px;
+    cursor: pointer;
+    
 }
+
 
 .contact_link_text{
     text-align: center;
@@ -136,6 +139,11 @@
     font-size: 21.28px;    ;
     line-height: 124.5%;
     color: #787878;
+    cursor: pointer;
+}
+
+.contact_link_text:hover{
+    color: #FF6800;
 }
 
 
@@ -265,6 +273,7 @@
 
 .social_icon {
     width: 7.5%;
+    cursor: pointer;
   }
   
 

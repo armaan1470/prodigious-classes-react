@@ -446,12 +446,12 @@
 }
 
 .text3 h1 {
-  font-size: clamp(2rem, 5vw + 1rem, 3.4rem);
+  font-size: clamp(2rem, 5vw + 1rem, 2.8rem);
   font-family: "biennalemedium";
   font-weight: 500;
-  padding: clamp(10px, 3vw, 1.25rem) 0;
+  padding: clamp(10px, 3vw, 1.08rem) 0;
   color: #00028a;
-  line-height: 3.7rem;
+
 }
 .text3 span {
   background: -webkit-linear-gradient(180deg, red, rgb(255, 112, 0));

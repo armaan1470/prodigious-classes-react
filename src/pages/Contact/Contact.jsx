@@ -48,7 +48,7 @@ function Contact() {
 
     const MySwal = withReactContent(Swal)
 
-
+    const openLink = (link) => {window.location.href = link}
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -94,22 +94,22 @@ function Contact() {
                 <div className="contact_details_links">
                     <div className="contact_link">
                         <div className="contact_link_icon">
-                            <img src={call} alt={call} />
+                            <img src={call} alt={call} onClick={() => openLink('tel:932416073')}/>
                         </div>
-                        <div className="contact_link_text">+91-9324164073</div>
+                        <div className="contact_link_text" onClick={() => openLink('tel:932416073')}>+91-9324164073</div>
 
                     </div>
                     <div className="contact_link">
                         <div className="contact_link_icon">
-                            <img src={mail} alt={mail} />
+                            <img src={mail} alt={mail} onClick={() => openLink('mailto:philomathean22@gmail.com')} />
                         </div>
-                        <div className="contact_link_text">philomathean22@gmail.com</div>
+                        <div className="contact_link_text" onClick={() => openLink('mailto:philomathean22@gmail.com')}>philomathean22@gmail.com</div>
                     </div>
                     <div className="contact_link">
                         <div className="contact_link_icon">
-                            <img src={wa} alt={wa} />
+                            <img src={wa} alt={wa} onClick={() => openLink('https://wa.me/919324164073')} />
                         </div>
-                        <div className="contact_link_text">+91-9324164073</div>
+                        <div className="contact_link_text" onClick={() => openLink('https://wa.me/919324164073')} >+91-9324164073</div>
                     </div>
                 </div>
             </div>
@@ -117,15 +117,15 @@ function Contact() {
             <div className="social_container">
                 <div className='social_heading'>Connect with us</div>
                 <div className='social_icons_container'>
-                    <img src={instagram} alt={instagram} className='social_icon' />
+                    <img src={facebook} alt={facebook} className='social_icon'  onClick={() => openLink('https://www.facebook.com/profile.php?id=100086078512350')}/>
                     <div className="divider_v"></div>
-                    <img src={facebook} alt={facebook} className='social_icon' />
+                    <img src={twitter} alt={twitter} className='social_icon' onClick={() => openLink('https://twitter.com/Prodigi69196135')}/>
                     <div className="divider_v"></div>
-                    <img src={twitter} alt={twitter} className='social_icon' />
+                    <img src={instagram} alt={instagram} className='social_icon' onClick={() => openLink('https://www.instagram.com/philomathean_2022/')}/>
                     <div className="divider_v"></div>
-                    <img src={linkedin} alt={linkedin} className='social_icon' />
+                    <img src={linkedin} alt={linkedin} className='social_icon' onClick={() => openLink('https://www.linkedin.com/in/prodigious-career-institute-35292a251/')}/>
                     <div className="divider_v"></div>
-                    <img src={telegram} alt={telegram} className='social_icon' />
+                    <img src={telegram} alt={telegram} className='social_icon' onClick={() => openLink('https://telegram.org/')}/>
                 </div>
 
             </div>
