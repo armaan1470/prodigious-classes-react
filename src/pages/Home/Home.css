@@ -359,12 +359,7 @@
 .arrows:last-child {
   right: 150px;
 } */
-.carousel {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 70vw;
-}
+
 .slider-img {
   height: 450px;
   margin: 10px 10px 3rem 10px;
@@ -507,7 +502,7 @@
   flex-direction: column;
   justify-content: end;
   align-items: center;
-  font-size: 5rem;
+  font-size: clamp(4rem, 6vw, 5rem);
   font-family: "biennalelight";
 }
 .main-q {
@@ -710,7 +705,7 @@
   text-align: center;
   color: white;
   font-family: "biennalemedium";
-  padding: 1rem 0 3rem 0;
+  padding: 1rem 0 0 0;
 }
 .text4 p span {
   position: relative;

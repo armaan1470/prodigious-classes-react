@@ -1,4 +1,10 @@
-.carousel{
+
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 70vw;
   max-width: 1200px;
   height:400px;
   position:relative;
@@ -24,12 +30,12 @@
 }
 
 .card--left{
-  transform: translateX(-125%) scale(.8);
+  transform: translateX(-120%) scale(.8);
   transition:500ms;
   opacity:1;
 }
 .card--right{
-  transform: translateX(125%) scale(.8);
+  transform: translateX(120%) scale(.8);
   transition:500ms;
   opacity:1;
 }
@@ -48,12 +54,112 @@
   height: 50px !important;
 }
 .btn-cars-left{
+  position: absolute;
   left:20px;
 }
 .btn-cars-right{
+  position: absolute;
   right:20px;
 }
 
 .blue_shadow{
   background-image: url("../../assets/images/Team background.png");
+}
+
+@media screen and (max-width: 1650px) {
+  .card--left{
+    transform: translateX(-110%) scale(.8);
+    transition:500ms;
+    opacity:1;
+  }
+  .card--right{
+    transform: translateX(110%) scale(.8);
+    transition:500ms;
+    opacity:1;
+  }
+
+  .btn-cars-left{
+    position: absolute;
+    left:-20px;
+  }
+  .btn-cars-right{
+    position: absolute;
+    right:-20px;
+  }
+
+
+}
+
+
+@media screen and (max-width: 1550px) {
+  .card--left{
+    transform: translateX(-110%) scale(.8);
+    transition:500ms;
+    opacity:1;
+  }
+  .card--right{
+    transform: translateX(110%) scale(.8);
+    transition:500ms;
+    opacity:1;
+  }
+
+  .btn-cars-left{
+    position: absolute;
+    left:-20px;
+  }
+  .btn-cars-right{
+    position: absolute;
+    right:-20px;
+  }
+
+
+}
+
+
+@media screen and (max-width: 1420px) {
+  .card--left{
+    transform: translateX(-100%) scale(.8);
+    transition:500ms;
+    opacity:1;
+  }
+  .card--right{
+    transform: translateX(100%) scale(.8);
+    transition:500ms;
+    opacity:1;
+  }
+
+  .btn-cars-left{
+    position: absolute;
+    left:-80px;
+  }
+  .btn-cars-right{
+    position: absolute;
+    right:-80px;
+  }
+
+
+}
+
+@media screen and (max-width: 1150px) {
+  .card--left{
+    transform: translateX(-100%) scale(.8);
+    transition:500ms;
+    opacity:1;
+  }
+  .card--right{
+    transform: translateX(100%) scale(.8);
+    transition:500ms;
+    opacity:1;
+  }
+
+  .btn-cars-left{
+    position: absolute;
+    left:-130px;
+  }
+  .btn-cars-right{
+    position: absolute;
+    right:-130px;
+  }
+
+
 }
