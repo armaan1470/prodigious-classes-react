@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 85px;
 }
 
 .about_us_hero{
@@ -350,12 +351,13 @@
     width: 30%;
     transition: all 0.5s ease-in-out;
     border-radius: 10px;
+    border: 1px solid #eef1f9;
     
 }
 
 .team_cards:hover{
     transform: scale(1.05);
-    box-shadow: 0 0.5rem 4rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 

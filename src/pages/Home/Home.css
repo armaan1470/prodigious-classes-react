@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 85px;
 }
 
 .hero_container {
@@ -106,21 +107,24 @@
     font-weight: 500;
   }
 
-  .btn {
-    padding: 8px;
+  .book_btn {
+    padding: 10px 14px;
     background-image: linear-gradient(rgb(255, 161, 0), rgb(255, 84, 0));
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-family: "biennalemedium";
     color: white;
     border: none;
     border-radius: 5px;
-    box-shadow: 0 2px 0px #d11f00;
+    box-shadow: 0 3.5px 0px #d11f00;
     margin: clamp(10px, 2vw, 16px) 0;
+    transition: 0.2s ease-in-out;
 }
 
-.btn:active {
-  box-shadow: 0 1px 0px #d11f00;
+.book_btn:hover{
+  transform: translateY(3px);
+  box-shadow: none;
 }
+
 
 
 .ill_position{
@@ -368,9 +372,7 @@
   border-radius: 20px;
   box-shadow: 2px 2px 30px 5px rgb(233, 233, 233);
 }
-.carousel img:is(:first-child, :last-child) {
-  height: 400px;
-}
+
 
 
 
@@ -450,7 +452,8 @@
 
 .text3 h1 {
   font-size: clamp(2rem, 5vw + 1rem, 3.4rem);
-  font-family: "biennalesemibold";
+  font-family: "biennalemedium";
+  font-weight: 500;
   padding: clamp(10px, 3vw, 1.25rem) 0;
   color: #00028a;
   line-height: 3.7rem;
@@ -461,6 +464,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
+  font-family: "biennalesemibold";
+  font-weight: 600 !important;
 }
 
 .text3 p {
@@ -568,7 +573,7 @@
 
 .course_container {
   max-width: 1200px;
-  padding-top: 5rem;
+  padding-top: 3rem;
   width: 100%;
   display: grid;
   place-items: center;
@@ -579,7 +584,7 @@
   text-align: center;
   margin: auto;
   color: #ff5400;
-  padding: 3rem 0;
+  padding: 1rem 0;
 }
 .course_container p span {
   background-image: -webkit-linear-gradient(
@@ -611,12 +616,12 @@
 .courses_home img {
   border-radius: 12px;
   width: 19.1rem;
-  margin: 1.4rem;
+  margin: 2.4rem 2.4rem 0 0;
   transition: all 0.3s ease-in-out;
 }
 
 .courses_home img:hover {
-  transform: scale(1.1);
+  transform: scale(1.06);
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
 }
 

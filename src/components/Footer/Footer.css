@@ -28,7 +28,7 @@
   }
   
   .each_icon{
-    margin  : 5px;
+    margin  : 8px;
   }
   
   
@@ -56,16 +56,22 @@
     position: absolute;
     right: 15px;
     bottom: 4px;
-    color: #6b6b6b;
+    color: #6b6b6b !important;
   }
   
   
   .links_footer{
     display: flex;
     justify-content: space-between;
-    color: #6b6b6b;
+    color: #6b6b6b !important;
     padding: 2rem 0;
     font-size: 0.9rem;
+  }
+
+  .react_links{
+    text-decoration: none;
+    color: #6b6b6b !important;
+
   }
   
   .links_footer .nav_links_footer {

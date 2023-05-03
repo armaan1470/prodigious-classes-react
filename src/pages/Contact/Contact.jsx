@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef  } from 'react';
 import "./Contact.css"
 import call from "../../assets/images/call.svg";
 import mail from "../../assets/images/email.svg";
@@ -14,21 +14,21 @@ import withReactContent from "sweetalert2-react-content";
 
 function Contact() {
 
-    useEffect(() => {
-        const contactDetailsContainer = document.querySelector('.contact_details_container');
-        const contactBannerText = document.querySelector('.contact_banner_text');
+    // useEffect(() => {
+    //     const contactDetailsContainer = document.querySelector('.contact_details_container');
+    //     const contactBannerText = document.querySelector('.contact_banner_text');
 
-        const handleMouseMove = () => {
-            contactDetailsContainer.classList.add('animate');
-            contactBannerText.classList.add('animate');
-        };
+    //     const handleMouseMove = () => {
+    //         contactDetailsContainer.classList.add('animate');
+    //         contactBannerText.classList.add('animate');
+    //     };
 
-        document.addEventListener('mousemove', handleMouseMove);
+    //     document.addEventListener('mousemove', handleMouseMove);
 
-        return () => {
-            document.removeEventListener('mousemove', handleMouseMove);
-        };
-    }, []);
+    //     return () => {
+    //         document.removeEventListener('mousemove', handleMouseMove);
+    //     };
+    // }, []);
 
 
     const [firstname, setFirstName] = useState('');
@@ -36,6 +36,15 @@ function Contact() {
     const [email, setEmail] = useState('');
     const [number, setNumber] = useState('');
     const [message, setMessage] = useState('');
+    const bannerText = useRef(null);
+    const addressText = useRef(null);
+
+    useEffect(() => {
+      setTimeout(() => {
+        bannerText.current.classList.add('slide_up');
+        addressText.current.classList.add('slide_up');
+      }, 700);
+    }, []);
 
     const MySwal = withReactContent(Swal)
 
@@ -75,9 +84,9 @@ function Contact() {
     return (
         <>
             <div className='contact_banner'>
-                <div className='contact_banner_text'>Contact Us</div>
+                <div className='contact_banner_text' ref={bannerText}>Contact Us</div>
             </div>
-            <div className='contact_details_container'>
+            <div className='contact_details_container' ref={addressText}>
                 <div className="contact_details_address">
                     <div className='primary_address'>Philomathean Career Institute Pvt. Ltd.</div>
                     <div className='secondary_address'>202, Abhishek Building, Hetal Park, Opp. Jangid Estate, Mira Road East, Thane - 401107</div>
@@ -85,29 +94,45 @@ function Contact() {
                 <div className="contact_details_links">
                     <div className="contact_link">
                         <div className="contact_link_icon">
-                            <img src={call} alt={call} width="15%" />
+                            <img src={call} alt={call} />
                         </div>
                         <div className="contact_link_text">+91-9324164073</div>
 
                     </div>
                     <div className="contact_link">
                         <div className="contact_link_icon">
-                            <img src={mail} alt={mail} width="15%" />
+                            <img src={mail} alt={mail} />
                         </div>
                         <div className="contact_link_text">philomathean22@gmail.com</div>
                     </div>
                     <div className="contact_link">
                         <div className="contact_link_icon">
-                            <img src={wa} alt={wa} width="15%" />
+                            <img src={wa} alt={wa} />
                         </div>
                         <div className="contact_link_text">+91-9324164073</div>
                     </div>
                 </div>
             </div>
 
+            <div className="social_container">
+                <div className='social_heading'>Connect with us</div>
+                <div className='social_icons_container'>
+                    <img src={instagram} alt={instagram} className='social_icon' />
+                    <div className="divider_v"></div>
+                    <img src={facebook} alt={facebook} className='social_icon' />
+                    <div className="divider_v"></div>
+                    <img src={twitter} alt={twitter} className='social_icon' />
+                    <div className="divider_v"></div>
+                    <img src={linkedin} alt={linkedin} className='social_icon' />
+                    <div className="divider_v"></div>
+                    <img src={telegram} alt={telegram} className='social_icon' />
+                </div>
+
+            </div>
+
             <div className="contact_form_container">
                 <div className="contact_form_heading">Book a Demo/Enquiry</div>
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} className='form_container'>
 
                     <div className="form_input_container">
                         <input className='form_input_field'
@@ -145,30 +170,23 @@ function Contact() {
                         />
                     </div>
                     <div className="form_textarea_container">
-                        <textarea className='form_input_field' name="" id="" style={{ height: "200px"}} value={message} onChange={(e) => setMessage(e.target.value)} placeholder='Write your message'></textarea>
+                        <textarea className='form_input_field' name="" id="" style={{ height: "200px" }} value={message} onChange={(e) => setMessage(e.target.value)} placeholder='Write your message'></textarea>
                     </div>
-                    <button type='submit' className='sub_btn'>Submit</button>
+                    <div className="form_btn_container">
+                        <button type='submit' className='sub_btn'>Submit</button>
+                    </div>
+
 
 
                 </form>
             </div>
 
-            <div className="social_container">
-                <img src={instagram} alt={instagram} className='social_icon' />
-                <div className="divider_v"></div>
-                <img src={facebook} alt={facebook} className='social_icon'  />
-                <div className="divider_v"></div>
-                <img src={twitter} alt={twitter} className='social_icon'  />
-                <div className="divider_v"></div>
-                <img src={linkedin} alt={linkedin} className='social_icon' />
-                <div className="divider_v"></div>
-                <img src={telegram} alt={telegram} className='social_icon'  />
-            </div>
+
 
             <div className="map_container">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d471.0201947501229!2d72.85101413266587!3d19.188144711175593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b74b6382b2e5%3A0xedaa0cac57eea62f!2sMalad%20Station!5e0!3m2!1sen!2sin!4v1683014520962!5m2!1sen!2sin"
-                    style={{ width: '100%', height: '100%', border: "0"}} 
-                    loading="lazy" 
+                    style={{ width: '100%', height: '100%', border: "0" }}
+                    loading="lazy"
                     title="map"></iframe>
             </div>
 

@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Aboutus from "./pages/Aboutus/Aboutus";
 import Courses from "./pages/Courses/Courses";
 import Contact from "./pages/Contact/Contact";
+import WhatsappChat from "./components/WhatsappChat/WhatsappChat";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Router>
@@ -19,5 +20,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
+    <WhatsappChat />
   </Router>
 );

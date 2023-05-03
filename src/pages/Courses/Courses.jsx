@@ -80,7 +80,6 @@ function Courses() {
                 </div>
 
                 <Footer />
-                <WhatsappChat />
             </div>
         </>
     )

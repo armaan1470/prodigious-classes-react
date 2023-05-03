@@ -29,15 +29,22 @@
 }
 
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   font-family: "biennalesemibold";
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
-  border-bottom: 1px solid #D1D1D1;
+  font-size: 1rem;
+  /* border-bottom: 1px solid #D1D1D1; */
   background-color: white;
   width: 100%;
-  height: 95px;
+  height: 85px;
+  z-index: 999;
+  margin-bottom: 80px;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,.1);
 }
 
 .navbar-container {

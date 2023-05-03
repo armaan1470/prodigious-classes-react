@@ -69,7 +69,7 @@ function Home() {
                   flexible learning solution that <br /> makes learning easy
                   and convinient
                 </p>
-                <button className="btn">Book A Demo Class</button>
+                <button className="book_btn">Book a Demo</button>
               </div>
             </div>
             <div className="second_half ill_position">
@@ -156,7 +156,7 @@ function Home() {
               them improve their overall performance.
               <br />
             </p>
-            <button className="btn">Book A Demo</button>
+            <button className="book_btn">Book a Demo</button>
           </div>
           <div className="second_half ilustrate-3" style={{ flex: "50%" }}>
             <img src={illustration3} alt="" />
@@ -205,7 +205,6 @@ function Home() {
 
         </div>
         <Footer />
-        <WhatsappChat />
       </div>
 
     </>

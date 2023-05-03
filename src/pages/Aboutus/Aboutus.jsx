@@ -9,8 +9,8 @@ import tut4 from "../../assets/images/Team-4.jpg";
 import tut5 from "../../assets/images/Team-5.jpg";
 import mission from "../../assets/images/Our Mission.png"
 import vision from "../../assets/images/Our Vision.png"
-import mission_div from "../../assets/images/mission_div.png"
-import vision_div from "../../assets/images/vision_div.png"
+import mission_div from "../../assets/images/mission.png"
+import vision_div from "../../assets/images/vision.png"
 import avatar1 from "../../assets/images/Profile-1.png"
 import avatar2 from "../../assets/images/Profile-2.png"
 import avatar3 from "../../assets/images/Profile-3.png"
@@ -176,7 +176,6 @@ function Aboutus() {
 
 
                 <Footer />
-                <WhatsappChat />
             </div>
 
         </>

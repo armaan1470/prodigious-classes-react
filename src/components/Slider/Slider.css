@@ -13,7 +13,7 @@
   transform: none;
 }
 
-.splide__arrow--next,
+/* .splide__arrow--next,
 .splide__arrow--prev {
   background-color: #e0ca89;
   width: 60px;
@@ -31,7 +31,7 @@
   width: 60px;
   border: 1px solid white;
   height: 60px;
-}
+} */
 
 .splide__arrow svg {
   fill: white;
@@ -79,7 +79,7 @@
 .splide {
   display: flex;
   justify-content: center;
-  width: 90rem;
+  /* width: 90rem; */
   height: 500px;
   align-items: center;
 }
@@ -98,4 +98,8 @@
 .arrow_img {
   display: flex;
   width: 5rem;
+}
+
+.test_img{
+  width: 700px;
 }

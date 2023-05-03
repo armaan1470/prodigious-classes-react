@@ -2,14 +2,12 @@ import React from "react";
 import { useState, useEffect } from "react";
 import logo from "../../assets/images/Logo.png";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
-  
-
-
+  const location = useLocation();
 
   useEffect(() => {
     const navLinks = document.querySelectorAll('.nav-links');
@@ -20,11 +18,22 @@ function Navbar() {
       });
     });
   }, []);
+
+  useEffect(() => {
+    const navLinks = document.querySelectorAll('.nav-links');
+    navLinks.forEach(link => {
+      if (link.getAttribute('href') === location.pathname) {
+        navLinks.forEach(link => link.classList.remove('active'));
+        link.classList.add('active');
+      }
+    });
+  }, [location]);
   
 
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+  const reloadPage = () => {window.location.reload(); window.location.pathname("/")}
 
   const showButton = () => {
     if (window.innerWidth <= 960) {
@@ -43,7 +52,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <Link className="logo">
+        <Link to="/" className="logo" onClick={reloadPage}>
           <img src={logo} alt="Philomathean" className="logo_img" />
         </Link>
         <div className="menu-icon" onClick={handleClick}>
