@@ -758,15 +758,15 @@
 @media screen and (max-width: 1440px) {
 
   :root{
-    font-size: 90%;
+    font-size: 85%;
   }
   
   .ilustrate-3{
-    padding-right: 12rem;
+    padding-right: 15rem;
   }
 
   .text3 {
-    padding-left: 9rem;
+    padding-left: 11rem;
   }
 
   .text h1 {
@@ -777,6 +777,38 @@
     position: relative;
     font-weight: 500 !important;
     line-height: 55px;
+  }
+
+  .text span:last-child:after {
+    content: "";
+    position: absolute;
+    background-image: url(/assets/line-b495e08a.svg);
+    background-size: contain;
+    width: 160px;
+    height: 10px;
+    bottom: -4px;
+    right: -10px;
+  }
+
+  .text h1:before {
+    content: "";
+    position: absolute;
+    background-image: url(/assets/3stick-439409a3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    left: -20px;
+    top: 9px;
+  }
+
+  .main-q p {
+    background: -webkit-linear-gradient(135deg, red, rgb(255, 150, 0) 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 3rem;
+    width: 700px;
   }
 }
 
