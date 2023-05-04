@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState } from "react";
 import "./Home.css";
 import illustration1 from "../../assets/images/illustration-ani.png";
@@ -43,14 +44,35 @@ import WhatsappChat from "../../components/WhatsappChat/WhatsappChat";
 import Carousel from "../../components/Carousel/Carousel";
 import Slider from "../../components/Slider/Slider";
 import Footer from "../../components/Footer/Footer";
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Modal from '@mui/material/Modal';
+import Form from '../../components/Form/Form';
 
 function Home() {
+
+  const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    bgcolor: 'background.paper',
+    boxShadow: 24,
+    borderRadius: 5,
+    p: 5
+  };
+
   const [count, setCount] = useState(0);
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
 
   return (
     <>
       <div className="body">
+
         <div className="hero_container">
           <div className="text_img_container">
             <div className="first_half text">
@@ -69,7 +91,7 @@ function Home() {
                   flexible learning solution that <br /> makes learning easy
                   and convinient
                 </p>
-                <button className="book_btn">Book a Demo</button>
+                <button className="book_btn" onClick={handleOpen}>Book a Demo</button>
               </div>
             </div>
             <div className="second_half ill_position">
@@ -156,7 +178,7 @@ function Home() {
               them improve their overall performance.
               <br />
             </p>
-            <button className="book_btn">Book a Demo</button>
+            <button className="book_btn" onClick={handleOpen}>Book a Demo</button>
           </div>
           <div className="second_half ilustrate-3" style={{ flex: "50%" }}>
             <img src={illustration3} alt="" />
@@ -206,7 +228,16 @@ function Home() {
         </div>
         <Footer />
       </div>
-
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style}>
+          <Form onCloseModal={handleClose}/>
+        </Box>
+      </Modal>
     </>
   );
 }

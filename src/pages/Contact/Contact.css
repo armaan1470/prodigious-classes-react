@@ -98,7 +98,7 @@
     font-weight: 600;
     font-size: 25.3086px;
     line-height: 124.5%;
-    color: #454545;
+    color: #0040a6;
 }
 
 .secondary_address{
@@ -114,6 +114,7 @@
     /* border: 2px solid red; */
     display: flex;
     justify-content: space-evenly;
+
 
 }
 
@@ -143,99 +144,33 @@
 }
 
 .contact_link_text:hover{
-    color: #FF6800;
+    color: #c5c5c5;
 }
 
 
-.contact_form_container{
+.hover{
+    transition: all 3s ease-in-out;
+}
+
+.hover_icon.ca:hover{
+    color: #FF6800 !important;
+
+}
+
+.hover_icon.em:hover{
+    color: #00A0FF !important;
+}
+
+.hover_icon.wa:hover{
+    color: #25D366 !important;
+}
+
+
+.form_component_container{
+    padding:clamp(1rem, 4vw, 6.25rem);
     margin: 0 auto;
     max-width: 700px;
     width: 100%;
-    /* border-top: 2px solid #00A0FF; */
-    padding:clamp(1rem, 4vw, 6.25rem);
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    justify-content: center;
-}
-
-.form_container{
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.form_btn_container{
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-}
-
-.contact_form_heading{
-    font-family: 'biennalesemibold';
-    font-weight: 600;
-    font-size: 25.3086px;
-    line-height: 124.5%;
-    color: #454545;
-    text-align: center;
-    
-}
-
-.form_input_container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 30px;
-}
-
-.form_textarea_container{
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.form_input_field{
-    font-family: 'biennalemedium';
-    /* margin: 10px 30px 10px 0; */
-    margin: 10px;
-    height: 45px;
-    padding:12px;
-    font-size: 14px;
-    font-weight: 400;
-    border-radius: 8px;
-    border: 2px solid #ccccccc5;
-    outline-color: #FF6800;
-    color: #454545;
-
-}
-
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #a7a1a1c5;
-    opacity: 1; /* Firefox */
-  }
-  
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #a7a1a1c5;
-  }
-  
-  ::-ms-input-placeholder { /* Microsoft Edge */
-    color: #a7a1a1c5;
-  }
-
-.sub_btn{
-    font-family: 'biennalesemibold';
-    font-size: 16px;
-    padding: 8px 20px;
-    color: white;
-    background-color: #FF6800;
-    border-radius: 8px;
-    box-shadow: 0 3px 0 #f35427;
-    border: 1px solid transparent;
-    transition: 0.3s ease-in-out;
-
-}
-
-.sub_btn:hover{
-    transform: translateY(3px);
-    box-shadow: none;
 }
 
 .social_container{
