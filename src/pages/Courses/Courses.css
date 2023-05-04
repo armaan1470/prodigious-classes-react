@@ -144,3 +144,10 @@
     flex: 1;
     
 }
+
+@media screen and (max-width: 1440px) {
+    .courses{
+      padding-top: 70px;
+    }
+
+}

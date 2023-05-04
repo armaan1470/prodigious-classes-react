@@ -360,5 +360,11 @@
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
 }
 
+@media screen and (max-width: 1440px) {
+    .about_us{
+      padding-top: 70px;
+    }
+
+}
 
 

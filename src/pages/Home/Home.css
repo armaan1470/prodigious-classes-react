@@ -99,7 +99,7 @@
   background-image: url("../../assets/images/line.svg");
   background-size: contain;
   width: 180px;
-  height: 12px;
+  height: 11px;
   bottom: -3px;
   right: -10px;
 }
@@ -463,8 +463,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
-  font-family: "biennalesemibold";
-  font-weight: 600 !important;
+  font-family: "biennalemedium";
+  /* font-weight: 600 !important; */
 }
 
 .text3 p {
@@ -669,7 +669,7 @@
   background-size: contain;
   width: 150px;
   height: 10px;
-  bottom: -10px;
+  bottom: -5px;
   right: -10px;
 }
 
@@ -758,15 +758,23 @@
 @media screen and (max-width: 1440px) {
 
   :root{
-    font-size: 85%;
-  }
-  
-  .ilustrate-3{
-    padding-right: 15rem;
+    font-size: 75%;
   }
 
-  .text3 {
-    padding-left: 11rem;
+  .body{
+    padding-top: 70px;
+  }
+
+  .text h1::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../assets/images/3stick.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 25px;
+    left: -15px;
+    top: 10px;
   }
 
   .text h1 {
@@ -779,28 +787,97 @@
     line-height: 55px;
   }
 
-  .text span:last-child:after {
+  .text span:last-child::after {
     content: "";
     position: absolute;
-    background-image: url(/assets/line-b495e08a.svg);
+    background-image: url("../../assets/images/line.svg");
     background-size: contain;
-    width: 160px;
-    height: 10px;
-    bottom: -4px;
+    width: 145px;
+    height: 9px;
+    bottom: -3px;
     right: -10px;
   }
 
-  .text h1:before {
+  .graduation span::after {
     content: "";
     position: absolute;
-    background-image: url(/assets/3stick-439409a3.png);
+    background-image: url(/src/assets/images/line.svg);
+    background-size: cover;
+    width: 250px;
+    height: 9px;
+    bottom: -5px;
+    right: 0px;
+  }
+
+.course_container p span::after {
+    content: "";
+    position: absolute;
+    background-image: url(/src/assets/images/line.svg);
+    background-size: contain;
+    width: 160px;
+    height: 10px;
+    bottom: -10px;
+    right: -10px;
+  }
+
+    
+  .ilustrate-3{
+    padding-right: 18rem;
+  }
+
+  .text3 {
+    padding-left: 18rem;
+  }
+
+  .text3 h1 span::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../assets/images/line.svg");
+    background-size: contain;
+    width: 155px;
+    height: 10px;
+    bottom: -6px;
+    right: -10px;
+  } 
+
+  .ilustrate-3 img {
+    width: 330px;
+  }
+
+  .team p::after {
+    content: "";
+    position: absolute;
+    background-image: url(/src/assets/images/3stick.png);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
-    left: -20px;
-    top: 9px;
+    width: 25px;
+    height: 25px;
+    top: 40px;
+    left: -17px;
   }
+
+  .team p span::after {
+    content: "";
+    position: absolute;
+    background-image: url(/src/assets/images/line.svg);
+    background-size: contain;
+    width: 120px;
+    height: 7px;
+    bottom: -5px;
+    right: -10px;
+  }
+
+  .text4 p span::after {
+    content: "";
+    position: absolute;
+    background-image: url(/src/assets/images/line.svg);
+    background-size: contain;
+    width: 130px;
+    height: 8px;
+    bottom: 0px;
+    right: 0px;
+  }
+
 
   .main-q p {
     background: -webkit-linear-gradient(135deg, red, rgb(255, 150, 0) 80%);

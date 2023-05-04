@@ -301,6 +301,15 @@
 }
 
 
+
+@media screen and (max-width: 1440px) {
+    .contact_banner{
+      margin-top: 70px;
+    }
+
+}
+
+
 @media screen and (max-width: 450px) {
     .contact_banner_text{
         font-size: 3.2rem;

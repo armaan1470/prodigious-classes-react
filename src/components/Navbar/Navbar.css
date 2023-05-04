@@ -148,6 +148,24 @@
   display: none;
 }
 
+
+@media screen and (max-width: 1440px) {
+  .navbar{
+    height: 70px;
+  }
+
+  .logo_img{
+    height: 38px;
+    width: 220px;
+
+  }
+
+}
+
+
+
+
+
 @media screen and (max-width: 0px) {
   /* .nav-menu {
     display: flex;
