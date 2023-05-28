@@ -93,3 +93,20 @@
     bottom: 4px;
     color: #6b6b6b;
   }
+
+  .fb_icon:hover{
+    color: #4267B2 !important;
+  }
+
+  .tw_icon:hover{
+    color:#1DA1F2 !important;
+  }
+
+  .in_icon:hover {
+    color: #bc2a8d !important;
+  }
+  
+
+  .li_icon:hover{
+    color: #0072b1 !important;
+  }

@@ -24,7 +24,7 @@ const Slider = () => {
     <Splide
       hasTrack={false}
       options={{
-        perPage: 1,
+        perPage: 3,
         focus: "center",
         type: "loop",
         pagination: false,

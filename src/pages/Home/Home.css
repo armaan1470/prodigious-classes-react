@@ -757,9 +757,9 @@
 
 @media screen and (max-width: 1440px) {
 
-  :root{
+  /* :root{
     font-size: 75%;
-  }
+  } */
 
   .body{
     padding-top: 70px;

@@ -10,9 +10,9 @@ import twitter from "../../assets/images/twitter.png";
 import linkedin from "../../assets/images/linkedin.png";
 import telegram from "../../assets/images/telegram.png";
 import Form from '../../components/Form/Form.jsx';
-import { BsTelephoneFill } from "react-icons/bs";
-import { MdEmail } from "react-icons/md";
-import { IoLogoWhatsapp } from "react-icons/io";
+import { FiPhone } from "react-icons/fi";
+import { FiMail } from "react-icons/fi";
+import { ImWhatsapp } from "react-icons/im";
 
 
 function Contact() {
@@ -64,7 +64,7 @@ function Contact() {
                     <div className="contact_link">
                         <div className="contact_link_icon">
                             {/* <img src={call} alt={call} onClick={() => openLink('tel:932416073')} /> */}
-                            <BsTelephoneFill  size={40} color='#6B6B6C' className='hover_icon ca' onClick={() => openLink('tel:932416073')}/>
+                            <FiPhone  size={40} color='#6B6B6C' className='hover_icon ca' onClick={() => openLink('tel:932416073')}/>
                         </div>
                         <div className="contact_link_text" onClick={() => openLink('tel:932416073')}>+91-9324164073</div>
 
@@ -72,14 +72,14 @@ function Contact() {
                     <div className="contact_link">
                         <div className="contact_link_icon">
                             {/* <img src={mail} alt={mail} onClick={() => openLink('mailto:philomathean22@gmail.com')} /> */}
-                            <MdEmail  size={55} color='#6B6B6C' className='hover_icon em' onClick={() => openLink('mailto:philomathean22@gmail.com')}/>
+                            <FiMail  size={45} color='#6B6B6C' className='hover_icon em' onClick={() => openLink('mailto:philomathean22@gmail.com')}/>
                         </div>
                         <div className="contact_link_text" onClick={() => openLink('mailto:philomathean22@gmail.com')}>philomathean22@gmail.com</div>
                     </div>
                     <div className="contact_link">
                         <div className="contact_link_icon">
                             {/* <img src={wa} alt={wa} onClick={() => openLink('https://wa.me/919324164073')} /> */}
-                            <IoLogoWhatsapp  size={45} color='#6B6B6C' className='hover_icon wa' onClick={() => openLink('https://wa.me/919324164073')}/>
+                            <ImWhatsapp  size={40} color='#6B6B6C' className='hover_icon wa' onClick={() => openLink('https://wa.me/919324164073')}/>
                         </div>
                         <div className="contact_link_text" onClick={() => openLink('https://wa.me/919324164073')} >+91-9324164073</div>
                     </div>

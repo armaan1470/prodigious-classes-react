@@ -9,6 +9,13 @@ function Navbar() {
   const [button, setButton] = useState(true);
   const location = useLocation();
 
+  
+  
+
+
+
+
+
   useEffect(() => {
     const navLinks = document.querySelectorAll('.nav-links');
     navLinks.forEach(link => {
