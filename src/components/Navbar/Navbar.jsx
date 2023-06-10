@@ -8,11 +8,17 @@ function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
   const location = useLocation();
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY  > 100) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
 
   
-  
-
-
 
 
 
@@ -24,6 +30,10 @@ function Navbar() {
         link.classList.add('active');
       });
     });
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   useEffect(() => {
@@ -57,7 +67,7 @@ function Navbar() {
   window.addEventListener("resize", showButton);
 
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${isScrolled ? "navbar-fixed" : ""}`}>
       <div className="navbar-container">
         <Link to="/" className="logo" onClick={reloadPage}>
           <img src={logo} alt="Philomathean" className="logo_img" />

@@ -10,10 +10,10 @@
 }
 
 .navbar {
-  position: fixed;
+  /* position: fixed;
   top: 0;
   left: 0;
-  right: 0;
+  right: 0; */
   font-family: "biennalesemibold";
   display: flex;
   justify-content: center;
@@ -24,9 +24,27 @@
   width: 100%;
   height: 85px;
   z-index: 9999 !important;
-  margin-bottom: 80px;
+  /* margin-bottom: 50px; */
   box-shadow: 0 2px 16px 0 rgba(0,0,0,.1);
+  /* transition: top 0.3s ease-out; */
 }
+
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  animation: slideDown 0.8s forwards; /* Slide down animation */
+  /* Additional styles you want for the fixed navbar */
+}
+
+@keyframes slideDown {
+  0% {
+    top: -85px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
 
 .navbar-container {
   display: flex;
@@ -155,8 +173,9 @@
     top: 85px;
     right: 0;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 85px); /* Adjust the height value as needed */
     padding: 3rem 0 0 0 ;
+    overflow: auto !important;
     /* gap: 1rem; */
     background-color: aliceblue;
     transform: translateX(2000px);
