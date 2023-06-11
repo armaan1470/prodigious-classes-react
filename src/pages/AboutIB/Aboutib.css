@@ -1,0 +1,37 @@
+.aboutIB_banner_text{
+    background-image:url("../../assets/images/aboutIB_header.jpg");
+    height:240px;
+    display: grid;
+    place-items: center;
+    background-size:cover;
+}
+.aboutIB_banner_text img{
+    width:100px;
+    margin:30px 0 -50px 0 ;
+    padding:0;
+}
+.aboutIB_banner_text h1{
+    font-size: 5rem;
+    color:white;
+    font-family: 'biennalesemibold';
+    margin:0 0 -55px;
+    padding:0;
+}
+
+.aboutIB_text h1{
+    font-size: clamp(2rem, 5vw + 1rem, 3.4rem);
+    line-height: 65px;
+    font-family: "biennalemedium";
+    color: #00028a;
+    padding: clamp(10px, 3vw, 1.25rem) 0;
+    position: relative;
+    font-weight: 500 !important;
+}
+.aboutIB_text span{
+        background: -webkit-linear-gradient(yellow, red);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "biennalesemibold";
+        font-weight: 600 !important;
+}

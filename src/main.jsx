@@ -9,6 +9,7 @@ import Courses from "./pages/Courses/Courses";
 import Contact from "./pages/Contact/Contact";
 import WhatsappChat from "./components/WhatsappChat/WhatsappChat";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import AboutIB from "./pages/AboutIB/AboutIB";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Router>
@@ -19,6 +20,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<Aboutus />} />
         <Route path="/courses" element={<Courses />} />
+        <Route path="/aboutIB" element={<AboutIB />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
