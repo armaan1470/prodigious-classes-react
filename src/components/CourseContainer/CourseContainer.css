@@ -54,13 +54,15 @@
     border-radius: 12px;
     width: 19.1rem;
     margin: 2.4rem 2.4rem 0 0;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
+    transition: all 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
     opacity: 0;
     transform: scale(0.9);
   }
   
   .courses_home img:hover {
-    transform: scale(1.06) !important;
+    /* transform: scale(1.06) !important; */
+    /* height: 360px !important; */
+    scale: 1.06;
     box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
   }
   
