@@ -378,7 +378,6 @@
     animation-delay:0.4s;
     transform: translateX(-200px);
     opacity:0;
-    /* animation-delay:1s; */
 }
 
 @keyframes fadein {
