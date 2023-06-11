@@ -74,7 +74,9 @@ function Home() {
             entry.target.classList.add("animate_2");
           } else if (entry.target.classList.contains("qoute_text_animation")) {
             entry.target.style.animation = "fadein forwards 1s";
-            entry.target.style.animationDelay = ".8s";
+            entry.target.style.animationDelay = "0.8s";
+          }else if(entry.target.classList.contains("text4")){
+            entry.target.classList.add("animate_test_text");
           } else {
             entry.target.classList.add("animate");
           }

@@ -279,7 +279,7 @@
 .card_details{
     color: white;
     font-family: 'biennalemedium';
-    padding: 10px;
+    padding: 0 10px;
 }
 
 .primary_text{
@@ -287,6 +287,7 @@
     font-weight: 500;
     font-size: 19.3585px;
     line-height: 139%;
+    margin: 5px 0;
 }
 
 .secondary_text{
@@ -389,6 +390,28 @@
   display: block; /* or flex */
 }
 
+.typed {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 0;
+    animation: typing 1s steps(30, end) forwards, blinking 0.3s;
+    animation-delay: 0.5s;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100%; border-right-color: transparent }
+  }
+
+
+  @keyframes blinking {
+    0% {border-right-color: transparent}
+    50% {border-right-color: white}
+    100% {border-right-color: transparent}
+  }
+  
+  
 
 
 @keyframes fadein {

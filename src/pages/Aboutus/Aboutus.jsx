@@ -34,12 +34,12 @@ function Aboutus() {
       elements.forEach((element) => {
         const { top, bottom } = element.getBoundingClientRect();
         const windowHeight = window.innerHeight;
-  
-        if (top < windowHeight * 0.8) {
+
+        if (top < windowHeight * 1) {
           if (element.classList.contains("ani1")) {
-            element.classList.add("animate_2", "visible");
+            element.classList.add("animate_2");
           } else if (element.classList.contains("ani2")) {
-            element.classList.add("animate_3", "visible");
+            element.classList.add("animate_3");
           } else if (element.classList.contains("director")) {
             element.classList.add("fadein");
           } else if (element.classList.contains("avatar_img")) {
@@ -47,21 +47,22 @@ function Aboutus() {
             const storiesImages = document.querySelectorAll(".stories_img");
             storiesImages.forEach((img) => {
               img.style.animation = "popup forwards 0.5s";
-              img.style.animationDelay = "1s";
+              img.style.animationDelay = "0.5s";
             });
+          } else if (element.classList.contains("primary_text") || element.classList.contains("secondary_text")){
+            element.classList.add("typed");
           }
         }
       });
     };
-  
+
     window.addEventListener("scroll", handleScroll);
-  
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  
-  
+
   
   
 
@@ -158,8 +159,8 @@ function Aboutus() {
                   <img src={avatar1} alt={avatar1} className="avatar_img t" />
 
                   <div className="card_details">
-                    <div className="primary_text">Sikha Gupta</div>
-                    <div className="secondary_text">Student, Class 10</div>
+                    <div className="primary_text t">Sikha Gupta</div>
+                    <div className="secondary_text t">Student, Class 10</div>
                   </div>
                 </div>
               </div>
@@ -171,8 +172,8 @@ function Aboutus() {
                   <img src={avatar2} alt={avatar2} className="avatar_img t" />
 
                   <div className="card_details">
-                    <div className="primary_text">Shriya Ganguly</div>
-                    <div className="secondary_text">
+                    <div className="primary_text t">Shriya Ganguly</div>
+                    <div className="secondary_text t">
                       Student, Class 9 (IGCSE)
                     </div>
                   </div>
@@ -186,8 +187,8 @@ function Aboutus() {
                   <img src={avatar3} alt={avatar3} className="avatar_img t" />
 
                   <div className="card_details">
-                    <div className="primary_text">Jitesh Singh</div>
-                    <div className="secondary_text">Student, Class 10</div>
+                    <div className="primary_text t">Jitesh Singh</div>
+                    <div className="secondary_text t">Student, Class 10</div>
                   </div>
                 </div>
               </div>
@@ -199,8 +200,8 @@ function Aboutus() {
                   <img src={avatar4} alt={avatar4} className="avatar_img t" />
 
                   <div className="card_details">
-                    <div className="primary_text">Suamya Kshirsagar</div>
-                    <div className="secondary_text">
+                    <div className="primary_text t">Suamya Kshirsagar</div>
+                    <div className="secondary_text t">
                       Student, Class 9 (IGCSE)
                     </div>
                   </div>
@@ -214,8 +215,8 @@ function Aboutus() {
                   <img src={avatar5} alt={avatar5} className="avatar_img t" />
 
                   <div className="card_details">
-                    <div className="primary_text">Khyati</div>
-                    <div className="secondary_text">Owner, Pupils Academy</div>
+                    <div className="primary_text t">Khyati</div>
+                    <div className="secondary_text t">Owner, Pupils Academy</div>
                   </div>
                 </div>
               </div>
@@ -227,8 +228,8 @@ function Aboutus() {
                   <img src={avatar6} alt={avatar6} className="avatar_img t" />
 
                   <div className="card_details">
-                    <div className="primary_text">Vanshika Desai</div>
-                    <div className="secondary_text">
+                    <div className="primary_text t">Vanshika Desai</div>
+                    <div className="secondary_text t">
                       Student, Class 9 (IGCSE)
                     </div>
                   </div>
