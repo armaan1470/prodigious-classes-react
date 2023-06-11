@@ -1,37 +1,98 @@
-.aboutIB_banner_text{
-    background-image:url("../../assets/images/aboutIB_header.jpg");
-    height:240px;
-    display: grid;
-    place-items: center;
-    background-size:cover;
+.aboutib{
+    width:100%;
 }
-.aboutIB_banner_text img{
-    width:100px;
-    margin:30px 0 -50px 0 ;
-    padding:0;
-}
-.aboutIB_banner_text h1{
-    font-size: 5rem;
-    color:white;
-    font-family: 'biennalesemibold';
-    margin:0 0 -55px;
-    padding:0;
+.aboutIB_banner {
+  background-image: url("../../assets/images/aboutIB_header.jpg");
+  display: grid;
+  place-items: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 243px;
+  color: #FFFFFF;
+  position: relative;
 }
 
-.aboutIB_text h1{
-    font-size: clamp(2rem, 5vw + 1rem, 3.4rem);
-    line-height: 65px;
-    font-family: "biennalemedium";
-    color: #00028a;
-    padding: clamp(10px, 3vw, 1.25rem) 0;
-    position: relative;
-    font-weight: 500 !important;
+
+
+.aboutIB_banner img {
+  width: 100px;
+  /* margin: 30px 0 -50px 0; */
+  padding-bottom: 20px ;
 }
-.aboutIB_text span{
-        background: -webkit-linear-gradient(yellow, red);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-family: "biennalesemibold";
-        font-weight: 600 !important;
+
+.aboutIB_banner_text {
+  padding: 0 1.25rem;
+  position: absolute;
+  bottom: -80px;
+  display: flex;
+  align-items: end;
+  color: #FFFFFF;
+  font-family: 'biennalesemibold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4.8rem;
+  line-height: 124.5%;
+  text-align: center;
+  animation: none;
+  transition: all 0.6s ease-in-out;
 }
+
+
+.aboutIB_banner_text.slide_up {
+  bottom: -22.5px;
+  opacity: 1;
+}
+
+
+
+@keyframes slideup-banner {
+  0%{
+      transform: translateY(60px);
+
+
+
+  }100%{
+      transform: translateY(0px);
+
+  }
+}
+
+  .aboutIB_content{
+  width:1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
+}
+.aboutIB_text {
+  padding: 60px;
+  font-size: 1rem;
+  font-family: "biennalemedium";
+  color: #6b6b69;
+  width:40%;
+}
+.aboutIB_ilust1{
+ width:40%;
+}
+.aboutIB_text h1 {
+  font-size: clamp(2rem, 5vw + 1rem, 2rem);
+  line-height: 38px;
+  font-family: "biennalemedium";
+  color: #00028a;
+  padding: clamp(10px, 3vw, 1.25rem) 0;
+  position: relative;
+  font-weight: 500 !important;
+}
+.aboutIB_text span {
+  background: -webkit-linear-gradient(yellow, red);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "biennalesemibold";
+  font-weight: 600 !important;
+}
+
+
