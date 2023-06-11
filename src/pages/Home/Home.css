@@ -623,13 +623,17 @@
 .testimonial_container {
   margin-top: 7rem;
   width: 100%;
-  background-image: url("../../assets/images/Testimonaial.jpg");
-  background-size: cover;
+  max-width: 1200px;
+  background-image: url("../../assets/images/testimonials-bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 
 .testimonials{
   max-width: 1200px;
@@ -643,8 +647,8 @@
   place-items: center;
 }
 .text4 p:first-child {
-  color: #ffde00;
-  font-size: 1.8rem;
+  color: #757575;
+  font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-family: "biennalesemibold";
@@ -653,7 +657,7 @@
 .text4 p:last-child {
   font-size: 3rem;
   text-align: center;
-  color: white;
+  color: #FF5300;
   font-family: "biennalemedium";
   padding: 1rem 0 0 0;
 }
