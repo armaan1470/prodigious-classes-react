@@ -28,47 +28,42 @@ import Footer from "../../components/Footer/Footer";
 import WhatsappChat from "../../components/WhatsappChat/WhatsappChat";
 
 function Aboutus() {
-    useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach((entry, index) => {
-            if (entry.isIntersecting) {
-              if (entry.target.classList.contains("ani1")) {
-                entry.target.classList.add("animate_2");
-              } else if (entry.target.classList.contains("ani2")) {
-                entry.target.classList.add("animate_3");
-              } else if (entry.target.classList.contains("director")) {
-                entry.target.classList.add("fadein");
-              }else if (entry.target.classList.contains("avatar_img")) {
-                entry.target.style.animation = "popup forwards 0.5s";
-                
-                // Add animation to elements with class "stories_img"
-                const storiesImages = document.querySelectorAll(".stories_img");
-                storiesImages.forEach((img, index) => {
-                  img.style.animation = "popup forwards 0.5s";
-                  img.style.animationDelay = "1s"; // Set the animation delay to the same value for all elements
-                },{threshold:[1]});
-              }
-              
-              
-            //    else if (entry.target.classList.contains("stories_img")) {
-            //     entry.target.style.animation = "popup forwards 0.5s";
-            //     entry.target.style.animationDelay = "1s";
-            //   }
-            }
-          });
-        });
-      
-
-    // Observe specific elements using querySelectorAll and index
-    const elements = document.querySelectorAll(".t");
-    elements.forEach((element, index) => {
-      observer.observe(element);
-    });
-
+  useEffect(() => {
+    const handleScroll = () => {
+      const elements = document.querySelectorAll(".t");
+      elements.forEach((element) => {
+        const { top, bottom } = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+  
+        if (top < windowHeight * 0.8) {
+          if (element.classList.contains("ani1")) {
+            element.classList.add("animate_2", "visible");
+          } else if (element.classList.contains("ani2")) {
+            element.classList.add("animate_3", "visible");
+          } else if (element.classList.contains("director")) {
+            element.classList.add("fadein");
+          } else if (element.classList.contains("avatar_img")) {
+            element.style.animation = "popup forwards 0.5s";
+            const storiesImages = document.querySelectorAll(".stories_img");
+            storiesImages.forEach((img) => {
+              img.style.animation = "popup forwards 0.5s";
+              img.style.animationDelay = "1s";
+            });
+          }
+        }
+      });
+    };
+  
+    window.addEventListener("scroll", handleScroll);
+  
     return () => {
-      observer.disconnect();
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  
+  
+  
+  
 
   return (
     <>
