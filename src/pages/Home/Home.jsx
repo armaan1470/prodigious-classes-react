@@ -67,15 +67,19 @@ function Home() {
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
+      entries.forEach((entry ) => {
         if (entry.isIntersecting) {
           // Element is in view
+          if(entry.target.classList.contains("ilustrate-3")){
+            entry.target.classList.add("animate_2")
+          }else{
           entry.target.classList.add("animate")
+          }
         }
       });
     });
 
-    aniElement.current.forEach((element) => {
+    aniElement.current.forEach((element,index) => {
       observer.observe(element);
     });
 
@@ -168,7 +172,7 @@ function Home() {
         <CourseContainer />
 
         <div className="benefits_container text_img_container">
-          <div className="first_half text3" style={{ flex: "50%" }}>
+          <div className="first_half text3" style={{ flex: "50%" }} ref={(el) => (aniElement.current[1] = el)}>
             <h1>
               Learning at
               <br />
