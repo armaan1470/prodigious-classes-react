@@ -10,7 +10,6 @@ function Footer() {
 
     const reloadPage = () => { window.location.reload(); window.location.pathname("/") }
     const svgCode = ReactDOMServer.renderToString(<FaInstagram />);
-    console.log(svgCode);
     
 
 

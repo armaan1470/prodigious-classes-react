@@ -318,9 +318,13 @@
 
 
 /* carousel css  */
-.graduation {
+.grad_back{
   background-image: url("../../assets/images/confetti.png");
   background-size: cover;
+  width: 100%;
+  height: 800px;
+}
+.graduation {
   width: 100%;
   height: 800px;
   display: flex;
@@ -946,3 +950,18 @@
     background-size: cover;
   }
 } */
+
+.animate{
+  animation: animate forwards 1s;
+}
+
+@keyframes animate{
+  0%{
+    transform: translateY(300px);
+    opacity:0;
+    }
+    100%{
+      transform: translateY(0px);
+      opacity:1;
+    }
+  }

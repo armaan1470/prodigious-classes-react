@@ -1,16 +1,16 @@
-import React from 'react'
-import { useState, useEffect } from "react";
+import React from "react";
+import { useState, useEffect, useRef } from "react";
 import "./Home.css";
 import illustration1 from "../../assets/images/illustration-ani.png";
-import apple from "../../assets/images/apple.png"
-import box from "../../assets/images/box.png"
-import bulb from "../../assets/images/bulb.png"
-import pie from "../../assets/images/pie.png"
-import rings from "../../assets/images/rings.png"
-import scale from "../../assets/images/scale.png"
-import calculator from "../../assets/images/calculator.png"
-import target from "../../assets/images/target.png"
-import hexagon from "../../assets/images/hexagon.png"
+import apple from "../../assets/images/apple.png";
+import box from "../../assets/images/box.png";
+import bulb from "../../assets/images/bulb.png";
+import pie from "../../assets/images/pie.png";
+import rings from "../../assets/images/rings.png";
+import scale from "../../assets/images/scale.png";
+import calculator from "../../assets/images/calculator.png";
+import target from "../../assets/images/target.png";
+import hexagon from "../../assets/images/hexagon.png";
 import illustration2 from "../../assets/images/About Us.png";
 import illustration3 from "../../assets/images/benefits.png";
 import Counter from "../../components/Counter/Counter";
@@ -38,39 +38,55 @@ import WhatsappChat from "../../components/WhatsappChat/WhatsappChat";
 import Carousel from "../../components/Carousel/Carousel";
 import Slider from "../../components/Slider/Slider";
 import Footer from "../../components/Footer/Footer";
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import Modal from '@mui/material/Modal';
-import Form from '../../components/Form/Form';
-import CourseContainer from '../../components/CourseContainer/CourseContainer';
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import Modal from "@mui/material/Modal";
+import Form from "../../components/Form/Form";
+import CourseContainer from "../../components/CourseContainer/CourseContainer";
 
 function Home() {
-
   const style = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    bgcolor: 'background.paper',
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    bgcolor: "background.paper",
     boxShadow: 24,
     borderRadius: 5,
-    p: 5
+    p: 5,
   };
 
   const [count, setCount] = useState(0);
   const [open, setOpen] = useState(false);
 
-
+  const aniElement = useRef([]);
 
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Element is in view
+          entry.target.classList.add("animate")
+        }
+      });
+    });
+
+    aniElement.current.forEach((element) => {
+      observer.observe(element);
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   return (
     <>
       <div className="body">
-
         <div className="hero_container">
           <div className="text_img_container">
             <div className="first_half text">
@@ -86,14 +102,21 @@ function Home() {
               <div>
                 <p>
                   Private group tution at your door step. <br /> We provide a
-                  flexible learning solution that <br /> makes learning easy
-                  and convinient
+                  flexible learning solution that <br /> makes learning easy and
+                  convinient
                 </p>
-                <button className="book_btn" onClick={handleOpen}>Book a Demo</button>
+                <button className="book_btn" onClick={handleOpen}>
+                  Book a Demo
+                </button>
               </div>
             </div>
             <div className="second_half ill_position">
-              <img src={illustration1} alt="ilustrate" className="illustrate" width="70%" />
+              <img
+                src={illustration1}
+                alt="ilustrate"
+                className="illustrate"
+                width="70%"
+              />
               <img src={apple} alt="apple" className="apple" />
               <img src={box} alt="box" className="box" />
               <img src={rings} alt="rings" className="rings" />
@@ -103,23 +126,23 @@ function Home() {
               <img src={calculator} alt="calculator" className="calculator" />
               <img src={hexagon} alt="hexagon" className="hexagon" />
               <img src={scale} alt="scale" className="scale" />
-
             </div>
           </div>
           <Counter />
         </div>
         {/*    */}
 
-
-
-
-        <div className="graduation">
-          <p>
-            Our <span> International </span>Graduates
-          </p>
-          <Carousel imgs={[igrad1, igrad2, igrad3, igrad4, igrad5, igrad6]} btn={[prevbtn1, nextbtn1]} />
+      <div className="grad_back">
+        <div className="graduation" ref={(el) => (aniElement.current[0] = el)}>
+            <p>
+              Our <span> International </span>Graduates
+            </p>
+            <Carousel
+              imgs={[igrad1, igrad2, igrad3, igrad4, igrad5, igrad6]}
+              btn={[prevbtn1, nextbtn1]}
+            />
         </div>
-
+      </div>
         {/* <div className="About-us">
           <div className="ilustrate-2">
             <img src={illustration2} alt="" />
@@ -142,11 +165,7 @@ function Home() {
           </div>
         </div> */}
 
-
-
-
         <CourseContainer />
-
 
         <div className="benefits_container text_img_container">
           <div className="first_half text3" style={{ flex: "50%" }}>
@@ -164,9 +183,15 @@ function Home() {
               them improve their overall performance.
               <br />
             </p>
-            <button className="book_btn" onClick={handleOpen}>Book a Demo</button>
+            <button className="book_btn" onClick={handleOpen}>
+              Book a Demo
+            </button>
           </div>
-          <div className="second_half ilustrate-3" style={{ flex: "50%" }}>
+          <div
+            className="second_half ilustrate-3"
+            ref={(el) => (aniElement.current[3] = el)}
+            style={{ flex: "50%" }}
+          >
             <img src={illustration3} alt="" />
           </div>
         </div>
@@ -185,12 +210,16 @@ function Home() {
           </div>
         </div>
 
-        <div className="team">
+        <div className="team" ref={(el) => (aniElement.current[2] = el)}>
           <p>
             Our Philomathean <span> Team </span>
           </p>
           <div className="wrapper">
-            <Carousel imgs={[tut1, tut2, tut3, tut4, tut5]} btn={[prevbtn2, nextbtn2]} className="team_carousel" />
+            <Carousel
+              imgs={[tut1, tut2, tut3, tut4, tut5]}
+              btn={[prevbtn2, nextbtn2]}
+              className="team_carousel"
+            />
           </div>
         </div>
 
@@ -210,7 +239,6 @@ function Home() {
               </div>
             </div>
           </div>
-
         </div>
         <Footer />
       </div>
