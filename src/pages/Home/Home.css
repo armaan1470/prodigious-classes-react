@@ -323,6 +323,8 @@
   background-size: cover;
   width: 100%;
   height: 800px;
+  max-width: 1920px;
+
 }
 .graduation {
   width: 100%;
@@ -335,7 +337,7 @@
   font-family: "biennalesemibold";
   font-size: 1.5rem;
   color: #d6a100;
-  max-width: 1920px;
+  /* max-width: 1920px; */
 }
 
 .arrows {
@@ -952,7 +954,25 @@
 } */
 
 .animate{
-  animation: animate forwards 1s;
+  animation: animate forwards 1s ;
+  animation-delay: 0.4s;
+  opacity:0;
+}
+.animate_2{
+  animation: animate_2 forwards 1s ;
+  animation-delay: 0.4s;
+  opacity:0;
+}
+
+@keyframes animate_2{
+  0%{
+    transform: translateX(300px);
+    opacity:0;
+    }
+    100%{
+      transform: translateX(0px);
+      opacity:1;
+    }
 }
 
 @keyframes animate{
@@ -964,4 +984,4 @@
       transform: translateY(0px);
       opacity:1;
     }
-  }
+}
