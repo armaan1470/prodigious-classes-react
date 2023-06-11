@@ -12,8 +12,10 @@ import test6 from "../../assets/images/review-6.png";
 import test7 from "../../assets/images/review-7.png";
 import test8 from "../../assets/images/review-8.png";
 import test9 from "../../assets/images/review-9.png";
-import prevbtn3 from "../../assets/images/slider button 4.png";
-import nextbtn3 from "../../assets/images/slider button 5.png";
+// import prevbtn3 from "../../assets/images/slider button 4.png";
+// import nextbtn3 from "../../assets/images/slider button 5.png";
+import prevbtn3 from "../../assets/images/SliderBtn.svg";
+import nextbtn3 from "../../assets/images/SliderBtn.svg";
 
 const Slider = () => {
   return (
@@ -62,6 +64,15 @@ const Slider = () => {
           <img src={test9} alt="Image 9" className="test_img" />
         </SplideSlide>
       </SplideTrack>
+
+      <div className="splide__arrows">
+        <button className="splide__arrow splide__arrow--prev">
+          <img src={prevbtn3} className="arrow_img pre" alt="Previous" />
+        </button>
+        <button className="splide__arrow  splide__arrow--next">
+          <img src={nextbtn3} className="arrow_img nex" alt="Next" />
+        </button>
+      </div>
     </Splide>
   );
 };

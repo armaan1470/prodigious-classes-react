@@ -14,7 +14,7 @@ function Counter() {
           const duration = 5000; // total duration in milliseconds
           const interval = setInterval(() => {
             setProgress((prev) => prev + 50);
-          }, 25);
+          }, 15);
           setTimeout(() => clearInterval(interval), duration);
         }
       },

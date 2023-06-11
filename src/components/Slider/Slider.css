@@ -9,9 +9,18 @@
   display: none;
 }
 
-.splide__arrow--prev svg {
-  transform: none;
+.pre{
+  transform: scaleX(-1);
 }
+
+/* .splide__arrow--prev svg {
+  transform: scaleX(-1);
+} */
+
+
+/* .splide__arrow--next svg {
+  transform: scaleX(-1);
+} */
 
 /* .splide__arrow--next,
 .splide__arrow--prev {
@@ -44,9 +53,7 @@
   background: transparent !important  ;
 }
 
-.splide__arrow--next svg {
-  transform: scaleX(-1);
-}
+
 
 .slider-img {
   height: 400px;
