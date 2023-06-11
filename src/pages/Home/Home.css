@@ -975,6 +975,12 @@
   opacity:0;
 }
 
+.animate_test_text{
+  animation: animate_test_text forwards 0.8s ;
+  animation-delay: 0.2s;
+  opacity:0;
+}
+
 
 @keyframes animate_2{
   0%{
@@ -1003,6 +1009,21 @@
     transform: translateY(300px);
     opacity:0;
     }
+    100%{
+      transform: translateY(0px);
+      opacity:1;
+    }
+}
+
+
+@keyframes animate_test_text{
+  0%{
+    transform: translateY(300px);
+    opacity:0;
+    }
+  50%{
+    opacity: 0;
+  }
     100%{
       transform: translateY(0px);
       opacity:1;
