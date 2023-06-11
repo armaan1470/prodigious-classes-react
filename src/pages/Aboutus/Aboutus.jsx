@@ -46,17 +46,11 @@ function Aboutus() {
                 storiesImages.forEach((img, index) => {
                   img.style.animation = "popup forwards 0.5s";
                   img.style.animationDelay = "1s"; // Set the animation delay to the same value for all elements
-                },{threshold:[1]});
+                });
               }
-              
-              
-            //    else if (entry.target.classList.contains("stories_img")) {
-            //     entry.target.style.animation = "popup forwards 0.5s";
-            //     entry.target.style.animationDelay = "1s";
-            //   }
             }
           });
-        });
+        },{threshold:[1]});
       
 
     // Observe specific elements using querySelectorAll and index

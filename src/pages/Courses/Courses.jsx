@@ -1,12 +1,42 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./Courses.css"
 import bgdesign1 from "../../assets/images/bg design.png"
 import bgdesign from "../../assets/images/bg design 1.png"
 import Footer from '../../components/Footer/Footer'
 import WhatsappChat from "../../components/WhatsappChat/WhatsappChat";
+import { element } from 'prop-types'
 
 
 function Courses() {
+    useEffect(()=>{
+        const observer = new IntersectionObserver((enteries)=>{
+            enteries.forEach((entry,index)=>{
+                if(entry.isIntersecting){
+                    if(entry.target.classList.contains("cd_even")){
+                        entry.target.classList.add("animate_3")
+                    }
+                    else{
+                        entry.target.classList.add("animate_2")
+                    }
+                }
+                else{
+                    entry.target.classList.remove("animate_3")
+                    entry.target.classList.remove("animate_2")
+                }
+            })
+        })
+        const element = document.querySelectorAll(".courses_card")
+        element.forEach((element,index)=>{
+            observer.observe(element)
+        })
+
+        return () => {
+            observer.disconnect();
+          };
+    },[])
+
+
+
     return (
         <>
             <div className='courses'>
@@ -25,7 +55,7 @@ function Courses() {
                         </div>
                     </div>
 
-                    <div className='courses_card'>
+                    <div className='courses_card cd_even'>
                         <div className="courses_card_heading course_head2">
                             <img src={bgdesign} alt={bgdesign} style={{ borderTopLeftRadius: "15px" }} />
                             <div className="card_heading_text ">IBDP</div>
@@ -39,7 +69,7 @@ function Courses() {
                         </div>
                     </div>
 
-                    <div className='courses_card'>
+                    <div className='courses_card '>
                         <div className="courses_card_heading course_head3">
                             <img src={bgdesign} alt={bgdesign} style={{ borderTopLeftRadius: "15px" }} />
                             <div className="card_heading_text " style={{ flex: "80%" }}>AS & A Level</div>
@@ -52,7 +82,7 @@ function Courses() {
                         </div>
                     </div>
 
-                    <div className='courses_card'>
+                    <div className='courses_card cd_even'>
                         <div className="courses_card_heading course_head4">
                             <img src={bgdesign} alt={bgdesign} style={{ borderTopLeftRadius: "15px" }} />
                             <div className="card_heading_text ">IIT-JEE</div>

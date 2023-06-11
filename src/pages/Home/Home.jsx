@@ -67,19 +67,22 @@ function Home() {
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry ) => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
           // Element is in view
-          if(entry.target.classList.contains("ilustrate-3")){
-            entry.target.classList.add("animate_2")
-          }else{
-          entry.target.classList.add("animate")
+          if (entry.target.classList.contains("ilustrate-3")) {
+            entry.target.classList.add("animate_2");
+          } else if (entry.target.classList.contains("qoute_text_animation")) {
+            entry.target.style.animation = "fadein forwards 1s";
+            entry.target.style.animationDelay = ".8s";
+          } else {
+            entry.target.classList.add("animate");
           }
         }
       });
     });
 
-    aniElement.current.forEach((element,index) => {
+    aniElement.current.forEach((element, index) => {
       observer.observe(element);
     });
 
@@ -136,8 +139,11 @@ function Home() {
         </div>
         {/*    */}
 
-      <div className="grad_back">
-        <div className="graduation" ref={(el) => (aniElement.current[0] = el)}>
+        <div className="grad_back">
+          <div
+            className="graduation"
+            ref={(el) => (aniElement.current[0] = el)}
+          >
             <p>
               Our <span> International </span>Graduates
             </p>
@@ -145,8 +151,8 @@ function Home() {
               imgs={[igrad1, igrad2, igrad3, igrad4, igrad5, igrad6]}
               btn={[prevbtn1, nextbtn1]}
             />
+          </div>
         </div>
-      </div>
         {/* <div className="About-us">
           <div className="ilustrate-2">
             <img src={illustration2} alt="" />
@@ -172,7 +178,11 @@ function Home() {
         <CourseContainer />
 
         <div className="benefits_container text_img_container">
-          <div className="first_half text3" style={{ flex: "50%" }} ref={(el) => (aniElement.current[1] = el)}>
+          <div
+            className="first_half text3"
+            style={{ flex: "50%" }}
+            ref={(el) => (aniElement.current[1] = el)}
+          >
             <h1>
               Learning at
               <br />
@@ -193,7 +203,7 @@ function Home() {
           </div>
           <div
             className="second_half ilustrate-3"
-            ref={(el) => (aniElement.current[3] = el)}
+            ref={(el) => (aniElement.current[2] = el)}
             style={{ flex: "50%" }}
           >
             <img src={illustration3} alt="" />
@@ -203,7 +213,11 @@ function Home() {
         <div className="qoute_container">
           <div className="main-q">
             <img src={leftcomma} width="10%" alt="" />
-            <p>
+            <p
+              class="qoute_text_animation"
+              ref={(el) => (aniElement.current[3] = el)}
+              style={{opacity:0}}
+            >
               We are committed <br />
               to providing the best education possible
             </p>
@@ -214,7 +228,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="team" ref={(el) => (aniElement.current[2] = el)}>
+        <div className="team" ref={(el) => (aniElement.current[4] = el)}>
           <p>
             Our Philomathean <span> Team </span>
           </p>
@@ -229,7 +243,7 @@ function Home() {
 
         <div className="testimonial_container">
           <div className="testimonials">
-            <div className="text4">
+            <div className="text4" ref={el=>(aniElement.current[5] = el)}>
               <p>testimonials</p>
               <p>
                 What Our Students/Parents
