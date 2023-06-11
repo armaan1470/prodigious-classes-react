@@ -50,6 +50,15 @@ function Aboutus() {
               img.style.animationDelay = "1s";
             });
           }
+          else if(element.classList.contains("team_cards_container")){
+            const TeamsImages = document.querySelectorAll(".team_cards");
+            // console.log(TeamsImages)
+            TeamsImages.forEach((img,index) => {
+              img.style.animation = "hoverable forwards 0.5s";
+              img.style.animationDelay = `${1 + index}s`;
+              console.log("first")
+            });
+          }
         }
       });
     };
@@ -242,7 +251,7 @@ function Aboutus() {
           <div className="team_heading">
             Our Philomathean <span> Team </span>
           </div>
-          <div className="team_cards_container">
+          <div className="team_cards_container t">
             <img src={tut1} alt={tut1} className="team_cards" />
             <img src={tut2} alt={tut2} className="team_cards" />
             <img src={tut3} alt={tut3} className="team_cards" />

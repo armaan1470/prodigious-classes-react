@@ -401,11 +401,22 @@
     }
 }
 
+@keyframes hoverable {
+    0%{
+        scale:1;
+    }
+    50%{
+        scale:1.1;
+    }
+    100%{
+        scale:1;
+    }
+}
+
 @media screen and (max-width: 1440px) {
     .about_us{
       padding-top: 70px;
     }
-
 }
 
 
