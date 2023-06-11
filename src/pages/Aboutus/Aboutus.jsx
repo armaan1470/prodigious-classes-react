@@ -30,7 +30,6 @@ import WhatsappChat from "../../components/WhatsappChat/WhatsappChat";
 function Aboutus() {
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
-          let avatarVisible = false; // Flag to track if "avatar_img" is visible
           entries.forEach((entry, index) => {
             if (entry.isIntersecting) {
               if (entry.target.classList.contains("ani1")) {
@@ -47,7 +46,7 @@ function Aboutus() {
                 storiesImages.forEach((img, index) => {
                   img.style.animation = "popup forwards 0.5s";
                   img.style.animationDelay = "1s"; // Set the animation delay to the same value for all elements
-                });
+                },{threshold:[1]});
               }
               
               
