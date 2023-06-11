@@ -380,6 +380,17 @@
     opacity:0;
 }
 
+.ani1, .ani2{
+    opacity: 0;
+}
+
+.ani1.visible,
+.ani2.visible {
+  display: block; /* or flex */
+}
+
+
+
 @keyframes fadein {
     0%{
         opacity:0;
