@@ -138,12 +138,14 @@
 
 .about_dir_container{
     /* border: 1px solid black; */
-    width: 1050px;
-    padding: 6.25rem 0;
+    width: 1000px;
+    margin: 6.25rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    border-radius: 30px;
 }
 
 .about_dir{
@@ -155,7 +157,7 @@
     linear-gradient(160deg, red , #fec20c); 
     background-clip: padding-box, border-box;
     background-origin: padding-box, border-box;
-    width: 95%;
+    width: 100%;
     height: auto;
 }
 
@@ -164,7 +166,7 @@
     border-top-left-radius: 26px;
     border-bottom-left-radius: 26px;
     height: 579px;
-
+    opacity:0;
 }
 
 .dir_text{
@@ -246,6 +248,7 @@
 .stories_img{
     width: 100%;
     transition: all 0.3s ease-in-out;
+    scale:0;
 }
 
 .stories_img:hover{
@@ -262,8 +265,17 @@
 
 .avatar_img{
     width: 20%;
+    scale: 0;
 }
 
+@keyframes popup {
+    0%{
+        scale: 0;
+    }
+    100%{
+        scale: 1;
+    }
+}
 .card_details{
     color: white;
     font-family: 'biennalemedium';
@@ -358,6 +370,25 @@
 .team_cards:hover{
     transform: scale(1.05);
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+
+.fadein{
+    animation:fadein forwards 1s;
+    animation-delay:0.4s;
+    transform: translateX(-200px);
+    opacity:0;
+    /* animation-delay:1s; */
+}
+
+@keyframes fadein {
+    0%{
+        opacity:0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity:1
+    }
 }
 
 @media screen and (max-width: 1440px) {
