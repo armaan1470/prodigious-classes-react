@@ -79,12 +79,12 @@
 .splide {
   display: flex;
   justify-content: center;
-  width: 90rem;
+  width: 1200px;
   height: 500px;
   align-items: center;
 }
 
-.splide__list {
+/* .splide__list {
   display: flex;
   align-items: center;
   width: 1200px;
@@ -93,19 +93,38 @@
   display: flex;
   justify-content: center;
   width: 350px;
+} */
+
+.splide__list {
+  display: flex;
+  width: 1000px !important;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
 }
 
-.splide__slide img{
+.splide__slide {
+  display: flex;
+  justify-content: center;
+  /* width: calc(26.55%) !important;   */
+  margin-right: 10px; /* Adjust the margin to decrease the gap between slide cards */
+}
+
+
+
+/* .splide__slide img{
   width: 380px;
 }
 
-
+.test_img{
+  width: 700px;
+} */
 
 .arrow_img {
   display: flex;
   width: 5rem;
 }
 
-.test_img{
-  width: 700px;
-}
+
