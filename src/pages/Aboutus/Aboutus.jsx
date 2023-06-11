@@ -28,29 +28,37 @@ import Footer from "../../components/Footer/Footer";
 import WhatsappChat from "../../components/WhatsappChat/WhatsappChat";
 
 function Aboutus() {
-  useEffect(() => {
-    let avt_visible = false;
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry, index) => {
-        if (entry.isIntersecting) {
-          if (entry.target.classList.contains("ani1")) {
-            entry.target.classList.add("animate_2");
-          } else if (entry.target.classList.contains("ani2")) {
-            entry.target.classList.add("animate_3");
-          }
-          else if (entry.target.classList.contains("director")){
-            entry.target.classList.add("fadein")
-          }
-          else if (entry.target.classList.contains("avatar_img")){
-            entry.target.style.animation = "popup forwards 0.5s"
-            avt_visible = true
-          }
-          else if ( avt_visible){
-            entry.target.style.animation = "popup forwards 0.5s"
-          }
-        }
-      });
-    });
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+          let avatarVisible = false; // Flag to track if "avatar_img" is visible
+          entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+              if (entry.target.classList.contains("ani1")) {
+                entry.target.classList.add("animate_2");
+              } else if (entry.target.classList.contains("ani2")) {
+                entry.target.classList.add("animate_3");
+              } else if (entry.target.classList.contains("director")) {
+                entry.target.classList.add("fadein");
+              }else if (entry.target.classList.contains("avatar_img")) {
+                entry.target.style.animation = "popup forwards 0.5s";
+                
+                // Add animation to elements with class "stories_img"
+                const storiesImages = document.querySelectorAll(".stories_img");
+                storiesImages.forEach((img, index) => {
+                  img.style.animation = "popup forwards 0.5s";
+                  img.style.animationDelay = "1s"; // Set the animation delay to the same value for all elements
+                });
+              }
+              
+              
+            //    else if (entry.target.classList.contains("stories_img")) {
+            //     entry.target.style.animation = "popup forwards 0.5s";
+            //     entry.target.style.animationDelay = "1s";
+            //   }
+            }
+          });
+        });
+      
 
     // Observe specific elements using querySelectorAll and index
     const elements = document.querySelectorAll(".t");
