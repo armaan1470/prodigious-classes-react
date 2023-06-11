@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Home.css";
 import illustration1 from "../../assets/images/illustration-ani.png";
 import apple from "../../assets/images/apple.png"
@@ -25,12 +25,6 @@ import igrad6 from "../../assets/images/Int Result-6.jpg";
 import leftcomma from "../../assets/images/Apostrophe left.png";
 import rightcomma from "../../assets/images/Apostrophe right.png";
 import decor from "../../assets/images/Lines.png";
-import course1 from "../../assets/images/Courses.jpg";
-import course2 from "../../assets/images/Courses 2.jpg";
-import course3 from "../../assets/images/Courses 3.jpg";
-import course4 from "../../assets/images/Courses 4.jpg";
-import course5 from "../../assets/images/Courses 5.jpg";
-import course6 from "../../assets/images/Courses 6.jpg";
 import tut1 from "../../assets/images/Team-1.jpg";
 import tut2 from "../../assets/images/Team-2.jpg";
 import tut3 from "../../assets/images/Team-3.jpg";
@@ -49,6 +43,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import Form from '../../components/Form/Form';
+import CourseContainer from '../../components/CourseContainer/CourseContainer';
 
 function Home() {
 
@@ -65,6 +60,9 @@ function Home() {
 
   const [count, setCount] = useState(0);
   const [open, setOpen] = useState(false);
+
+
+
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
@@ -147,20 +145,8 @@ function Home() {
 
 
 
+        <CourseContainer />
 
-        <div className="course_container">
-          <p>
-            Featured <span> Courses</span> at Philomathean
-          </p>
-          <div className="courses_home">
-            <img src={course1} alt="" />
-            <img src={course2} alt="" />
-            <img src={course3} alt="" />
-            <img src={course4} alt="" />
-            <img src={course5} alt="" />
-            <img src={course6} alt="" />
-          </div>
-        </div>
 
         <div className="benefits_container text_img_container">
           <div className="first_half text3" style={{ flex: "50%" }}>
@@ -235,7 +221,7 @@ function Home() {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Form onCloseModal={handleClose}/>
+          <Form onCloseModal={handleClose} />
         </Box>
       </Modal>
     </>

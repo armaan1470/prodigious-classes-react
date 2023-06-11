@@ -1,0 +1,118 @@
+.course_container {
+    max-width: 1200px;
+    padding-top: 3rem;
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+  
+  .course_container p {
+    font-family: "biennalemedium";
+    font-size: 3rem;
+    text-align: center;
+    margin: auto;
+    color: #ff5400;
+    padding: 1rem 0;
+  }
+  
+  .course_container p span {
+    background-image: -webkit-linear-gradient(
+      135deg,
+      rgb(0, 121, 255) 50%,
+      rgb(0, 187, 255)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+  }
+  
+  .course_container p span::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../assets/images/line.svg");
+    background-size: contain;
+    width: 200px;
+    height: 12px;
+    bottom: -10px;
+    right: -10px;
+  }
+  
+  .courses_home {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    padding: 0px 40px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .courses_home.visible {
+    opacity: 1;
+  }
+  
+  .courses_home img {
+    border-radius: 12px;
+    width: 19.1rem;
+    margin: 2.4rem 2.4rem 0 0;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  
+  .courses_home img:hover {
+    transform: scale(1.06) !important;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
+  }
+  
+  .courses_home.visible img {
+    animation: scaleIn 0.5s forwards;
+  }
+  
+  .courses_home.visible img.animation-card-1 {
+    animation-delay: 0.2s;
+  }
+  
+  .courses_home.visible img.animation-card-2 {
+    animation-delay: 0.4s;
+  }
+  
+  .courses_home.visible img.animation-card-3 {
+    animation-delay: 0.6s;
+  }
+  
+  .courses_home.visible img.animation-card-4 {
+    animation-delay: 0.8s;
+  }
+  
+  .courses_home.visible img.animation-card-5 {
+    animation-delay: 1s;
+  }
+  
+  .courses_home.visible img.animation-card-6 {
+    animation-delay: 1.2s;
+  }
+  
+  /* Automatic Loop Animation */
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes cardLoop {
+    0% {
+      transform: scale(1);
+    }
+    20% {
+      transform: scale(1.06);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  

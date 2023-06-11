@@ -8,9 +8,11 @@ import Aboutus from "./pages/Aboutus/Aboutus";
 import Courses from "./pages/Courses/Courses";
 import Contact from "./pages/Contact/Contact";
 import WhatsappChat from "./components/WhatsappChat/WhatsappChat";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Router>
+  <ScrollToTop/>
     <Navbar />
     <div>
       <Routes>
