@@ -21,8 +21,8 @@ const AboutIB = () => {
     <>
       <div className="aboutib">
         <div className="aboutIB_banner">
-          <img src={logo} alt="logo" class="about_ib_logo" ref={logoImg} />
-          <div class="aboutIB_banner_text" ref={bannerText}>About the IB</div>
+          <img src={logo} alt="logo" className="about_ib_logo" ref={logoImg} />
+          <div className="aboutIB_banner_text" ref={bannerText}>About the IB</div>
         </div>
         <div className="aboutIB_content">
           <div className="aboutIB_text">

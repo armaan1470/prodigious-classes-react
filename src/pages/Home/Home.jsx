@@ -216,7 +216,7 @@ function Home() {
           <div className="main-q">
             <img src={leftcomma} width="10%" alt="" />
             <p
-              class="qoute_text_animation"
+              className="qoute_text_animation"
               ref={(el) => (aniElement.current[3] = el)}
               style={{opacity:0}}
             >
