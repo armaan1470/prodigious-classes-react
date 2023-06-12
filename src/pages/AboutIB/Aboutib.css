@@ -81,6 +81,7 @@
 
   .aboutIB_text {
     /* border: 1px solid red; */
+    opacity: 0;
     padding: 0 80px;
     font-size: 1.2rem;
     font-family: "biennalemedium";
@@ -90,10 +91,16 @@
 
 
   .aboutIB_ilust1{
+    opacity: 1;
     display: flex;
     justify-content: center;
     /* border: 1px solid blue; */
     width:50%;
+  }
+
+
+  .aboutIB_img2{
+    opacity: 0;
   }
 
 

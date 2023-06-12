@@ -15,31 +15,29 @@ const AboutIB = () => {
       logoImg.current.classList.add("logo_fade_in");
     }, 700);
 
-    const observer = new IntersectionObserver((enteries)=>{
-      enteries.forEach((entry,index)=>{
-        if(entry.isIntersecting){
-          if(entry.target.classList.contains("aboutIB_text")){
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.3) {
+          if (entry.target.classList.contains("aboutIB_text")) {
             entry.target.classList.add("animate");
-          }
-          else if(entry.target.classList.contains("aboutIB_img")){
+          } else if (entry.target.classList.contains("aboutIB_img")) {
             entry.target.classList.add("animate_2");
-          }
-          else if(entry.target.classList.contains("aboutIB_img2")){
+          } else if (entry.target.classList.contains("aboutIB_img2")) {
             entry.target.classList.add("animate_3");
           }
         }
-      })
-    })
-
-    const element = document.querySelectorAll(".t")
-        element.forEach((element,index)=>{
-            observer.observe(element)
-        })
-
-        return () => {
-            observer.disconnect();
-            clearTimeout();
-          };
+      });
+    }, { threshold: 0.3 });
+    
+    const elements = document.querySelectorAll(".t");
+    elements.forEach((element, index) => {
+      observer.observe(element);
+    });
+    
+    return () => {
+      observer.disconnect();
+      clearTimeout();
+    };
 
   }, []);
 
