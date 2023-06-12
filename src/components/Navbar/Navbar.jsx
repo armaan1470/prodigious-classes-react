@@ -82,7 +82,7 @@ function Navbar() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
+            <Link to="/about-us" className="nav-links" onClick={closeMobileMenu}>
               About Us
             </Link>
           </li>
@@ -93,17 +93,18 @@ function Navbar() {
           </li>
 
           <li className="nav-item">
-            <Link to="/aboutib" className="nav-links" onClick={closeMobileMenu}>
-              About the IB
+            <Link to="/about-ib" className="nav-links" onClick={closeMobileMenu}>
+               IB & IGC SE
             </Link>
           </li>
           <li className="nav-item">
-            <Link
-              to="/counselling"
-              className="nav-links"
-              onClick={closeMobileMenu}
-            >
+            <Link to="/career-counselling" className="nav-links" onClick={closeMobileMenu}>
               Career Counselling
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/writing-support" className="nav-links" onClick={closeMobileMenu}>
+              Writing Support
             </Link>
           </li>
           <li className="nav-item">
