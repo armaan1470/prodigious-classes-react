@@ -7,11 +7,13 @@ import ilust1 from "../../assets/images/aboutin_illust1.png"
 const AboutIB = () => {
 
     const bannerText = useRef(null);
+    const logoImg = useRef(null);
 
 
     useEffect(() => {
         setTimeout(() => {
             bannerText.current.classList.add('slide_up');
+            logoImg.current.classList.add('logo_fade_in');
         }, 700);
     }, []);
 
@@ -19,7 +21,7 @@ const AboutIB = () => {
     <>
       <div className="aboutib">
         <div className="aboutIB_banner">
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="logo" class="about_ib_logo" ref={logoImg} />
           <div class="aboutIB_banner_text" ref={bannerText}>About the IB</div>
         </div>
         <div className="aboutIB_content">
@@ -28,7 +30,7 @@ const AboutIB = () => {
               <h1>
                 A variety of <br />
                 <span> Educational Programs </span> <br />
-                Offered by IB
+                offered by IB
               </h1>
             </div>
             <div>
