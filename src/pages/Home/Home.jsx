@@ -55,6 +55,23 @@ function Home() {
     boxShadow: 24,
     borderRadius: 5,
     p: 5,
+    display: 'flex',
+    flexDirection: 'column',
+  };
+
+  const buttonContainerStyle = {
+    display: 'flex',
+    justifyContent: 'flex-end',
+  };
+
+  const buttonStyle = {
+    borderRadius: '50%',
+    color: 'grey',
+    minWidth: 0,
+    width: '40px',
+    height: '40px',
+    padding: 0,
+    fontSize:'30px',
   };
 
   const [count, setCount] = useState(0);
@@ -268,7 +285,11 @@ function Home() {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
+        
         <Box sx={style}>
+          <Box sx={buttonContainerStyle}>
+            <Button style={buttonStyle} onClick={handleClose}>&times;</Button>
+          </Box>
           <Form onCloseModal={handleClose} />
         </Box>
       </Modal>
