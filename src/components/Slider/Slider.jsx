@@ -1,8 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Slider.css";
-import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
-import "@splidejs/react-splide/css";
-import "@splidejs/splide/dist/css/splide.min.css";
 import test1 from "../../assets/images/review-1.png";
 import test2 from "../../assets/images/review-2.png";
 import test3 from "../../assets/images/review-3.png";
@@ -12,68 +9,94 @@ import test6 from "../../assets/images/review-6.png";
 import test7 from "../../assets/images/review-7.png";
 import test8 from "../../assets/images/review-8.png";
 import test9 from "../../assets/images/review-9.png";
-// import prevbtn3 from "../../assets/images/slider button 4.png";
-// import nextbtn3 from "../../assets/images/slider button 5.png";
 import prevbtn3 from "../../assets/images/SliderBtn.svg";
 import nextbtn3 from "../../assets/images/SliderBtn.svg";
 
 const Slider = () => {
-  return (
-    <Splide
-      hasTrack={false}
-      options={{
-        perPage: 3,
-        perMove: 1,
-        focus: "center",
-        type: "loop",
-        pagination: false,
-        speed: 500,
-        autoplay: true,
-        interval: 2000,
-        pauseOnHover: true,
-        pauseOnFocus: true,
-      }}
-      aria-label="Testimonials"
-    >
-      <SplideTrack>
-        <SplideSlide>
-          <img src={test1} alt="Image 1" className="test_img" />
-        </SplideSlide>
-        <SplideSlide>
-          <img src={test2} alt="Image 2" className="test_img" />
-        </SplideSlide>
-        <SplideSlide>
-          <img src={test3} alt="Image 3" className="test_img" />
-        </SplideSlide>
-        <SplideSlide>
-          <img src={test4} alt="Image 4" className="test_img" />
-        </SplideSlide>
-        <SplideSlide>
-          <img src={test5} alt="Image 5" className="test_img" />
-        </SplideSlide>
-        <SplideSlide>
-          <img src={test6} alt="Image 6" className="test_img" />
-        </SplideSlide>
-        <SplideSlide>
-          <img src={test7} alt="Image 7" className="test_img" />
-        </SplideSlide>
-        <SplideSlide>
-          <img src={test8} alt="Image 8" className="test_img" />
-        </SplideSlide>
-        <SplideSlide>
-          <img src={test9} alt="Image 9" className="test_img" />
-        </SplideSlide>
-      </SplideTrack>
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [intervalId, setIntervalId] = useState(null);
 
-      <div className="splide__arrows">
-        <button className="splide__arrow splide__arrow--prev">
-          <img src={prevbtn3} className="arrow_img pre" alt="Previous" />
-        </button>
-        <button className="splide__arrow  splide__arrow--next">
-          <img src={nextbtn3} className="arrow_img nex" alt="Next" />
-        </button>
+  const images = [
+    test1,
+    test2,
+    test3,
+    test4,
+    test5,
+    test6,
+    test7,
+    test8,
+    test9,
+  ];
+
+  const handlePrevSlide = () => {
+    setActiveIndex((prevIndex) => {
+      if (prevIndex === 0) {
+        return images.length - 3;
+      } else {
+        return prevIndex - 1;
+      }
+    });
+  };
+
+  const handleNextSlide = () => {
+    setActiveIndex((prevIndex) => {
+      if (prevIndex === images.length - 3) {
+        return 0;
+      } else {
+        return prevIndex + 1;
+      }
+    });
+  };
+
+  useEffect(() => {
+    const id = setInterval(handleNextSlide, 2000);
+    setIntervalId(id);
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, []);
+
+  const handleMouseEnter = () => {
+    clearInterval(intervalId);
+    console.log("first");
+  };
+
+  const handleMouseLeave = () => {
+    const id = setInterval(handleNextSlide, 2000);
+    setIntervalId(id);
+  };
+  return (
+    <div className="slider-holder">
+      <div
+        className="slider"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        <div className="slides-container">
+          {images.map((image, index) => (
+            <div
+              key={index}
+              style={{
+                transform: `translateX(-${activeIndex * 300}px)`,
+                transition: ".7s ease",
+              }}
+            >
+              <img
+                src={image}
+                alt={`Slide ${index}`}
+                className={`slide ${activeIndex === index - 1 ? "active" : ""}`}
+              />
+            </div>
+          ))}
+        </div>
       </div>
-    </Splide>
+      <button className=" prev-button" onClick={handlePrevSlide}>
+        <img src={prevbtn3} alt="" />
+      </button>
+      <button className=" next-button" onClick={handleNextSlide}>
+        <img src={nextbtn3} alt="" />
+      </button>
+    </div>
   );
 };
 
