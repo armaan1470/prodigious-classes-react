@@ -85,30 +85,30 @@ function Home() {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          // Element is in view
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
           if (entry.target.classList.contains("ilustrate-3")) {
             entry.target.classList.add("animate_2");
           } else if (entry.target.classList.contains("qoute_text_animation")) {
             entry.target.style.animation = "fadein forwards 1s";
-            entry.target.style.animationDelay = "0.4s";
-          }else if(entry.target.classList.contains("text4")){
+            entry.target.style.animationDelay = "0.2s";
+          } else if (entry.target.classList.contains("text4")) {
             entry.target.classList.add("animate_test_text");
           } else {
             entry.target.classList.add("animate");
           }
         }
       });
-    });
-
+    }, { threshold: 0.5 });
+  
     aniElement.current.forEach((element, index) => {
       observer.observe(element);
     });
-
+  
     return () => {
       observer.disconnect();
     };
   }, []);
+  
 
   return (
     <>

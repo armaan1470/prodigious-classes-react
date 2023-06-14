@@ -338,6 +338,7 @@
   font-family: "biennalesemibold";
   font-size: 1.5rem;
   color: #d6a100;
+  opacity: 0;
   /* max-width: 1920px; */
 }
 
@@ -454,6 +455,7 @@
 
 .text3{
   padding-left: 5rem;
+  opacity: 0;
 }
 
 .text3 h1 {
@@ -500,6 +502,7 @@
   align-items: start;
   padding-right: 5rem;
   background-size: contain;
+  opacity: 0;
 }
 .ilustrate-3 img {
   width: 450px;
@@ -584,6 +587,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  opacity: 0;
 }
 .team p {
   font-family: "biennalemedium";
@@ -648,6 +652,7 @@
 .text4 {
   display: grid;
   place-items: center;
+  opacity: 0;
 }
 .text4 p:first-child {
   color: #757575;
@@ -750,6 +755,7 @@
     bottom: -3px;
     right: -10px;
   }
+
 
   .graduation span::after {
     content: "";
@@ -960,27 +966,41 @@
 
 .animate{
   animation: animate forwards 1s ;
-  animation-delay: 0.4s;
+  animation-delay: 0s;
   opacity:0;
 }
 .animate_2{
   animation: animate_2 forwards 1s ;
-  animation-delay: 0.4s;
+  animation-delay: 0s;
   opacity:0;
 }
 
 .animate_3{
   animation: animate_3 forwards 1s ;
-  animation-delay: 0.4s;
+  animation-delay: 0s;
   opacity:0;
 }
 
 .animate_test_text{
   animation: animate_test_text forwards 0.8s ;
-  animation-delay: 0.2s;
+  animation-delay: 0s;
   opacity:0;
 }
 
+
+@keyframes animate{
+  0%{
+    transform: translateY(300px);
+    opacity:0;
+    }
+    20%{
+      opacity:0;
+    }
+    100%{
+      transform: translateY(0px);
+      opacity:1;
+    }
+}
 
 @keyframes animate_2{
   0%{
@@ -1010,19 +1030,7 @@
     }
 }
 
-@keyframes animate{
-  0%{
-    transform: translateY(300px);
-    opacity:0;
-    }
-    20%{
-      opacity:0;
-    }
-    100%{
-      transform: translateY(0px);
-      opacity:1;
-    }
-}
+
 
 
 @keyframes animate_test_text{
