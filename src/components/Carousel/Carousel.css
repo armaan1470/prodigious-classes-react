@@ -21,6 +21,7 @@
   border: 4px solid white;
   border-radius: 20px;
   box-shadow: 2px 2px 30px 5px rgb(233, 233, 233);
+  user-select: none;
 }
 
 .card--active{

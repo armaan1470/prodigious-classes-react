@@ -101,7 +101,7 @@
   white-space: nowrap;
 }
 
-.nav-links::before {
+.nav-links::before,.sub-nav-active::before {
   content: "";
   position: absolute;
   width: 0;
@@ -116,16 +116,17 @@
 .nav-links:hover::before,
 .nav-links.active::before,
 .nav-links:focus::before,
-.nav-links:active::before {
+.nav-links:active::before,
+.sub-nav-active::before {
   width: 100%;
 }
 
 .nav-links.active,
+.sub-nav-active,
 .nav-links:focus,
 .nav-links:hover {
   color: #148ffa;
 }
-
 .sub-nav-links{
   display: flex;
   color: #424242;

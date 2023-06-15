@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import logo from "../../assets/images/Logo.png";
 import "./Navbar.css";
 
@@ -13,7 +13,6 @@ function Navbar() {
     isDropdownOpenCareer: false,
   });
 
-  // Rest of the code...
 
   const handleMouseEnter = (dropdown) => {
     if (!click && window.innerWidth > 1024) {
@@ -67,46 +66,21 @@ function Navbar() {
   useEffect(() => {
     showButton();
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  useEffect(() => {
-    const navLinks = document.querySelectorAll(".nav-links");
-    navLinks.forEach((link) => {
+    const NavLinks = document.querySelectorAll(".nav-links");
+    NavLinks.forEach((link) => {
       if (link.getAttribute("href") === location.pathname) {
-        navLinks.forEach((link) => link.classList.remove("active"));
+        NavLinks.forEach((link) => link.classList.remove("active"));
         link.classList.add("active");
       }
     });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, [location]);
 
+
   const handleClick = () => setClick(!click);
-  // const handleDropdownOpen = () => setIsDropdownOpen(true);
-  // const handleDropdownClose = () => setIsDropdownOpen(false);
-
-  // const handleMouseEnter = () => {
-  //   if (!click && window.innerWidth > 1024) {
-  //     handleDropdownOpen();
-  //   }
-  // };
-
-  // const handleMouseLeave = () => {
-  //   if (!click && window.innerWidth > 1024) {
-  //     handleDropdownClose();
-  //   }
-  // };
-
-  // const handleDropdownClick = () => {
-  //   if (window.innerWidth <= 1024) {
-  //     if (isDropdownOpen) {
-  //       handleDropdownClose();
-  //     } else {
-  //       handleDropdownOpen();
-  //     }
-  //   }
-  // };
 
   useEffect(() => {
     window.addEventListener("resize", showButton);
@@ -118,45 +92,36 @@ function Navbar() {
   return (
     <nav className={`navbar ${isScrolled ? "navbar-fixed" : ""}`}>
       <div className="navbar-container">
-        <Link to="/" className="logo" onClick={reloadPage}>
+        <NavLink to="/" className="logo" onClick={reloadPage}>
           <img src={logo} alt="Philomathean" className="logo_img" />
-        </Link>
+        </NavLink>
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
-            <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+            <NavLink to="/" className="nav-links" onClick={closeMobileMenu}>
               Home
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link
+            <NavLink
               to="/about-us"
               className="nav-links"
               onClick={closeMobileMenu}
             >
               About Us
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link
+            <NavLink
               to="/courses"
               className="nav-links"
               onClick={closeMobileMenu}
             >
               Courses
-            </Link>
+            </NavLink>
           </li>
-          {/* <li className="nav-item">
-            <Link
-              to="/about-ib"
-              className="nav-links"
-              onClick={closeMobileMenu}
-            >
-              IB & IGC SE
-            </Link>
-          </li> */}
           <li
             className="nav-item"
             onMouseEnter={() => handleMouseEnter("isDropdownOpenIB")}
@@ -164,8 +129,9 @@ function Navbar() {
             onClick={() => handleDropdownClick("isDropdownOpenIB")}
           >
             <div
-              className={`nav-links ${dropdownStates.isDropdownOpenIB ? "active" : ""
-                }`}
+              className={`nav-links ${dropdownStates.isDropdownOpenIB ? "active" : ""} ${location.pathname === '/about-ib' ? 'sub-nav-active' : ''}
+              ${location.pathname === '/about-igcse' ? 'sub-nav-active' : ''}
+              `}
               onClick={closeMobileMenu}
             >
               IB & IGC SE
@@ -182,17 +148,17 @@ function Navbar() {
               <div className="dropdown-wrapper">
                 <ul
                   className={`dropdown-menu ${dropdownStates.isDropdownOpenIB ? "active" : ""
-                    }`}
+                    } `}
                 >
                   <li className="dropdown-item">
-                    <Link to="/about-ib" className="sub-nav-links" onClick={closeMobileMenu}>
+                    <NavLink to="/about-ib" className="sub-nav-links" onClick={closeMobileMenu} >
                       About-IB
-                    </Link>
+                    </NavLink>
                   </li>
                   <li className="dropdown-item">
-                    <Link to="/about-igcse" className="sub-nav-links" onClick={closeMobileMenu}>
+                    <NavLink to="/about-igcse" className="sub-nav-links" onClick={closeMobileMenu}>
                       About IGC SE
-                    </Link>
+                    </NavLink>
                   </li>
                 </ul>
               </div>
@@ -206,7 +172,7 @@ function Navbar() {
           >
             <div
               className={`nav-links ${dropdownStates.isDropdownOpenCareer ? "active" : ""
-                }`}
+                }   ${location.pathname === '/parental-support' ? 'sub-nav-active' : ''}   ${location.pathname === '/emotional-support' ? 'sub-nav-active' : ''}`}
               onClick={closeMobileMenu}
             >
               Career Counselling
@@ -226,36 +192,36 @@ function Navbar() {
                     }`}
                 >
                   <li className="dropdown-item">
-                    <Link to="/parental-support" className="sub-nav-links" onClick={closeMobileMenu}>
+                    <NavLink to="/parental-support" className="sub-nav-links" onClick={closeMobileMenu}>
                       Parental Support
-                    </Link>
+                    </NavLink>
                   </li>
                   <li className="dropdown-item">
-                    <Link to="/emotional-support" className="sub-nav-links" onClick={closeMobileMenu}>
+                    <NavLink to="/emotional-support" className="sub-nav-links" onClick={closeMobileMenu}>
                       Emotional Support
-                    </Link>
+                    </NavLink>
                   </li>
                 </ul>
               </div>
             )}
           </li>
           <li className="nav-item">
-            <Link
+            <NavLink
               to="/writing-support"
               className="nav-links"
               onClick={closeMobileMenu}
             >
               Writing Support
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link
+            <NavLink
               to="/contact"
               className="nav-links"
               onClick={closeMobileMenu}
             >
               Contact
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>
