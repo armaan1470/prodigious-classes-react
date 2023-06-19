@@ -32,47 +32,13 @@ import tut4 from "../../assets/images/Team-4.jpg";
 import tut5 from "../../assets/images/Team-5.jpg";
 import prevbtn2 from "../../assets/images/slider button 2.png";
 import nextbtn2 from "../../assets/images/slider button 3.png";
-import prevbtn3 from "../../assets/images/slider button 4.png";
-import nextbtn3 from "../../assets/images/slider button 4.png";
-import WhatsappChat from "../../components/WhatsappChat/WhatsappChat";
 import Carousel from "../../components/Carousel/Carousel";
 import Slider from "../../components/Slider/Slider";
 import Footer from "../../components/Footer/Footer";
-import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-import Modal from "@mui/material/Modal";
-import Form from "../../components/Form/Form";
 import CourseContainer from "../../components/CourseContainer/CourseContainer";
+import ButtonModal from "../../components/ButtonModal/ButtonModal";
 
 function Home() {
-  const style = {
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    bgcolor: "background.paper",
-    boxShadow: 24,
-    borderRadius: 5,
-    p: 5,
-    display: 'flex',
-    flexDirection: 'column',
-  };
-
-  const buttonContainerStyle = {
-    display: 'flex',
-    justifyContent: 'flex-end',
-  };
-
-  const buttonStyle = {
-    borderRadius: '50%',
-    color: 'grey',
-    minWidth: 0,
-    width: '40px',
-    height: '40px',
-    padding: 0,
-    fontSize:'30px',
-  };
 
   const [count, setCount] = useState(0);
   const [open, setOpen] = useState(false);
@@ -131,9 +97,7 @@ function Home() {
                   flexible learning solution that <br /> makes learning easy and
                   convinient
                 </p>
-                <button className="book_btn" onClick={handleOpen}>
-                  Book a Demo
-                </button>
+                <ButtonModal name="Book a Demo"/>
               </div>
             </div>
             <div className="second_half ill_position">
@@ -216,9 +180,7 @@ function Home() {
               them improve their overall performance.
               <br />
             </p>
-            <button className="book_btn" onClick={handleOpen}>
-              Book a Demo
-            </button>
+            <ButtonModal name="Book a Demo"/>
           </div>
           <div
             className="second_half ilustrate-3"
@@ -279,7 +241,7 @@ function Home() {
         </div>
         <Footer />
       </div>
-      <Modal
+      {/* <Modal
         open={open}
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
@@ -292,7 +254,7 @@ function Home() {
           </Box>
           <Form onCloseModal={handleClose} />
         </Box>
-      </Modal>
+      </Modal> */}
     </>
   );
 }

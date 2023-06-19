@@ -1,0 +1,17 @@
+.book_btn {
+  padding: 10px 14px;
+  background-image: linear-gradient(rgb(255, 161, 0), rgb(255, 84, 0));
+  font-size: 1rem;
+  font-family: "biennalemedium";
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 3.5px 0px #d11f00;
+  margin: clamp(10px, 2vw, 16px) 0;
+  transition: 0.2s ease-in-out;
+}
+
+.book_btn:hover {
+  transform: translateY(3px);
+  box-shadow: none;
+}

@@ -4,6 +4,7 @@ import "./Aboutib.css";
 import logo from "../../assets/images/aboutib_logo.png";
 import ilust1 from "../../assets/images/aboutin_illust1.png";
 import ilust2 from "../../assets/images/aboutib_ilust2.png"
+import ButtonModal from "../../components/ButtonModal/ButtonModal";
 
 const AboutIB = () => {
   const bannerText = useRef(null);
@@ -104,9 +105,7 @@ const AboutIB = () => {
                 your academic prowess to college admissions officers, who will
                 be familiar with the program’s reputation
               </p>
-              <button className="book_btn" >
-                  Book a Demo Class
-                </button>
+              <ButtonModal name="Book a Demo class"/>
             </div>
           </div>         
         </div>
