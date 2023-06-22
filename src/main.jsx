@@ -10,10 +10,11 @@ import Contact from "./pages/Contact/Contact";
 import WhatsappChat from "./components/WhatsappChat/WhatsappChat";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import AboutIB from "./pages/AboutIB/AboutIB";
+import Footer from "./components/Footer/Footer";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Router>
-  <ScrollToTop/>
+  {/* <ScrollToTop/>
     <Navbar />
     <div>
       <Routes>
@@ -24,6 +25,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
-    <WhatsappChat />
+    <WhatsappChat /> */}
+     <Navbar />
+    <Courses />
   </Router>
 );

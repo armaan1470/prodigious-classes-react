@@ -32,8 +32,7 @@
 .navbar-fixed {
   position: fixed;
   top: 0;
-  animation: slideDown 0.8s forwards; /* Slide down animation */
-  /* Additional styles you want for the fixed navbar */
+  animation: slideDown 0.8s forwards; 
 }
 
 @keyframes slideDown {

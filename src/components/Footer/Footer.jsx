@@ -18,23 +18,26 @@ function Footer() {
             <div className="footer_container">
                 <div className="footer">
                     <div className="icons">
-                        <div className="white-logo">
-                            <Link to="/" className="logo" onClick={reloadPage}>
-                                <img src={greylogo} alt="" width="60%" />
-                            </Link>
+                        <div className="white_logo" >
+                            <div className='logo_div'>
+                                <Link to="/" className="logo" onClick={reloadPage}>
+                                    <img src={greylogo} alt="" className='logo_img2'/>
+                                </Link>
+                            </div>
+
                         </div>
                         <div className="social-icons border">
                             <a href="https://www.facebook.com/profile.php?id=100086078512350">
-                                <FaFacebook size={30} color="#6b6b6b" className="each_icon fb_icon" />
+                                <FaFacebook color="#6b6b6b" className="each_icon fb_icon" />
                             </a>
                             <a href="https://twitter.com/Prodigi69196135">
-                                <FaTwitter size={30} color="#6b6b6b" className="each_icon tw_icon" />
+                                <FaTwitter color="#6b6b6b" className="each_icon tw_icon" />
                             </a>
                             <a href="https://www.instagram.com/philomathean_2022/">
-                                <FaInstagram size={30} color="#6b6b6b" className="each_icon in_icon" />
+                                <FaInstagram color="#6b6b6b" className="each_icon in_icon" />
                             </a>
                             <a href="https://www.linkedin.com/in/prodigious-career-institute-35292a251/">
-                                <FaLinkedin size={30} color="#6b6b6b" className="each_icon li_icon" />
+                                <FaLinkedin color="#6b6b6b" className="each_icon li_icon" />
                             </a>
                         </div>
 
@@ -62,7 +65,10 @@ function Footer() {
                                 </Link>
                             </li>
                         </ul>
-                        <b>&copy; 2023 All Rights Reserved.</b>
+                        <div className='copyright_container'>
+                            <b>&copy; 2023 All Rights Reserved.</b>
+                        </div>
+      
                     </div>
                 </div>
             </div>

@@ -1,10 +1,12 @@
 /* footer  */
 
 .footer_container {
+    position: relative;
+    bottom: 0;
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 350px;
+    /* height: 350px; */
     background-color: #f2f2f2;
     font-family: "biennalelight";
   
@@ -16,7 +18,6 @@
   }
   
   .footer{
-  
     width: 100%;
     max-width: 1200px;
   }
@@ -26,12 +27,21 @@
     color: white;
   
   }
+
+  .white_logo{
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo_img2{
+    width: 70%;
+  }
   
   .each_icon{
     margin  : 8px;
+    width: 30px;
+    width: 30px;
   }
-  
-  
   
   .footer_container .links {
     display: flex;
@@ -65,7 +75,7 @@
     justify-content: space-between;
     color: #6b6b6b !important;
     padding: 2rem 0;
-    font-size: 0.9rem;
+    font-size: 0.9rem
   }
 
   .react_links{
@@ -109,4 +119,147 @@
 
   .li_icon:hover{
     color: #0072b1 !important;
+  }
+
+
+
+  @media screen and (max-width: 1200px) {
+
+
+    .footer_container .icons {
+      display: flex;
+      justify-content: space-between;
+      padding: 6.8rem 1.75rem 3rem 1.75rem;
+    }
+
+    .footer{
+      width: 100%;
+      max-width: 1024px;
+    }
+
+
+    .links_footer{
+      display: flex;
+      justify-content: space-between;
+      color: #6b6b6b !important;
+      padding: 2rem 1.75rem;
+      font-size: 0.86rem;
+    }
+
+    .links_footer .nav_links_footer li {
+      padding-right: 1.9rem;
+      position: relative;
+    }
+
+
+  }
+
+
+  @media screen and (max-width: 768px) {
+
+
+    .footer_container .icons {
+      display: flex;
+      justify-content: space-between;
+      padding: 6.8rem 1.75rem 3rem 1.75rem;
+    }
+
+    .footer{
+      width: 100%;
+      max-width: 1024px;
+    }
+
+
+    .links_footer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1.75rem;
+      color: #6b6b6b !important;
+      padding: 2rem 1.75rem;
+      font-size: 0.9rem;
+    }
+
+    .links_footer .nav_links_footer li {
+      padding-right: 1.7rem;
+      position: relative;
+    }
+
+
+  }
+
+
+  @media screen and (max-width: 603px) {
+
+
+    .footer_container .icons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2.5rem;
+      padding: 6.8rem 1.75rem 3rem 1.75rem;
+    }
+
+    .footer{
+      width: 100%;
+      max-width: 1024px;
+    }
+
+
+    .links_footer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1.75rem;
+      color: #6b6b6b !important;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    .logo{
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .logo_img2{
+      width: 80%;
+    }
+
+    .each_icon{
+      margin  : 8px 10px;
+      width: 32px;
+      width: 32px;
+    }
+
+    .links_footer .nav_links_footer {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      list-style-type: none;
+      font-weight: 600;
+      text-align: start;
+    }
+
+    .nav_links_footer li:not(:last-child)::after{
+      display: none;
+    }
+
+    .links_footer .nav_links_footer li {
+      padding-right: 0;
+      position: relative;
+    }
+
+    .copyright_container{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+ 
+
   }

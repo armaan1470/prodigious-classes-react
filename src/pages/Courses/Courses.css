@@ -23,7 +23,7 @@
 
 .courses_card{
     /* border: 3px solid #F56D3B; */
-    width: 874px;
+    max-width: 874px;
     /* height: 477px; */
     border-radius: 15px;
     margin-top: 95px;
