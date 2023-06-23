@@ -206,6 +206,13 @@
 
 @media screen and (max-width: 1024px) {
 
+  .navbar{
+    position: fixed;
+    top:0;
+  }
+  .navbar-fixed{
+    animation:none;
+  }
 
   .menu-icon {
     display: flex;
@@ -248,7 +255,6 @@
 
   .nav-menu.active {
     transform: translateX(0);
-
   }
 
   .nav-links {
