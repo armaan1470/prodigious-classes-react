@@ -153,8 +153,13 @@
 }
 
 @media screen and (max-width: 1024px) {
+
+    .courses_container{
+        padding: 0 3rem;
+    }
+
     .courses_card {
-        max-width: 680px;
+        width: 100%;
         border-radius: 15px;
         margin-top: 95px;
         font-family: "biennalemedium";
@@ -166,26 +171,20 @@
 
 
 @media screen and (max-width: 768px) {
+
+    .courses_container{
+        padding: 0 2.75rem;
+    }
+
     .courses_card {
-        max-width: 550px;
+        /* max-width: 480px; */
+        width: 100%;
         border-radius: 15px;
         margin-top: 95px;
         font-family: "biennalemedium";
         font-weight: 500;
         opacity: 0;
-      }
-
-}
-
-@media screen and (max-width: 768px) {
-    .courses_card {
-        max-width: 400px;
-        border-radius: 15px;
-        margin-top: 40px;
-        font-family: "biennalemedium";
-        font-weight: 500;
-        opacity: 0;
-      }
+    }
 
       .card_heading_text {
         font-size: 40px;
@@ -195,8 +194,8 @@
 
       .courses_card_text {
         text-align: left;
-        padding: 20px 25px;
-        font-size: 15px;
+        padding: 20px;
+        font-size: 16px;
         line-height: 24px;
         border: 3px solid transparent;
         border-bottom-left-radius: 15px;
@@ -207,10 +206,17 @@
 
 
 @media screen and (max-width: 425px) {
+
+    
+    .courses_container{
+        padding: 0 2rem;
+    }
+
     .courses_card {
-        max-width: 300px;
+        width: 100%;
+        /* max-width: 360px; */
         border-radius: 15px;
-        margin-top: 20px;
+        margin-top: 80px;
         font-family: "biennalemedium";
         font-weight: 500;
         opacity: 0;
@@ -224,12 +230,35 @@
 
       .courses_card_text {
         text-align: left;
-        padding: 15px;
-        font-size: 12px;
+        padding: 12px;
+        font-size: 13px;
         line-height: 18px;
         border: 3px solid transparent;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
+     }
+
+    .card_para {
+        text-align: justify;
+        margin: 6px 0;
+        color: #6c6c6a;
     }
 
+}
+
+@media screen and (max-width: 375px) {
+
+    .courses_container{
+        padding: 0 1rem;
+    }
+
+      .courses_card_text {
+        text-align: left;
+        padding: 12px;
+        font-size: 13px;
+        line-height: 17px;
+        border: 3px solid transparent;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+     }
 }
