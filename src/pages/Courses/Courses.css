@@ -35,7 +35,6 @@
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     text-align: center;
-    font-size: 59.3796px;
     line-height: 74px;
     display: flex;
     justify-content: center;
@@ -44,6 +43,7 @@
   }
   
   .card_heading_text {
+    font-size: 60px;
     flex: 1.6;
     color: #FFFFFF;
   }
@@ -148,6 +148,88 @@
 @media screen and (max-width: 1440px) {
     .courses{
       padding-top: 70px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .courses_card {
+        max-width: 680px;
+        border-radius: 15px;
+        margin-top: 95px;
+        font-family: "biennalemedium";
+        font-weight: 500;
+        opacity: 0;
+      }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .courses_card {
+        max-width: 550px;
+        border-radius: 15px;
+        margin-top: 95px;
+        font-family: "biennalemedium";
+        font-weight: 500;
+        opacity: 0;
+      }
+
+}
+
+@media screen and (max-width: 768px) {
+    .courses_card {
+        max-width: 400px;
+        border-radius: 15px;
+        margin-top: 40px;
+        font-family: "biennalemedium";
+        font-weight: 500;
+        opacity: 0;
+      }
+
+      .card_heading_text {
+        font-size: 40px;
+        flex: 1.6;
+        color: #FFFFFF;
+      }
+
+      .courses_card_text {
+        text-align: left;
+        padding: 20px 25px;
+        font-size: 15px;
+        line-height: 24px;
+        border: 3px solid transparent;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+}
+
+
+@media screen and (max-width: 425px) {
+    .courses_card {
+        max-width: 300px;
+        border-radius: 15px;
+        margin-top: 20px;
+        font-family: "biennalemedium";
+        font-weight: 500;
+        opacity: 0;
+      }
+
+      .card_heading_text {
+        font-size: 40px;
+        flex: 1.6;
+        color: #FFFFFF;
+      }
+
+      .courses_card_text {
+        text-align: left;
+        padding: 15px;
+        font-size: 12px;
+        line-height: 18px;
+        border: 3px solid transparent;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
     }
 
 }
