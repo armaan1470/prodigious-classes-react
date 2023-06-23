@@ -36,9 +36,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #000 !important;
+  /* background: #000 !important;
   color: #0f0 !important;
-  outline: solid #f00 1px !important;
+  outline: solid #f00 1px !important; */
 }
 
 html,body{
