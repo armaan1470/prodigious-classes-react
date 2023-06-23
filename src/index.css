@@ -41,6 +41,6 @@
   outline: solid #f00 1px !important;
 }
 
-/* html,body{
-  overflow-x:hidden ;
-} */
+html,body{
+  overflow-x: hidden;
+}
