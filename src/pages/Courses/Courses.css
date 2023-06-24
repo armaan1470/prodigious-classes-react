@@ -39,9 +39,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Added to prevent image overflow */
+    overflow: hidden;  
+    /* Added to prevent image overflow */
   }
-  
+
   .card_heading_text {
     font-size: 60px;
     flex: 1.6;
@@ -49,10 +50,10 @@
   }
   
   .courses_card_heading img {
-    width: 100%;
-    height: auto;
+    max-width: 100%;
+    height: 100%;
     flex: 1;
-    object-fit: cover; /* Added to ensure the image fits within the container */
+    object-fit: cover !important; /* Added to ensure the image fits within the container */
   }
   
 
