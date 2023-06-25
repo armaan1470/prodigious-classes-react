@@ -11,8 +11,8 @@ function Navbar() {
   const [dropdownStates, setDropdownStates] = useState({
     isDropdownOpenIB: false,
     isDropdownOpenCareer: false,
+    isDropdownOpenIGCSE: false,
   });
-
 
   const handleMouseEnter = (dropdown) => {
     if (!click && window.innerWidth > 1024) {
@@ -79,7 +79,6 @@ function Navbar() {
     };
   }, [location]);
 
-
   const handleClick = () => setClick(!click);
 
   useEffect(() => {
@@ -122,6 +121,9 @@ function Navbar() {
               Courses
             </NavLink>
           </li>
+
+          {/* Drop down link starts here about IB */}
+
           <li
             className="nav-item"
             onMouseEnter={() => handleMouseEnter("isDropdownOpenIB")}
@@ -129,12 +131,14 @@ function Navbar() {
             onClick={() => handleDropdownClick("isDropdownOpenIB")}
           >
             <div
-              className={`nav-links ${dropdownStates.isDropdownOpenIB ? "active" : ""} ${location.pathname === '/about-ib' ? 'sub-nav-active' : ''}
-              ${location.pathname === '/about-igcse' ? 'sub-nav-active' : ''}
+              className={`nav-links ${
+                dropdownStates.isDropdownOpenIB ? "active" : ""
+              } ${location.pathname === "/about-ib" ? "sub-nav-active" : ""}
+              ${location.pathname === "/about-igcse" ? "sub-nav-active" : ""}
               `}
               onClick={closeMobileMenu}
             >
-              IB & IGC SE
+              IB
               <i
                 className={
                   dropdownStates.isDropdownOpenIB
@@ -147,23 +151,91 @@ function Navbar() {
             {dropdownStates.isDropdownOpenIB && (
               <div className="dropdown-wrapper">
                 <ul
-                  className={`dropdown-menu ${dropdownStates.isDropdownOpenIB ? "active" : ""
-                    } `}
+                  className={`dropdown-menu ${
+                    dropdownStates.isDropdownOpenIB ? "active" : ""
+                  } `}
                 >
                   <li className="dropdown-item">
-                    <NavLink to="/about-ib" className="sub-nav-links" onClick={closeMobileMenu} >
+                    <NavLink
+                      to="/about-ib"
+                      className="sub-nav-links"
+                      onClick={closeMobileMenu}
+                    >
                       About-IB
                     </NavLink>
                   </li>
                   <li className="dropdown-item">
-                    <NavLink to="/about-igcse" className="sub-nav-links" onClick={closeMobileMenu}>
-                      About IGC SE
+                    <NavLink
+                      to="/about-igcse"
+                      className="sub-nav-links"
+                      onClick={closeMobileMenu}
+                    >
+                      About IB
                     </NavLink>
                   </li>
                 </ul>
               </div>
             )}
           </li>
+
+          {/* drop down for about ig */}
+          <li
+            className="nav-item"
+            onMouseEnter={() => handleMouseEnter("isDropdownOpenIGCSE")}
+            onMouseLeave={() => handleMouseLeave("isDropdownOpenIGCSE")}
+            onClick={() => handleDropdownClick("isDropdownOpenIGCSE")}
+          >
+            <div
+              className={`nav-links ${
+                dropdownStates.isDropdownOpenIGCSE ? "active" : ""
+              } ${location.pathname === "/about-ig" ? "sub-nav-active" : ""}
+              ${location.pathname === "/about-igcse" ? "sub-nav-active" : ""}
+              `}
+              onClick={closeMobileMenu}
+            >
+              IGCSE
+              <i
+                className={
+                  dropdownStates.isDropdownOpenIGCSE
+                    ? "fas fa-chevron-up"
+                    : "fas fa-chevron-down"
+                }
+                style={{ paddingLeft: 5 }}
+              ></i>
+            </div>
+            {dropdownStates.isDropdownOpenIGCSE && (
+              <div className="dropdown-wrapper">
+                <ul
+                  className={`dropdown-menu ${
+                    dropdownStates.isDropdownOpenIGCSE ? "active" : ""
+                  } `}
+                >
+
+                      <li className="dropdown-item">
+                        <NavLink
+                          to="/about-ib"
+                          className="sub-nav-links"
+                          onClick={closeMobileMenu}
+                        >
+                          About-IG
+                        </NavLink>
+                      </li>
+                      <li className="dropdown-item">
+                        <NavLink
+                          to="/about-igcse"
+                          className="sub-nav-links"
+                          onClick={closeMobileMenu}
+                        >
+                          About IG
+                        </NavLink>
+                      </li>
+                    </ul>
+              </div>
+            )}
+          </li>
+
+          {/* drop down for Career  Counselling */}
+
           <li
             className="nav-item"
             onMouseEnter={() => handleMouseEnter("isDropdownOpenCareer")}
@@ -171,8 +243,17 @@ function Navbar() {
             onClick={() => handleDropdownClick("isDropdownOpenCareer")}
           >
             <div
-              className={`nav-links ${dropdownStates.isDropdownOpenCareer ? "active" : ""
-                }   ${location.pathname === '/parental-support' ? 'sub-nav-active' : ''}   ${location.pathname === '/emotional-support' ? 'sub-nav-active' : ''}`}
+              className={`nav-links ${
+                dropdownStates.isDropdownOpenCareer ? "active" : ""
+              }   ${
+                location.pathname === "/parental-support"
+                  ? "sub-nav-active"
+                  : ""
+              }   ${
+                location.pathname === "/emotional-support"
+                  ? "sub-nav-active"
+                  : ""
+              }`}
               onClick={closeMobileMenu}
             >
               Career Counselling
@@ -188,16 +269,25 @@ function Navbar() {
             {dropdownStates.isDropdownOpenCareer && (
               <div className="dropdown-wrapper">
                 <ul
-                  className={`dropdown-menu ${dropdownStates.isDropdownOpenCareer ? "active" : ""
-                    }`}
+                  className={`dropdown-menu ${
+                    dropdownStates.isDropdownOpenCareer ? "active" : ""
+                  }`}
                 >
                   <li className="dropdown-item">
-                    <NavLink to="/parental-support" className="sub-nav-links" onClick={closeMobileMenu}>
+                    <NavLink
+                      to="/parental-support"
+                      className="sub-nav-links"
+                      onClick={closeMobileMenu}
+                    >
                       Parental Support
                     </NavLink>
                   </li>
                   <li className="dropdown-item">
-                    <NavLink to="/emotional-support" className="sub-nav-links" onClick={closeMobileMenu}>
+                    <NavLink
+                      to="/emotional-support"
+                      className="sub-nav-links"
+                      onClick={closeMobileMenu}
+                    >
                       Emotional Support
                     </NavLink>
                   </li>
