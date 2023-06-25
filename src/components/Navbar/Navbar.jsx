@@ -10,6 +10,8 @@ function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [dropdownStates, setDropdownStates] = useState({
     isDropdownOpenIB: false,
+    isDropdownOpenIBSub: false,
+    isDropdownOpenIGCSESub: false,
     isDropdownOpenCareer: false,
   });
 
@@ -134,7 +136,7 @@ function Navbar() {
               `}
               onClick={closeMobileMenu}
             >
-              IB & IGC SE
+              IB & IGCSE
               <i
                 className={
                   dropdownStates.isDropdownOpenIB
@@ -150,15 +152,51 @@ function Navbar() {
                   className={`dropdown-menu ${dropdownStates.isDropdownOpenIB ? "active" : ""
                     } `}
                 >
-                  <li className="dropdown-item">
-                    <NavLink to="/about-ib" className="sub-nav-links" onClick={closeMobileMenu} >
-                      About-IB
-                    </NavLink>
+                  <li className="dropdown-item" 
+                      onMouseEnter={() => handleMouseEnter("isDropdownOpenIBSub")}
+                      onMouseLeave={() => handleMouseLeave("isDropdownOpenIBSub")}
+                      onClick={() => handleDropdownClick("isDropdownOpenIBSub")}>
+                    {/* <NavLink to="/about-ib" className="sub-nav-links" onClick={closeMobileMenu} >
+                      IB
+                    </NavLink> */}
+                    <p className="sub-nav-links">About IB</p>
+                    <ul className={`sub-dropdown-menu ${dropdownStates.isDropdownOpenIBSub ? "active" : ""
+                    } `}>
+                      <li className="sub-dropdown-item">
+                        <NavLink to="/about-ib" className="sub-sub-nav-links" onClick={closeMobileMenu} >
+                          Benefits of IB
+                        </NavLink>
+                        <NavLink to="/about-ib" className="sub-sub-nav-links" onClick={closeMobileMenu} >
+                          IB Programs
+                        </NavLink>
+                        <NavLink to="/about-ib" className="sub-sub-nav-links" onClick={closeMobileMenu} >
+                          IB School & Subject
+                        </NavLink>
+                      </li>
+                    </ul>
                   </li>
-                  <li className="dropdown-item">
-                    <NavLink to="/about-igcse" className="sub-nav-links" onClick={closeMobileMenu}>
-                      About IGC SE
-                    </NavLink>
+                  <li className="dropdown-item" 
+                      onMouseEnter={() => handleMouseEnter("isDropdownOpenIGCSESub")}
+                      onMouseLeave={() => handleMouseLeave("isDropdownOpenIGCSESub")}
+                      onClick={() => handleDropdownClick("isDropdownOpenIGCSESub")}>
+                    {/* <NavLink to="/about-ib" className="sub-nav-links" onClick={closeMobileMenu} >
+                      IB
+                    </NavLink> */}
+                    <p className="sub-nav-links">About IGCSE</p>
+                    <ul className={`sub-dropdown-menu ${dropdownStates.isDropdownOpenIGCSESub ? "active" : ""
+                    } `}>
+                      <li className="sub-dropdown-item">
+                        <NavLink to="/about-ib" className="sub-sub-nav-links" onClick={closeMobileMenu} >
+                          Benefits of IGCSE
+                        </NavLink>
+                        <NavLink to="/about-ib" className="sub-sub-nav-links" onClick={closeMobileMenu} >
+                          IGCSE Programs
+                        </NavLink>
+                        <NavLink to="/about-ib" className="sub-sub-nav-links" onClick={closeMobileMenu} >
+                          IGCSE Schools & Subject
+                        </NavLink>
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </div>
