@@ -14,7 +14,7 @@ import Footer from "./components/Footer/Footer";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Router>
-  {/* <ScrollToTop/>
+  <ScrollToTop/>
     <Navbar />
     <div>
       <Routes>
@@ -25,8 +25,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
-    <WhatsappChat /> */}
-     <Navbar />
-    <Courses />
+    <WhatsappChat />
+     {/* <Navbar />
+    <Courses /> */}
   </Router>
 );
