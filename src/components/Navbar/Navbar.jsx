@@ -138,7 +138,6 @@ function Navbar() {
               } ${location.pathname === "/about-ib" ? "sub-nav-active" : ""}
               ${location.pathname === "/about-igcse" ? "sub-nav-active" : ""}
               `}
-              onClick={closeMobileMenu}
             >
               IB & IGCSE
               <i
@@ -169,13 +168,13 @@ function Navbar() {
                     } `}>
                       <li className="sub-dropdown-item">
                         <NavLink to="/about-ib" className="sub-sub-nav-links" onClick={closeMobileMenu} >
+                          Introduction
+                        </NavLink>
+                        <NavLink to="/benefit-ib" className="sub-sub-nav-links" onClick={closeMobileMenu} >
                           Benefits of IB
                         </NavLink>
                         <NavLink to="/about-ib" className="sub-sub-nav-links" onClick={closeMobileMenu} >
                           IB Programs
-                        </NavLink>
-                        <NavLink to="/about-ib" className="sub-sub-nav-links" onClick={closeMobileMenu} >
-                          IB School & Subject
                         </NavLink>
                       </li>
                     </ul>
@@ -204,62 +203,6 @@ function Navbar() {
                     </ul>
                   </li>
                 </ul>
-              </div>
-            )}
-          </li>
-
-          {/* drop down for about ig */}
-          <li
-            className="nav-item"
-            onMouseEnter={() => handleMouseEnter("isDropdownOpenIGCSE")}
-            onMouseLeave={() => handleMouseLeave("isDropdownOpenIGCSE")}
-            onClick={() => handleDropdownClick("isDropdownOpenIGCSE")}
-          >
-            <div
-              className={`nav-links ${
-                dropdownStates.isDropdownOpenIGCSE ? "active" : ""
-              } ${location.pathname === "/about-ig" ? "sub-nav-active" : ""}
-              ${location.pathname === "/about-igcse" ? "sub-nav-active" : ""}
-              `}
-              onClick={closeMobileMenu}
-            >
-              IGCSE
-              <i
-                className={
-                  dropdownStates.isDropdownOpenIGCSE
-                    ? "fas fa-chevron-up"
-                    : "fas fa-chevron-down"
-                }
-                style={{ paddingLeft: 5 }}
-              ></i>
-            </div>
-            {dropdownStates.isDropdownOpenIGCSE && (
-              <div className="dropdown-wrapper">
-                <ul
-                  className={`dropdown-menu ${
-                    dropdownStates.isDropdownOpenIGCSE ? "active" : ""
-                  } `}
-                >
-
-                      <li className="dropdown-item">
-                        <NavLink
-                          to="/about-ib"
-                          className="sub-nav-links"
-                          onClick={closeMobileMenu}
-                        >
-                          About-IG
-                        </NavLink>
-                      </li>
-                      <li className="dropdown-item">
-                        <NavLink
-                          to="/about-igcse"
-                          className="sub-nav-links"
-                          onClick={closeMobileMenu}
-                        >
-                          About IG
-                        </NavLink>
-                      </li>
-                    </ul>
               </div>
             )}
           </li>
