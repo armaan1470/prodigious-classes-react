@@ -14,7 +14,7 @@ const AboutIB = () => {
     setTimeout(() => {
       bannerText.current.classList.add("slide_up");
       logoImg.current.classList.add("logo_fade_in");
-    }, 700);
+    }, 300);
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry, index) => {
@@ -110,7 +110,6 @@ const AboutIB = () => {
           </div>         
         </div>
       </div>
-      <Footer />
     </>
   );
 };

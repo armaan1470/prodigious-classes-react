@@ -156,9 +156,15 @@
   display: none;
 }
 
-.fas{
+.fas.fa-bars, .fas.fa-times{
+  font-size: 1.25rem;
+}
+
+.fas.fa-chevron-up, .fas.fa-chevron-down{
   font-size: 0.6rem;
 }
+
+
 
 .dropdown-menu {
   color: #424242;
@@ -269,13 +275,13 @@
 
 @media screen and (max-width: 1024px) {
 
-  .navbar{
+
+
+  /* .navbar-fixed{
     position: fixed;
     top:0;
-  }
-  .navbar-fixed{
-    animation:none;
-  }
+    animation: none;
+  } */
 
   .menu-icon {
     display: flex;

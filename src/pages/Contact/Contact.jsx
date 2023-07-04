@@ -116,8 +116,6 @@ function Contact() {
                     loading="lazy"
                     title="map"></iframe>
             </div>
-
-            <Footer />
         </>
 
 
