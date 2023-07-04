@@ -1,0 +1,66 @@
+.ib_introduction{
+  position: relative;
+}
+.banner_container{
+  position: relative;
+}
+.banner_container img{
+  width:100%;
+}
+.banner_container h1 {
+  font-size: clamp(2rem, -0.8341rem + 9.0293vw, 4rem);
+  color: white;
+  font-family: "biennalesemibold";
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.detail_card_container {
+  position: absolute;
+  bottom: 0;
+  left:50%;
+  transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+.detail_card_container .about_card {
+  background-image: linear-gradient(#ffad00, #fe6b02);
+  color: white;
+  width: clamp(200px, 20vw, 300px);
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(1rem, 0.325rem + 3vw, 1.9rem);
+  text-align: center;
+  margin: 10px 30px 0 30px;
+  font-family: "biennalelight";
+}
+.about_card .img_container {
+  background-color: white;
+  width: 100px;
+  border-radius: 50%;
+  padding: 10px;
+}
+.about_card .img_container img {
+  width: 70px;
+  aspect-ratio: 1/1;
+}
+Footer{
+ position: absolute;
+ bottom:0; 
+}
+@media screen and (max-width: 770px){
+  .ib_introduction{
+    position: absolute;
+    top: 85px;
+  }
+}
+@media screen and (max-width:430px){
+    .detail_card_container{
+        display: block;
+        top:30%;
+    }
+}

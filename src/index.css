@@ -44,3 +44,6 @@
 html,body{
   overflow-x: hidden;
 }
+.border{
+border: 1px solid black;
+}

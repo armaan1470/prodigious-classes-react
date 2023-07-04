@@ -11,6 +11,7 @@ import WhatsappChat from "./components/WhatsappChat/WhatsappChat";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import AboutIB from "./pages/AboutIB/AboutIB";
 import Footer from "./components/Footer/Footer";
+import BenefitsIB from "./pages/BenefitIB/BenefitsIB";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Router>
@@ -22,11 +23,12 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/about-us" element={<Aboutus />} />
         <Route path="/courses" element={<Courses />} />
         <Route path="/about-ib" element={<AboutIB />} />
+        <Route path="/benefit-ib" element={<BenefitsIB />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
     <WhatsappChat />
-     {/* <Navbar />
-    <Courses /> */}
+     {/* <Navbar/>
+    <BenefitsIB /> */}
   </Router>
 );
