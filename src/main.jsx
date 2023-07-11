@@ -16,7 +16,7 @@ import BenefitsIB from "./pages/BenefitIB/BenefitsIB";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Router>
-  {/* <ScrollToTop/>
+  <ScrollToTop/>
     <Navbar />
     <div>
       <Routes>
@@ -29,10 +29,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       </Routes>
     </div>
     <WhatsappChat />
-    <Footer /> */}
-    <Navbar />
-    <BenefitsIB />
     <Footer />
+    {/* <Navbar />
+    <BenefitsIB />
+    <Footer /> */}
   </Router>
 
 
