@@ -19,8 +19,8 @@
 }
 
 .hero_img{
-    /* border: 1px solid red; */
-    width: 95%;
+    width: 95vw;
+    max-width: 1000px;
 }
 
 .illustration4{
@@ -32,7 +32,8 @@
     /* border: 1px solid blue; */
     display: flex;
     flex-direction: column;
-    width: 95%;
+    width: 90vw;
+    max-width: 1000px;
     font-family: "biennalemedium";
     font-weight: 500;
 
@@ -41,7 +42,7 @@
 
 .hero_text_heading{
     text-align: center;
-    font-size: 63.54px;
+    font-size: clamp(2rem, 0.0495rem + 4.7525vw, 4rem);
     line-height: 88.32px;
 
 }
@@ -110,9 +111,10 @@
 .hero_subtext{
     text-align: justify;
     margin: 10px 0;
-    font-size: 20px;
+    font-size: clamp(1rem, 0.9286rem + 0.3571vw, 1.25rem);
     line-height: 27.8px;
     color: #6c6c6a;
+    flex-wrap: wrap;
 }
 
 .two_items_container{
@@ -436,10 +438,8 @@
     }
 }
 
-@media screen and (max-width: 1440px) {
-    .about_us{
-      padding-top: 70px;
+@media screen and (max-width:450px){
+    .illustration4{
+        padding:0;
     }
 }
-
-
