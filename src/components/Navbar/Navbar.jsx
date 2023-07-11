@@ -91,7 +91,7 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className={`navbar ${isScrolled ? "navbar-fixed" : ""}`}>
+    <nav className={`navbar ${isScrolled ? "navbar-fixed" : ""} ${click ? "navbar-fixed":""}`} >
       <div className="navbar-container">
         <NavLink to="/" className="logo" onClick={reloadPage}>
           <img src={logo} alt="Philomathean" className="logo_img" />
