@@ -261,7 +261,6 @@ function Aboutus() {
           </div>
         </div>
 
-        <Footer />
       </div>
     </>
   );

@@ -8,33 +8,35 @@ import Footer from "../../components/Footer/Footer";
 
 function BenefitIB() {
   return (
-    <div className="ib_introduction ">
-      <div className="banner_container border">
-        <h1>Benefits of IB</h1>
-        <img src={banner} alt="" />
-        <div className="detail_card_container">
-          <div className="about_card">
-            <div className="img_container">
-              <img src={icon1} alt="cardimg"  />
+    <>
+      <div className="benefitib_container">
+        <div className="benefit_hero_container">
+          <img src={banner} alt="banner" className="benefit_banner_img" />
+          <div className="benefit_header_text">Benefits Of IB</div>
+          <div className="detail_card_container">
+            <div className="about_card">
+              <div className="img_container">
+                <img src={icon1} alt="cardimg" />
+              </div>
+              <p>Global <br /> Recognition</p>
             </div>
-            <p>Global <br/> Recognition</p>
-          </div>
-          <div className="about_card">
-            <div className="img_container">
-              <img src={icon2} alt="cardimg" />
+            <div className="about_card">
+              <div className="img_container">
+                <img src={icon2} alt="cardimg" />
+              </div>
+              <p>University<br /> preparation</p>
             </div>
-            <p>University<br/> preparation</p>
-          </div>
-          <div className="about_card">
-            <div className="img_container">
-              <img src={icon3} alt="cardimg" />
+            <div className="about_card">
+              <div className="img_container">
+                <img src={icon3} alt="cardimg" />
+              </div>
+              <p>Personal<br /> Development</p>
             </div>
-            <p>Personal<br/> Development</p>
           </div>
         </div>
+
       </div>
-      <Footer />
-    </div>
+    </>
   );
 }
 

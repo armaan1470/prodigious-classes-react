@@ -26,7 +26,7 @@ function Footer() {
                             </div>
 
                         </div>
-                        <div className="social-icons border">
+                        <div className="social-icons">
                             <a href="https://www.facebook.com/profile.php?id=100086078512350">
                                 <FaFacebook color="#6b6b6b" className="each_icon fb_icon" />
                             </a>

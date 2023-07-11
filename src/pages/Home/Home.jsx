@@ -239,7 +239,6 @@ function Home() {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
       {/* <Modal
         open={open}
