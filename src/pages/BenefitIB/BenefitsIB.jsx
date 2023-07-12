@@ -3,6 +3,7 @@ import icon1 from "../../assets/images/icon-1.svg";
 import icon2 from "../../assets/images/icon-2.svg";
 import icon3 from "../../assets/images/icon-3.svg";
 import banner from "../../assets/images/bg.jpg"
+import wwoff_illus from "../../assets/images/model.png"
 import "./BenefitsIB.css";
 import Footer from "../../components/Footer/Footer";
 
@@ -55,7 +56,27 @@ function BenefitIB() {
           </div>
         </div>
 
+        <div className="wwoff_container">
+          <div className="wwoff_illus_container">
+            <img src={wwoff_illus} alt="wwoff_illus" className="wwoff_illus_img" />
+          </div>
+          <div className="wwoff_content">
+            <div className="wwoff_content_heading">What We Offer</div>
+            <div className="wwoff_content_text">We have worked to assemble everything related to
+              IB curriculum under one roof. From past papers to
+              assignment samples to chapter-wise tests, you
+              name any IB HL/SL resource, We have it!</div>
+          </div>
+        </div>
+
+
+
       </div>
+      <div className="bottom_space">
+
+      </div>
+
+
     </>
   );
 }
