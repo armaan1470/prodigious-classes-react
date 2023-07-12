@@ -1,9 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import "./Contact.css"
-import call from "../../assets/images/call.svg";
-import mail from "../../assets/images/email.svg";
-import wa from "../../assets/images/whatsapp.svg";
-import Footer from "../..//components/Footer/Footer.jsx";
 import instagram from "../../assets/images/instagram.png";
 import facebook from "../../assets/images/facebook.png";
 import twitter from "../../assets/images/twitter.png";
@@ -16,25 +12,6 @@ import { ImWhatsapp } from "react-icons/im";
 
 
 function Contact() {
-
-    // useEffect(() => {
-    //     const contactDetailsContainer = document.querySelector('.contact_details_container');
-    //     const contactBannerText = document.querySelector('.contact_banner_text');
-
-    //     const handleMouseMove = () => {
-    //         contactDetailsContainer.classList.add('animate');
-    //         contactBannerText.classList.add('animate');
-    //     };
-
-    //     document.addEventListener('mousemove', handleMouseMove);
-
-    //     return () => {
-    //         document.removeEventListener('mousemove', handleMouseMove);
-    //     };
-    // }, []);
-
-
-
     const bannerText = useRef(null);
     const addressText = useRef(null);
 
@@ -106,10 +83,6 @@ function Contact() {
                 <Form />
             </div>
 
-
-
-
-
             <div className="map_container">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d471.0201947501229!2d72.85101413266587!3d19.188144711175593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b74b6382b2e5%3A0xedaa0cac57eea62f!2sMalad%20Station!5e0!3m2!1sen!2sin!4v1683014520962!5m2!1sen!2sin"
                     style={{ width: '100%', height: '100%', border: "0" }}
@@ -117,12 +90,6 @@ function Contact() {
                     title="map"></iframe>
             </div>
         </>
-
-
-
-
-
-
     );
 }
 
