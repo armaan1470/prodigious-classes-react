@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import Footer from "../../components/Footer/Footer";
+import banner from "../../assets/images/aboutIB_header.jpg";
 import "./Aboutib.css";
 import logo from "../../assets/images/aboutib_logo.png";
 import ilust1 from "../../assets/images/aboutin_illust1.png";
@@ -47,6 +47,7 @@ const AboutIB = () => {
       <div className="aboutib">
         <div className="aboutIB_banner">
           <img src={logo} alt="logo" className="about_ib_logo" ref={logoImg} />
+          <img src={banner} alt="banner" className="about_ib_banner" />
           <div className="aboutIB_banner_text" ref={bannerText}>
             About the IB
           </div>
@@ -85,7 +86,7 @@ const AboutIB = () => {
           <div className="aboutIB_text t">
             <div>
               <h1>
-                The <span> IB Curriculumn</span> is <br />
+                The <span> IB Curriculumn</span> is 
                 well kwon worldwide
               </h1>
             </div>
