@@ -250,7 +250,7 @@ function Aboutus() {
 
         <div className="team_container">
           <div className="team_heading">
-            Our Philomathean <span> Team </span>
+             <p>Our Philomathean <span> Team </span></p>
           </div>
           <div className="team_cards_container t">
             <img src={tut1} alt={tut1} className="team_cards" />
