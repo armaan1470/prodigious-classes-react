@@ -316,13 +316,17 @@
     padding: 9rem 0 2.9rem 0;
     line-height: 65.78px;
     color: #00028a;
-    position: relative;
     text-align: center;
     font-weight: 500;
     position: relative;
 }
+.team_heading p{
+    margin:0 auto;
+    position: relative;
+    width:fit-content;
+}
 
-.team_heading::after {
+.team_heading p::after {
     content: "";
     position: absolute;
     background-image: url("../../assets/images/3stick.png");
@@ -330,8 +334,8 @@
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
-    top: 135px;
-    left: 235px;
+    top: -10px;
+    left: -20px;
   }
 
 .team_heading span{
@@ -349,7 +353,7 @@
     background-image: url("../../assets/images/line.svg");
     background-size: contain;
     width: 150px;
-    height: 10px;
+    height: 8px;
     bottom: -10px;
     right: -10px;
   }
@@ -450,6 +454,7 @@
     }
     .team_cards{
         margin:10px;
+        width:35%;
     }
 }
 
