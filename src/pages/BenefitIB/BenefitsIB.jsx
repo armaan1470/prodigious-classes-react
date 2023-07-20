@@ -66,6 +66,35 @@ function BenefitIB() {
               IB curriculum under one roof. From past papers to
               assignment samples to chapter-wise tests, you
               name any IB HL/SL resource, We have it!</div>
+
+            <div className="wwoff_three_tiles_container">
+                <div className="wwoff_tile">
+                  <div className="wwoff_tile_head">
+                      01
+                  </div>
+                  <div className="wwoff_tile_tail">
+                      IBDP TUTORING
+                  </div>
+                </div>
+                <div className="wwoff_tile">
+                  <div className="wwoff_tile_head">
+                      01
+                  </div>
+                  <div className="wwoff_tile_tail">
+                      IBDP TUTORING
+                  </div>
+                </div>
+                <div className="wwoff_tile">
+                  <div className="wwoff_tile_head">
+                      01
+                  </div>
+                  <div className="wwoff_tile_tail">
+                      IBDP TUTORING
+                  </div>
+                </div>
+            </div>
+
+
           </div>
         </div>
 
