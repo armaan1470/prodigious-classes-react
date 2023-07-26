@@ -4,6 +4,12 @@ import icon2 from "../../assets/images/icon-2.svg";
 import icon3 from "../../assets/images/icon-3.svg";
 import banner from "../../assets/images/bg.jpg"
 import wwoff_illus from "../../assets/images/model.png"
+import bef_transparent_image from "../../assets/images/abstract.svg"
+import green_tick from "../../assets/images/right tick.svg"
+import myp_icon_1 from "../../assets/images/icon-4.svg"
+import myp_icon_2 from "../../assets/images/icon-5.svg"
+import myp_icon_3 from "../../assets/images/icon-6.svg"
+import myp_icon_4 from "../../assets/images/icon-7.svg"
 import "./BenefitsIB.css";
 import Footer from "../../components/Footer/Footer";
 
@@ -68,36 +74,282 @@ function BenefitIB() {
               name any IB HL/SL resource, We have it!</div>
 
             <div className="wwoff_three_tiles_container">
-                <div className="wwoff_tile">
-                  <div className="wwoff_tile_head">
-                      01
-                  </div>
-                  <div className="wwoff_tile_tail">
-                      IBDP TUTORING
-                  </div>
+              <div className="wwoff_tile " style={{ outline: "2px solid #4789d9", }}>
+                <div className="wwoff_tile_head tile_1" style={{ backgroundColor: "#4789d9" }}>
+                  01
                 </div>
-                <div className="wwoff_tile">
-                  <div className="wwoff_tile_head">
-                      01
-                  </div>
-                  <div className="wwoff_tile_tail">
-                      IBDP TUTORING
-                  </div>
+                <div className="wwoff_tile_tail" style={{ color: "#4789d9" }}>
+                  IBDP TUTORING
                 </div>
-                <div className="wwoff_tile">
-                  <div className="wwoff_tile_head">
-                      01
-                  </div>
-                  <div className="wwoff_tile_tail">
-                      IBDP TUTORING
-                  </div>
+              </div>
+              <div className="wwoff_tile " style={{ outline: "2px solid #fe7702", }}>
+                <div className="wwoff_tile_head tile_2" style={{ backgroundColor: "#fe7702" }}>
+                  02
                 </div>
+                <div className="wwoff_tile_tail" style={{ color: "#fe7702" }}>
+                  IB MYP TUTORING
+                </div>
+              </div>
+              <div className="wwoff_tile " style={{ outline: "2px solid #ffbe00", }}>
+                <div className="wwoff_tile_head tile_3" style={{ backgroundColor: "#ffbe00" }}>
+                  03
+                </div>
+                <div className="wwoff_tile_tail" style={{ color: "#ffbe00" }}>
+                  IB PYP TUTORING
+                </div>
+              </div>
             </div>
-
-
           </div>
         </div>
 
+
+        <div className="benefit_detail_container">
+          <div className="benefit_detail_heading_container_wrapper" style={{backgroundColor:"#D1E7FF"}}>
+            <div className="benefit_detail_heading_container" style={{backgroundColor:"#4789d9"}}>
+              <div className="benefit_detail_heading_text">IBDP TUTORING</div>
+              <img
+                src={bef_transparent_image}
+                alt={bef_transparent_image}
+              />
+            </div>
+          </div>
+
+          <div className="benefit_detail_body_container">
+            <div className="benefit_detail_body">
+              <span>
+                We have worked to assemble everything related to IB curriculum under one roof.
+                From past papers to assignment samples to chapter-wise tests, you name any IB HL/SL
+                resource, We have it!
+              </span>
+              <div className="benefit_detail_body_sub">
+                <div className="benefit_detail_body_sub_tile">
+                  <div className="benefit_detail_body_sub_tile_icon">
+                    <img src={green_tick} alt={green_tick} />
+                  </div>
+                  <div className="benefit_detail_body_sub_tile_text">
+                    IB Math Tutoring
+                  </div>
+                </div>
+
+                <div className="benefit_detail_body_sub_tile">
+                  <div className="benefit_detail_body_sub_tile_icon">
+                    <img src={green_tick} alt={green_tick} />
+                  </div>
+                  <div className="benefit_detail_body_sub_tile_text">
+                    IB Physics Tutoring
+                  </div>
+                </div>
+
+                <div className="benefit_detail_body_sub_tile">
+                  <div className="benefit_detail_body_sub_tile_icon">
+                    <img src={green_tick} alt={green_tick} />
+                  </div>
+                  <div className="benefit_detail_body_sub_tile_text">
+                    IB Chemistry Tutoring
+                  </div>
+                </div>
+
+                <div className="benefit_detail_body_sub_tile">
+                  <div className="benefit_detail_body_sub_tile_icon">
+                    <img src={green_tick} alt={green_tick} />
+                  </div>
+                  <div className="benefit_detail_body_sub_tile_text">
+                    IB Psychology Tutoring
+                  </div>
+                </div>
+
+                <div className="benefit_detail_body_sub_tile">
+                  <div className="benefit_detail_body_sub_tile_icon">
+                    <img src={green_tick} alt={green_tick} />
+                  </div>
+                  <div className="benefit_detail_body_sub_tile_text">
+                    IB Biology Tutoring
+                  </div>
+                </div>
+
+                <div className="benefit_detail_body_sub_tile">
+                  <div className="benefit_detail_body_sub_tile_icon">
+                    <img src={green_tick} alt={green_tick} />
+                  </div>
+                  <div className="benefit_detail_body_sub_tile_text">
+                    IB Histroy Tutoring
+                  </div>
+                </div>
+
+                <div className="benefit_detail_body_sub_tile">
+                  <div className="benefit_detail_body_sub_tile_icon">
+                    <img src={green_tick} alt={green_tick} />
+                  </div>
+                  <div className="benefit_detail_body_sub_tile_text">
+                    IB Geography Tutoring
+                  </div>
+                </div>
+
+                <div className="benefit_detail_body_sub_tile">
+                  <div className="benefit_detail_body_sub_tile_icon">
+                    <img src={green_tick} alt={green_tick} />
+                  </div>
+                  <div className="benefit_detail_body_sub_tile_text">
+                    IB Economics Tutoring
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div className="benefit_detail_container">
+          <div className="benefit_detail_heading_container_wrapper" style={{backgroundColor:"#FFE6D0"}}>
+            <div className="benefit_detail_heading_container" style={{backgroundColor:"#fe7702"}}>
+              <div className="benefit_detail_heading_text">IB-MYP TUTORING</div>
+              <img
+                src={bef_transparent_image}
+                alt={bef_transparent_image}
+              />
+            </div>
+          </div>
+
+          <div className="benefit_detail_body_container">
+            <div className="benefit_detail_body">
+              <span>
+                At IB Scholars, we have students who move through their entire five-year MYP program
+                (from age 11 to 16 years). As the curriculum requires them to complete studies in eight
+                subject areas, as well as an integrative subject and a Personal Project, we design our
+                classes according to the provided structure.
+              </span>
+
+              <div className="myp_icons_container">
+
+                <div className="myp_icon_card">
+                    <img src={myp_icon_1} alt={myp_icon_1} />
+                    <div className="myp_icon_text">Language & Literature</div>
+                </div>
+
+                <div className="myp_icon_card">
+                    <img src={myp_icon_2} alt={myp_icon_2} />
+                    <div className="myp_icon_text">Language Acquisition</div>
+                </div>
+
+                <div className="myp_icon_card">
+                    <img src={myp_icon_3} alt={myp_icon_3} />
+                    <div className="myp_icon_text">Sciences</div>
+                </div>
+
+                <div className="myp_icon_card">
+                    <img src={myp_icon_4} alt={myp_icon_4} />
+                    <div className="myp_icon_text">Mathematics</div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div className="benefit_detail_container">
+          <div className="benefit_detail_heading_container_wrapper" style={{backgroundColor:"#FEF0C3"}}>
+            <div className="benefit_detail_heading_container"  style={{backgroundColor:"#ffbe00"}}>
+              <div className="benefit_detail_heading_text">IB-PYP TUTORING</div>
+              <img
+                src={bef_transparent_image}
+                alt={bef_transparent_image}
+              />
+            </div>
+          </div>
+
+          <div className="benefit_detail_body_container">
+            <div className="benefit_detail_body">
+              <span>
+                IB Scholars offer trained and experienced IB PYP tutors in Dubai. The IB PYP is a curriculum
+                designed specifically for children aged 3 to 12. This curriculum encourages young children to
+                think for themselves and take responsibility for their education so that they can investigate
+                local and global issues and opportunities.
+                <br />
+                <br />
+                We offer IB PYP tutoring to help these students achieve their goals. IB emphasizes on a child’s
+                full growth, both academically and beyond the classroom. Our IB PYP instructors are
+                experienced in teaching according to the IB framework. This curriculum emphasizes inquiry-
+                based learning and activity-based learning.
+              </span>
+              <div className="benefit_detail_body_sub">
+                <div className="benefit_detail_body_sub_tile">
+                  <div className="benefit_detail_body_sub_tile_icon">
+                    <img src={green_tick} alt={green_tick} />
+                  </div>
+                  <div className="benefit_detail_body_sub_tile_text">
+                    IB Math Tutoring
+                  </div>
+                </div>
+
+                <div className="benefit_detail_body_sub_tile">
+                  <div className="benefit_detail_body_sub_tile_icon">
+                    <img src={green_tick} alt={green_tick} />
+                  </div>
+                  <div className="benefit_detail_body_sub_tile_text">
+                    IB Physics Tutoring
+                  </div>
+                </div>
+
+                <div className="benefit_detail_body_sub_tile">
+                  <div className="benefit_detail_body_sub_tile_icon">
+                    <img src={green_tick} alt={green_tick} />
+                  </div>
+                  <div className="benefit_detail_body_sub_tile_text">
+                    IB Chemistry Tutoring
+                  </div>
+                </div>
+
+                <div className="benefit_detail_body_sub_tile">
+                  <div className="benefit_detail_body_sub_tile_icon">
+                    <img src={green_tick} alt={green_tick} />
+                  </div>
+                  <div className="benefit_detail_body_sub_tile_text">
+                    IB Psychology Tutoring
+                  </div>
+                </div>
+
+                <div className="benefit_detail_body_sub_tile">
+                  <div className="benefit_detail_body_sub_tile_icon">
+                    <img src={green_tick} alt={green_tick} />
+                  </div>
+                  <div className="benefit_detail_body_sub_tile_text">
+                    IB Biology Tutoring
+                  </div>
+                </div>
+
+                <div className="benefit_detail_body_sub_tile">
+                  <div className="benefit_detail_body_sub_tile_icon">
+                    <img src={green_tick} alt={green_tick} />
+                  </div>
+                  <div className="benefit_detail_body_sub_tile_text">
+                    IB Histroy Tutoring
+                  </div>
+                </div>
+
+                <div className="benefit_detail_body_sub_tile">
+                  <div className="benefit_detail_body_sub_tile_icon">
+                    <img src={green_tick} alt={green_tick} />
+                  </div>
+                  <div className="benefit_detail_body_sub_tile_text">
+                    IB Geography Tutoring
+                  </div>
+                </div>
+
+                <div className="benefit_detail_body_sub_tile">
+                  <div className="benefit_detail_body_sub_tile_icon">
+                    <img src={green_tick} alt={green_tick} />
+                  </div>
+                  <div className="benefit_detail_body_sub_tile_text">
+                    IB Economics Tutoring
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
 
 
       </div>
