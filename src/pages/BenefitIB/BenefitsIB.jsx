@@ -10,6 +10,7 @@ import myp_icon_1 from "../../assets/images/icon-4.svg"
 import myp_icon_2 from "../../assets/images/icon-5.svg"
 import myp_icon_3 from "../../assets/images/icon-6.svg"
 import myp_icon_4 from "../../assets/images/icon-7.svg"
+import green_star from "../../assets/images/star.svg"
 import "./BenefitsIB.css";
 import Footer from "../../components/Footer/Footer";
 
@@ -273,79 +274,31 @@ function BenefitIB() {
                 experienced in teaching according to the IB framework. This curriculum emphasizes inquiry-
                 based learning and activity-based learning.
               </span>
-              <div className="benefit_detail_body_sub">
-                <div className="benefit_detail_body_sub_tile">
-                  <div className="benefit_detail_body_sub_tile_icon">
-                    <img src={green_tick} alt={green_tick} />
-                  </div>
-                  <div className="benefit_detail_body_sub_tile_text">
-                    IB Math Tutoring
-                  </div>
-                </div>
 
-                <div className="benefit_detail_body_sub_tile">
-                  <div className="benefit_detail_body_sub_tile_icon">
-                    <img src={green_tick} alt={green_tick} />
+              <div className="pyp_details_container">
+                <div className="pyp_heading_container">
+                  <div className="pyp_heading_icon">
+                    <img src={green_star} alt={green_star} />
                   </div>
-                  <div className="benefit_detail_body_sub_tile_text">
-                    IB Physics Tutoring
-                  </div>
+                  <div className="pyp_heading_text">The PYP has five basic elements :</div>
                 </div>
-
-                <div className="benefit_detail_body_sub_tile">
-                  <div className="benefit_detail_body_sub_tile_icon">
-                    <img src={green_tick} alt={green_tick} />
-                  </div>
-                  <div className="benefit_detail_body_sub_tile_text">
-                    IB Chemistry Tutoring
-                  </div>
-                </div>
-
-                <div className="benefit_detail_body_sub_tile">
-                  <div className="benefit_detail_body_sub_tile_icon">
-                    <img src={green_tick} alt={green_tick} />
-                  </div>
-                  <div className="benefit_detail_body_sub_tile_text">
-                    IB Psychology Tutoring
-                  </div>
-                </div>
-
-                <div className="benefit_detail_body_sub_tile">
-                  <div className="benefit_detail_body_sub_tile_icon">
-                    <img src={green_tick} alt={green_tick} />
-                  </div>
-                  <div className="benefit_detail_body_sub_tile_text">
-                    IB Biology Tutoring
-                  </div>
-                </div>
-
-                <div className="benefit_detail_body_sub_tile">
-                  <div className="benefit_detail_body_sub_tile_icon">
-                    <img src={green_tick} alt={green_tick} />
-                  </div>
-                  <div className="benefit_detail_body_sub_tile_text">
-                    IB Histroy Tutoring
-                  </div>
-                </div>
-
-                <div className="benefit_detail_body_sub_tile">
-                  <div className="benefit_detail_body_sub_tile_icon">
-                    <img src={green_tick} alt={green_tick} />
-                  </div>
-                  <div className="benefit_detail_body_sub_tile_text">
-                    IB Geography Tutoring
-                  </div>
-                </div>
-
-                <div className="benefit_detail_body_sub_tile">
-                  <div className="benefit_detail_body_sub_tile_icon">
-                    <img src={green_tick} alt={green_tick} />
-                  </div>
-                  <div className="benefit_detail_body_sub_tile_text">
-                    IB Economics Tutoring
-                  </div>
+                <div className="pyp_list_container">
+                  <ul className="pyp_list_text">
+                    <li>	Knowledge (both disciplinary and transdisciplinary), which is represented by traditional
+                      subject areas such as language, math, science, social studies, arts, and PE.
+                    </li>
+                    <li>Concepts that students investigate through structured inquiry to gain a cohesive, in-depth
+                      grasp of both within and outside of academic areas.</li>
+                    <li>Skills are the broad capabilities that students build and utilize during their education and in
+                      their lives outside of the classroom.</li>
+                    <li>Attitudes that contribute to international awareness and the well-being of individuals and
+                      learning communities, and which are directly related to the IB learner profile.</li>
+                    <li>Actions of successful enquiry that lead to responsible, intelligent, and appropriate
+                      contribution to people and communities.</li>
+                  </ul>
                 </div>
               </div>
+
 
             </div>
           </div>

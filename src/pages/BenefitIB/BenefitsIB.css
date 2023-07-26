@@ -380,9 +380,54 @@
 }
 
 
+.pyp_heading_container{
+  display: flex;
+  gap: 10px;
+  /* height: 40px !important; */
+  /* width: 300px !important; */
+  
+}
 
+.pyp_heading_icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.pyp_heading_icon img{
+  width: 30px;
+}
 
+.pyp_heading_text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "biennalemedium";
+  font-size: clamp(1.25rem, 1.0739rem + 0.7512vw, 1.75rem);
+  color: #0252DD;
+  font-weight: 500;
+  line-height: 171.5%;
+}
+
+.pyp_list_container{
+  padding: 20px 35px;
+}
+
+.pyp_list_text{
+  color: #0F3C65;
+  font-family: "biennalemedium";
+  font-size: clamp(1rem, 0.9286rem + 0.3571vw, 1.25rem);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140.5%; /* 28.1px */
+  list-style-image: url('../../assets/images/list_disc.svg');
+}
+
+.pyp_list_text li{
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
 
 
 
