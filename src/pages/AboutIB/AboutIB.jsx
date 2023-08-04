@@ -56,9 +56,9 @@ const AboutIB = () => {
           <div className="aboutIB_text t">
             <div>
               <h1>
-                A variety of <br />
+                A Variety Of &<br />
                 <span> Educational Programs </span> <br />
-                offered by IB
+                Offered By IB
               </h1>
             </div>
             <div>
@@ -86,8 +86,8 @@ const AboutIB = () => {
           <div className="aboutIB_text t">
             <div>
               <h1>
-                The <span> IB Curriculumn</span> is 
-                well kwon worldwide
+                The <span> IB Curriculumn</span> Is 
+                Well Known Worldwide
               </h1>
             </div>
             <div>

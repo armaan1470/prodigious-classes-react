@@ -36,7 +36,7 @@
 }
 
 .benefit_header_text {
-  font-size: clamp(2rem, -0.8341rem + 9.0293vw, 4.5rem);
+  font-size: var(--banner-heading);
   color: white;
   font-family: "biennalemedium";
   position: absolute;
@@ -107,12 +107,12 @@
 
 .benefit_bottom_card {
   background-color: white;
-  padding: 30px;
-  height: 411px;
-  line-height: 1.4rem ;
-  font-size: 1rem;
-  font-family: "biennalemedium";
-  color: #6B6B69;
+  padding: 20px 30px;
+  height: 480px;
+  font-size: var(--detail-small);
+  font-family: var(--font-1);
+  line-height: var(--detail-lh2);
+  color: #6b6b69;
   position: relative;
 }
 

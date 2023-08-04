@@ -39,8 +39,8 @@
   font-family: 'biennalesemibold';
   font-style: normal;
   font-weight: 600;
-  font-size: clamp(2.6rem, 1.2rem + 4vw, 4.8rem);
-  line-height: 124.5%;
+  font-size: var(--banner-h);
+  /* line-height: var(--banner-lh); */
   text-align: center;
   animation: none;
   transition: all 0.6s ease-in-out;
@@ -79,8 +79,9 @@
   .aboutIB_text {
     opacity: 0;
     padding: 0 80px;
-    font-size: clamp(1rem, 0.9429rem + 0.2857vw, 1.2rem);
-    font-family: "biennalemedium";
+    font-size: var(--detail-primary);
+    font-family: var(--font-1);
+    line-height: var(--detail-lh1);
     color: #6b6b69;
     width:50%;
     flex-wrap:wrap;
@@ -103,11 +104,13 @@
 
 .aboutIB_text h1 {
   line-height: 38px;
-  font-family: "biennalemedium";
+  font-size: var(--para-h);
+  font-family: var(--font-3);
+  line-height: var(--para-lh);
   color: #00028a;
   padding: clamp(10px, 3vw, 1.25rem) 0;
   position: relative;
-  font-weight: 500 !important;
+  font-weight: 600;
 }
 
 .aboutIB_text span {
@@ -123,9 +126,9 @@
     flex-direction: column;
   }
   .aboutIB_text{
-    margin: 0 auto;
-    width:95%;
-    padding:0 30px;
+    margin: 0 !important;
+    width:100%;
+    padding:0 15px;
     order:2;
   }
   .aboutIB_ilust1{

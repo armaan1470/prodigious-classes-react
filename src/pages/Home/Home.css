@@ -459,11 +459,13 @@
 }
 
 .text3 h1 {
-  font-size: clamp(2rem, 5vw + 1rem, 2.8rem);
-  font-family: "biennalemedium";
+  font-size: var(--content-h);
+  font-family: var(--font-3);
   font-weight: 500;
   padding: clamp(10px, 3vw, 1.08rem) 0;
   color: #00028a;
+  line-height: var(--content-lh);
+  font-weight: 500;
 
 }
 .text3 span {
@@ -472,13 +474,14 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
-  font-family: "biennalemedium";
+  font-family: var(--font-3);
   /* font-weight: 600 !important; */
 }
 
 .text3 p {
-  font-size: 1.3rem;
-  font-family: "biennalemedium";
+  font-size: var(--detail-primary);
+  font-family: var(--font-1);
+  line-height: var(--detail-lh1);
   opacity: 0.6;
 }
 
@@ -656,18 +659,22 @@
 }
 .text4 p:first-child {
   color: #757575;
-  font-size: 1.5rem;
+  font-size: var(--sub-h);
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-family: "biennalesemibold";
+  font-family: var(--font-3);
   padding-top: 4rem;
+  line-height: var(--sub-lh);
+  font-weight: 600;
 }
 .text4 p:last-child {
-  font-size: 3rem;
+  font-size: var(--content-h);
   text-align: center;
   color: #FF5300;
-  font-family: "biennalemedium";
+  font-family: var(--font-3);
+  line-height: var(--content-lh);
   padding: 1rem 0 0 0;
+  font-weight: 500;
 }
 .text4 p span {
   position: relative;
