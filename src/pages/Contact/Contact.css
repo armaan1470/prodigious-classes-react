@@ -17,10 +17,10 @@
   display: flex;
   align-items: end;
   color: #ffffff;
-  font-family: "biennalesemibold";
+  font-family: var(--font-secondary);
   font-style: normal;
   font-weight: 600;
-  font-size: var(--banner-heading);
+  font-size: var(--banner-h);
   line-height: 124.5%;
   text-align: center;
   animation: none;
@@ -79,7 +79,7 @@
 
 .primary_address {
   padding-bottom: 10px;
-  font-family: "biennalesemibold";
+  font-family: var(--font-secondary);
   font-weight: 600;
   font-size: 25.3086px;
   line-height: 124.5%;
@@ -87,7 +87,7 @@
 }
 
 .secondary_address {
-  font-family: "biennalemedium";
+  font-family: var(--font-primary);
   font-weight: 500;
   font-size: 17.8px;
   line-height: 124.5%;
@@ -96,7 +96,6 @@
 
 .contact_details_links {
   padding-top: 50px;
-  /* border: 2px solid red; */
   display: flex;
   justify-content: space-evenly;
 }
@@ -116,9 +115,9 @@
 
 .contact_link_text {
   text-align: center;
-  font-family: "biennalemedium";
+  font-family: var(--font-primary);
   font-weight: 500;
-  font-size: clamp(1rem, 0.6831rem + 1.3521vw, 1.9rem);
+  font-size: var(--detail-large);
   line-height: 124.5%;
   color: #787878;
   cursor: pointer;
@@ -166,7 +165,7 @@
 }
 
 .social_heading {
-  font-family: "biennalemedium";
+  font-family: var(--font-primary);
   font-weight: 500;
   font-size: 25.3696px;
   line-height: 124.5%;

@@ -32,11 +32,11 @@
 .aboutIB_banner_text {
   padding: 0 1.25rem;
   position: absolute;
-  bottom: -80px;
+  bottom: -85px;
   display: flex;
   align-items: end;
   color: #FFFFFF;
-  font-family: 'biennalesemibold';
+  font-family: var(--font-secondary);
   font-style: normal;
   font-weight: 600;
   font-size: var(--banner-h);
@@ -79,8 +79,8 @@
   .aboutIB_text {
     opacity: 0;
     padding: 0 80px;
-    font-size: var(--detail-primary);
-    font-family: var(--font-1);
+    font-size: var(--detail-medium);
+    font-family: var(--font-secondary);
     line-height: var(--detail-lh1);
     color: #6b6b69;
     width:50%;

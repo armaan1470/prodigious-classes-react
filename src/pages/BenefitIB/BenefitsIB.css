@@ -36,9 +36,9 @@
 }
 
 .benefit_header_text {
-  font-size: var(--banner-heading);
+  font-size: var(--banner-h);
   color: white;
-  font-family: "biennalemedium";
+  font-family: var(--font-secondary);
   position: absolute;
   text-align: center;
   top: 25%;
@@ -79,10 +79,10 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  font-size: 1.8rem;
+  font-size: var(--detail-large);
   text-align: center;
-  font-family: "biennalelight";
-  font-weight: 700;
+  font-family: var(--font-primary);
+  font-weight: 600;
 }
 
 .benefit_main_card:first-child {
@@ -110,7 +110,7 @@
   padding: 20px 30px;
   height: 480px;
   font-size: var(--detail-small);
-  font-family: var(--font-1);
+  font-family: var(--font-primary);
   line-height: var(--detail-lh2);
   color: #6b6b69;
   position: relative;
@@ -176,8 +176,8 @@
 .wwoff_content_heading{
   color: #FE3000;
   /* text-align: center; */
-  font-family: "biennalemedium";
-  font-size: clamp(3.438rem, 2.991rem + 1.19vw, 4.063rem);
+  font-family: var(--font-secondary);
+  font-size: var(--content-h);
   font-style: normal;
   font-weight: 500;
   line-height: 124%;
@@ -185,11 +185,11 @@
 
 .wwoff_content_text{
   color: #6C6C6A;
-  font-family: "biennalemedium";
-  font-size: clamp(1rem, 0.9286rem + 0.3571vw, 1.25rem);
+  font-family: var(--font-primary);
+  font-size: var(--detail-medium);
   font-style: normal;
   font-weight: 500;
-  line-height: 124%;
+  line-height: var(--detail-lh1);
 }
 
 
@@ -220,8 +220,8 @@
   align-items: center;
   color: white;
   height: 100%;
-  font-size: 1.9rem;
-  font-family: "biennalemedium";
+  font-size: var(--detail-large);
+  font-family: var(--font-secondary);
   font-weight: 400;
   padding: 0 10px;
 }
@@ -235,7 +235,6 @@
   height: 0;
   border-style: solid;
   border-width: 7px 0 7px 7px;
-
 }
 
 .wwoff_tile_head.tile_1::after{
@@ -255,8 +254,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.6rem;
-  font-family: "biennalesemibold";
+  font-size: var(--detail-large);
+  font-family:var(--font-secondary);
 
 }
 
@@ -282,8 +281,8 @@
 
 .benefit_detail_heading_text{
   padding: 20px 0 20px clamp(1.25rem, 0.3697rem + 3.7559vw, 3.75rem);
-  font-size: 3.2rem;
-  font-family: "biennalemedium";
+  font-size: var(--content-h);
+  font-family: var(--font-secondary);
 }
 
 .benefit_detail_body_container{
@@ -301,8 +300,8 @@
 
 .benefit_detail_body span{
   color: #6C6C6A;
-  font-family: "biennalemedium";
-  font-size: clamp(1rem, 0.9286rem + 0.3571vw, 1.25rem);
+  font-family: var(--font-primary);
+  font-size: var(--detail-large);
   font-style: normal;
   font-weight: 500;
   line-height: 124%;
@@ -340,8 +339,8 @@
   justify-content: center;
   align-items: center;
   color: #6B6B69;
-  font-family: "biennalemedium";
-  font-size: clamp(1.25rem, 1.0739rem + 0.7512vw, 1.75rem);
+  font-family:var(--font-primary);
+  font-size: var(--detail-large);
   font-style: normal;
   font-weight: 500;
   line-height: 124%; /* 35.712px */
@@ -372,8 +371,8 @@
 .myp_icon_text{
   color: #154CA9;
   text-align: center;
-  font-family: "biennalemedium";
-  font-size: clamp(1.25rem, 1.1972rem + 0.2254vw, 1.4rem);
+  font-family: var(--font-primary);
+  font-size: var(--detail-large);
   font-style: normal;
   font-weight: 500;
   line-height: 124%;
@@ -403,8 +402,8 @@
   justify-content: center;
   align-items: center;
 
-  font-family: "biennalemedium";
-  font-size: clamp(1.25rem, 1.0739rem + 0.7512vw, 1.75rem);
+  font-family: var(--font-secondary);
+  font-size: var(--para-h);
   color: #0252DD;
   font-weight: 500;
   line-height: 171.5%;
@@ -416,8 +415,8 @@
 
 .pyp_list_text{
   color: #0F3C65;
-  font-family: "biennalemedium";
-  font-size: clamp(1rem, 0.9286rem + 0.3571vw, 1.25rem);
+  font-family: var(--font-primary);
+  font-size: var(--detail-large);
   font-style: normal;
   font-weight: 500;
   line-height: 140.5%; /* 28.1px */

@@ -34,7 +34,7 @@
     flex-direction: column;
     width: 90vw;
     max-width: 1000px;
-    font-family: "biennalemedium";
+    font-family:var(--font-secondary);
     font-weight: 500;
 
 
@@ -42,9 +42,8 @@
 
 .hero_text_heading{
     text-align: center;
-    font-size: clamp(2rem, 0.0495rem + 4.7525vw, 4rem);
-    line-height: 88.32px;
-
+    font-size: var(--content-h);
+    line-height: var(--detail-lh3);
 }
 
 
@@ -111,8 +110,8 @@
 .hero_subtext{
     text-align: justify;
     margin: 10px 0;
-    font-size: clamp(1rem, 0.9286rem + 0.3571vw, 1.25rem);
-    line-height: 27.8px;
+    font-size: var(--detail-medium);
+    line-height: var(--detail-lh1);
     color: #6c6c6a;
     flex-wrap: wrap;
 }
@@ -176,14 +175,13 @@
 .dir_text{
     font-family: "biennalemedium";
     padding: clamp(2rem, 0.8929rem + 1.7857vw, 2.5rem);
-    font-size:clamp(1rem, 0.9286rem + 0.3571vw, 1.25rem);
 }
 
 .dir_heading{
     font-style: normal;
     font-weight: 350;
     flex-wrap: nowrap;
-    font-size: clamp(2rem, 1.6786rem + 1.6071vw, 3.125rem);
+    font-size: var(--content-h);
     line-height: 139%;
     background: -webkit-linear-gradient(146deg, red 70%, rgb(255, 150, 0));
     background-clip: text;
@@ -193,9 +191,9 @@
 }
 
 .dir_subtext{
-    font-size: 18px;
+    font-size: var(--detail-medium);
     font-weight: 500;
-    line-height: 25.02px;
+    line-height: var(--detail-lh1);
     color: #6c6c6a;
     margin: 16px 0;
     
@@ -220,10 +218,10 @@
 }
 
 .stories_heading{
-    font-family: 'biennalemedium';
+    font-family: var(--font-secondary);
     font-style: normal;
     font-weight: 500;
-    font-size: 47.3208px;
+    font-size: var(--content-h);
     line-height: 139%;
     color: #FFFFFF;
     padding-bottom: 1rem;
@@ -283,14 +281,14 @@
 }
 .card_details{
     color: white;
-    font-family: 'biennalemedium';
+    font-family: var(--font-secondary);
     padding: 0 10px;
 }
 
 .primary_text{
     font-style: normal;
     font-weight: 500;
-    font-size: 19.3585px;
+    font-size: var(--detail-medium);
     line-height: 139%;
     margin: 5px 0;
 }
@@ -298,7 +296,7 @@
 .secondary_text{
     font-style: normal;
     font-weight: 500;
-    font-size: 13.5px;
+    font-size: var(--detail-small);
     line-height: 139%;
 }
 
@@ -311,10 +309,10 @@
 }
 
 .team_heading{
-    font-family: "biennalemedium";
-    font-size: clamp(1.7rem, 0.0495rem + 4.7525vw, 3rem);
+    font-family:var(--font-secondary);
+    font-size: var(--content-h);
     padding: 9rem 0 2.9rem 0;
-    line-height: 65.78px;
+    line-height: var(--detail-lh1);
     color: #00028a;
     text-align: center;
     font-weight: 500;

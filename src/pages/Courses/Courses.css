@@ -25,7 +25,7 @@
       max-width: 874px;
       border-radius: 15px;
       margin-top: 95px;
-      font-family: "biennalemedium";
+      font-family: var(--font-secondary);
       font-weight: 500;
       opacity: 0;
     }
@@ -39,18 +39,17 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      /* overflow: hidden;   */
-      /* Added to prevent image overflow */
     }
 
     .card_heading_text {
-      font-size: 60px;
+      font-size: var(--content-h);
       flex: 1.6;
       color: #FFFFFF;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100%;
+
       /* height: 100%; */
     }
     
@@ -147,6 +146,8 @@
       text-align: justify;
       margin: 10px 0;
       color: #6c6c6a;
+      font-size: var(--detail-medium);
+      font-family: var(--font-primary);
   }
 
 
