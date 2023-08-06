@@ -51,9 +51,9 @@
   --detail-lh1: 1.6;
   --detail-lh2: 1.85;
   --detail-lh3: 1.65;
-  --banner-h: 75px;
-  --content-h: 48px;
-  --para-h: 35px;
+  --banner-h: clamp(1.25rem, 0.2679rem + 4.9107vw, 4.6875rem);
+  --content-h: clamp(1.125rem, 0.5893rem + 2.6786vw, 3rem);
+  --para-h:clamp(1rem, 0.6607rem + 1.6964vw, 2.1875rem);
   --sub-h: 24px;
   --banner-lh: 1.3;
   --content-lh: 1.2;
