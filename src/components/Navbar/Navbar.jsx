@@ -217,11 +217,11 @@ function Navbar() {
                 >
                   <li className="dropdown-item">
                     <NavLink
-                      to="/about-ib"
+                      to="/about-ig"
                       className="sub-sub-nav-links"
                       onClick={closeMobileMenu}
                     >
-                      Introduction
+                      Intro to IGCSE
                     </NavLink>
                   </li>
                   <li className="dropdown-item">

@@ -105,7 +105,7 @@
 .aboutIB_text h1 {
   line-height: 38px;
   font-size: var(--para-h);
-  font-family: var(--font-3);
+  font-family: var(--font-secondary);
   line-height: var(--para-lh);
   color: #00028a;
   padding: clamp(10px, 3vw, 1.25rem) 0;
