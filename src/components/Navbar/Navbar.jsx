@@ -325,6 +325,15 @@ function Navbar() {
           </li> */}
 
           {/* drop down for Career  Counselling */}
+          <li className="nav-item">
+            <NavLink
+              to="/writing-support"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              AS & A Levels
+            </NavLink>
+          </li>
 
           <li
             className="nav-item"
@@ -385,6 +394,7 @@ function Navbar() {
               </div>
             )}
           </li>
+          
           <li className="nav-item">
             <NavLink
               to="/writing-support"

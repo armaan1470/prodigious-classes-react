@@ -1,7 +1,7 @@
 
 .header{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: relative;
 }
@@ -47,7 +47,7 @@
 }
 
 .igsce_content{
-    padding: 0 clamp(2rem, 1.1429rem + 4.2857vw, 5rem);    
+    padding: 0 clamp(1rem, 1.1429rem + 4.2857vw, 5rem);    
     max-width: 650px;
     display: flex;
     justify-content: center;
@@ -88,6 +88,6 @@
         display: none;
     }
     .intro_igsce{
-        display: block;
+        flex-direction: column-reverse;
     }
 }

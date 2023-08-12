@@ -57,9 +57,9 @@ const IntroIG = () => {
           </div>
         </div>
       </div>
-      <div className="intro_igsce">
+      <div className="intro_igsce col-rev">
         <div className="igsce_content">
-          <div className="content-detail">
+          <div className="content-detail ">
             <p>
               pecialization. Upon completing their IGCSEs, students can progress
               to the next level of education, such as the International
