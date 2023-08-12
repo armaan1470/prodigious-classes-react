@@ -21,11 +21,11 @@ const IntroIG = () => {
           <img src={logo} alt="logo" />
         </div>
       </div>
-      <div className="intro_igsce">
+      <div className="intro_igsce1">
         <div className="igsce_ilust_container">
           <img src={ilust1} alt="ilustration" />
         </div>
-        <div className="igsce_content">
+        <div className="igsce_content1">
           <div className="content_header">
             <p>IGCSE TUTION</p>
             <h1>Introduction to IGCSE</h1>
@@ -57,11 +57,13 @@ const IntroIG = () => {
           </div>
         </div>
       </div>
-      <div className="intro_igsce col-rev">
-        <div className="igsce_content">
+      <div className="intro_igsce2">
+        <div className="igsce_content2">
           <div className="content-detail ">
             <p>
-              pecialization. Upon completing their IGCSEs, students can progress
+              In terms of career opportunities, the IGCSE curriculum provides a strong
+              foundation for further education and specialization.
+              Upon completing their IGCSEs, students can progress
               to the next level of education, such as the International
               Baccalaureate (IB) Diploma Programme, A-Levels, or other
               pre-university courses. These qualifications can open doors to
@@ -88,7 +90,9 @@ const IntroIG = () => {
           <img src={ilust2} alt="ilustration" />
         </div>
       </div>
+      <div className="bottom_space"></div>
     </div>
+
   );
 };
 
