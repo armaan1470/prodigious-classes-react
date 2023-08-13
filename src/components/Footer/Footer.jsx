@@ -108,7 +108,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className="footer_bottom_container">
-                    Copyright &copy; 2023 Philomathean Carrer Institute. All Rights Reserved
+                    <div className='bottom_text_copyright'>Copyright &copy; 2023 Philomathean Carrer Institute. All Rights Reserved</div>
                 </div>
             </footer>
         </>

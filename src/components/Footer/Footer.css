@@ -102,6 +102,11 @@
   justify-content: center;
 }
 
+.bottom_text_copyright{
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
 .padding_right{
   padding-right: 30px;
 }
