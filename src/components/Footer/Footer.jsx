@@ -22,13 +22,13 @@ function Footer() {
             <footer className='footer'>
                 <div className="footer_top_container">
                     <div className="footer_top_row">
-                        <div className="footer_top_column">
+                        <div className="footer_top_column footer_first_top_column">
                             <img src={whitelogo} alt={whitelogo} className='footer_logo' />
                             <div className='footer_detail_text footer_logo_text'>
                                 We bring you a world-class team of highly experienced and qualified faculty
                             </div>
                         </div>
-                        <div className="footer_top_column">
+                        <div className="footer_top_column padding_right">
                             <div className="footer_heading_text">
                                 Quick Links
                             </div>
@@ -43,7 +43,7 @@ function Footer() {
 
                             </div>
                         </div>
-                        <div className="footer_top_column">
+                        <div className="footer_top_column footer_supp_col">
                             <div className="footer_heading_text">
                                 Support
                             </div>
