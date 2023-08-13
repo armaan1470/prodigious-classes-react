@@ -159,6 +159,9 @@
       flex-direction: column;
     }
 
+    .bottom_text_copyright{
+      padding: 0 95px 0 15px;
+    }
 
 
   }
