@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Footer.css"
-import whitelogo from "../../assets/images/logo-white.png";
+import whitelogo from "../../assets/images/logo-white.svg";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import ReactDOMServer from 'react-dom/server';
