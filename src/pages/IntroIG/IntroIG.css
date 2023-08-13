@@ -1,5 +1,69 @@
+.banner{
+    position: relative;
+    height: 300px;
+    /* height: 100%; */
+    background-image: url("../../assets/igcsepagecontent/4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
 
-.header{
+.banner_content_area{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 15px;
+}
+
+
+.banner_text_content_area{
+    color: white;
+}
+
+.banner_img_content_area{
+    padding: 15px 0 0 0 ;
+}
+
+.banner_img_content{
+    width: clamp(8.125rem, 4.107rem + 10.714vw, 13.75rem);
+}
+
+.banner_heading{
+    font-family: var(--font-secondary);
+    font-size: var(--banner-h);
+    line-height: var(--banner-lh);
+    font-weight: 800;
+}
+
+.banner_text{
+    font-family: var(--font-primary);
+    font-size: clamp(0.813rem, 0.679rem + 0.357vw, 1rem);
+    font-weight: 300;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* .banner:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #0009;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+} */
+
+
+
+/* .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,7 +101,7 @@
 .content-holder p{
     font-family: var(--font-primary);
     font-size: var(--detail-small);
-}
+} */
 
 .intro_igsce1 {
     display: flex;
@@ -161,5 +225,12 @@
     /* .igsce_ilust_container img{
         min-width: 300px;
     } */
+
+  }
+
+  @media screen and (max-width: 375px) {
+    .banner_content_area{
+        flex-direction: column-reverse;
+    }
 
   }

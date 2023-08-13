@@ -8,7 +8,7 @@ import ilust2 from "../../assets/igcsepagecontent/2.png";
 const IntroIG = () => {
   return (
     <div className="main_container">
-      <div className="header">
+      {/* <div className="header">
         <img src={banner} alt="banner" className="banner" />
         <div className="content-holder">
           <div className="details">
@@ -20,7 +20,25 @@ const IntroIG = () => {
           </div>
           <img src={logo} alt="logo" />
         </div>
+      </div> */}
+      <div className="banner">
+
+        <div className="banner_content_area">
+          <div className="banner_text_content_area">
+            <div className="banner_heading">IGCSE Tuition</div>
+            <div className="banner_text">World Class and Certified IGCSE Tutors at Your Fingertips. <br /> Get
+              Individualized, Focused Tuition Classes and Ace your Assessment.</div>
+          </div>
+          <div className="banner_img_content_area">
+              <img src={logo} alt={logo} className="banner_img_content"/>
+          </div>
+
+        </div>
+
+
       </div>
+
+
       <div className="intro_igsce1">
         <div className="igsce_ilust_container">
           <img src={ilust1} alt="ilustration" />
