@@ -216,9 +216,10 @@
 
 .book_in_detail h1{
     /* font-weight: bold; */
-    font-size: var(--para-h);
+    font-size: var(--template-h);
     line-height: var(--banner-lh);
     padding:10px;
+    font-weight: 700 !important;
 
 }
 

@@ -116,7 +116,7 @@ const IntroIG = () => {
       <div className="book_in_wrapper">
         <div className="book_in_container">
           <div className="book_in_detail">
-            <small>Free demo lecture</small>
+            <small>Free Demo Lecture</small>
             <h1>
               Ready to dive in?<br />
               Attain your Free Demo Lecture today.
