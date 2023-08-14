@@ -5,15 +5,15 @@
 .art1{
     position: absolute;
     top:20%;
-    right:-30px;
-    width:100px;
+    right:-25px;
+    width:125px;
     z-index:-1;
 }
 .art2{
     position: absolute;
     bottom:37% ;
-    width:100px;
-    left:-30px;
+    width:125px;
+    left:-35px;
 }
 
 .banner{
