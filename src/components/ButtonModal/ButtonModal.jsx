@@ -5,7 +5,7 @@ import Modal from "@mui/material/Modal"
 import Form from "../Form/Form"
 import "./ButtonModal.css";
 
-const ButtonModal = ({ name }) => {
+const ButtonModal = ({ name, bg="linear-gradient(rgb(255, 161, 0), rgb(255, 84, 0))",clr="white" ,bld = "400"}) => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => {
     setOpen(true);
@@ -44,7 +44,13 @@ const ButtonModal = ({ name }) => {
   return (
     <>
       <div>
-        <button className="book_btn" onClick={handleOpen}>
+        <button className="book_btn" onClick={handleOpen}
+        style={{
+        background: bg,
+          color:clr,
+          fontWeight:bld
+      }}
+        >
           {name}
         </button>
       </div>

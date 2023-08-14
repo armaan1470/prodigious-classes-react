@@ -120,7 +120,7 @@
     padding: 6rem 0 0 0;
     gap: 30px;
     width: clamp(300px,100%,1200px);
-    margin: 0 auto;
+    margin: 0 auto 3rem auto;
 }
 
 .igsce_content1{ 
@@ -149,9 +149,9 @@
     font-weight: 600;
 }
 .igsce_content1 .content_header p{
-    font-size: var(--sub-h);
+    font-size: var(--detail-large);
     color:#2464a2;
-    font-weight: 600;
+    font-weight: 400;
 }
 .igsce_content1 .content-detail{
     padding:0 clamp(1rem , 0.5714rem + 2.1429vw,2.5rem);
@@ -165,7 +165,6 @@
     font-family: var(--font-primary);
     font-size: var(--detail-small);
     width: 74%;
-    /* padding-bottom: 50px; */
 }
 
 .igsce_ilust_container {
@@ -179,6 +178,29 @@
     padding:20px;
 }
 
+.book_in_container{
+    background-image:url("../../assets/igcsepagecontent/3.jpg");
+    background-size: cover;
+    height:250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--font-secondary);
+    color:white;
+}
+.book_in_detail h1{
+    /* font-weight: bold; */
+    font-size: var(--para-h);
+    line-height: var(--banner-lh);
+    padding:10px;
+
+}
+
+.book_in_detail small {
+    font-size: var(--detail-large);
+    padding:10px;
+
+}
 @media screen and (max-width: 800px) {
     .content-holder p{
         display: none;
@@ -221,6 +243,12 @@
         flex-direction: column;
     }
 
+    .igsce_ilust_container{
+        justify-content: center;
+    }
+    .book_in_container{
+        flex-direction: column;
+    }
 
     /* .igsce_ilust_container img{
         min-width: 300px;

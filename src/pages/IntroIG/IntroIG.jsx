@@ -4,6 +4,7 @@ import banner from "../../assets/igcsepagecontent/4.jpg";
 import logo from "../../assets/igcsepagecontent/5.png";
 import ilust1 from "../../assets/igcsepagecontent/1.png";
 import ilust2 from "../../assets/igcsepagecontent/2.png";
+import ButtonModal from "../../components/ButtonModal/ButtonModal"
 
 const IntroIG = () => {
   return (
@@ -108,7 +109,17 @@ const IntroIG = () => {
           <img src={ilust2} alt="ilustration" />
         </div>
       </div>
-      <div className="bottom_space"></div>
+      <div className="book_in_container">
+      <div className="book_in_detail">
+        <small>Free demo lecture</small>
+        <h1>
+          Ready to dive in?<br/>
+          Attain your Free Demo Lecture today.
+        </h1>
+      </div>
+        <ButtonModal name="BOOK NOW" bg="white" clr="orange" bld="600"/>
+      </div>
+      {/* <div className="bottom_space"></div> */}
     </div>
 
   );
