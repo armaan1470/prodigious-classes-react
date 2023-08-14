@@ -1,3 +1,21 @@
+.main_container{
+    position: relative;
+}
+
+.art1{
+    position: absolute;
+    top:20%;
+    right:-30px;
+    width:200px;
+    z-index:-1;
+}
+.art2{
+    position: absolute;
+    bottom:30% ;
+    width:200px;
+    left:-60px;
+}
+
 .banner{
     position: relative;
     height: 300px;

@@ -4,11 +4,15 @@ import banner from "../../assets/igcsepagecontent/4.jpg";
 import logo from "../../assets/igcsepagecontent/5.png";
 import ilust1 from "../../assets/igcsepagecontent/1.png";
 import ilust2 from "../../assets/igcsepagecontent/2.png";
-import ButtonModal from "../../components/ButtonModal/ButtonModal"
+import ButtonModal from "../../components/ButtonModal/ButtonModal";
+import idea from "../../assets/images/idea.png";
+import dna from "../../assets/images/dna.png";
 
 const IntroIG = () => {
   return (
     <div className="main_container">
+      <img src={idea} alt="art" className="art1"/>
+      <img src={dna} alt="art" className="art2"/>
       {/* <div className="header">
         <img src={banner} alt="banner" className="banner" />
         <div className="content-holder">
