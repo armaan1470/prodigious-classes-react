@@ -197,26 +197,35 @@
     padding:20px;
 }
 
-.book_in_container{
+.book_in_wrapper{
     background-image:url("../../assets/igcsepagecontent/3.jpg");
     background-size: cover;
-    height:250px;
+    height:200px;
+    font-family: var(--font-secondary);
+    color:white;
+    width: 100%;
+}
+
+.book_in_container{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: var(--font-secondary);
-    color:white;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
 }
+
 .book_in_detail h1{
     /* font-weight: bold; */
-    font-size: var(--para-h);
+    font-size: var(--template-h);
     line-height: var(--banner-lh);
     padding:10px;
+    font-weight: 700 !important;
 
 }
 
 .book_in_detail small {
-    font-size: var(--detail-large);
+    font-size: var(--detail-medium);
     padding:10px;
 
 }

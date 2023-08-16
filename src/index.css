@@ -54,6 +54,7 @@
   --banner-h: clamp(2.5rem, 1.607rem + 2.381vw, 3.75rem);
   --content-h: clamp(1.563rem, 1.057rem + 1.881vw, 2.75rem);
   --para-h: clamp(1.563rem, 1.057rem + 1.881vw, 2.75rem);
+  --template-h: clamp(1.5rem, 0.964rem + 1.429vw, 2.25rem);
   --sub-h: clamp(1rem, 0.787rem + 0.792vw, 1.5rem);
   --banner-lh: 1.2;
   --content-lh: 1.2;
