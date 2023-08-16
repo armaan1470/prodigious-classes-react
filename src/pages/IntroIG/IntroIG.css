@@ -14,6 +14,7 @@
     bottom:37% ;
     width:125px;
     left:-35px;
+    z-index:-1;
 }
 
 .banner{

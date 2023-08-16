@@ -226,7 +226,7 @@ function Navbar() {
                   </li>
                   <li className="dropdown-item">
                     <NavLink
-                      to="/benefit-ib"
+                      to="/subject-ig"
                       className="sub-sub-nav-links"
                       onClick={closeMobileMenu}
                     >

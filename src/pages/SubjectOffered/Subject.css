@@ -1,0 +1,48 @@
+.mr-b{
+    margin-bottom: 20px;
+}
+.igsce_ilust_container img{
+    width:85%;
+}
+.subject-list{
+    font-size: var(--detail-medium);
+}
+.list-header{
+    color:#2464a2;
+    font-weight: 500;
+    list-style: none;
+    position: relative;
+    padding-left: 22px;
+}
+.list-header::before{
+    content: url("../../assets/IGCSE Content/Subjects Offered at IGCSE/Right tick.svg");
+    width:10px;
+    height: 10px;
+    position: absolute;
+    left:-3px;
+    top:1px;
+}
+.list-inner > li{
+    list-style-type: disc;
+    list-style-position: inside;
+}
+.list-inner > li::marker{
+    color:orange;
+}
+
+.igsce_content2 .content-detail{
+    padding: 0 20px;
+}
+.list-container{
+    font-size: var(--detail-medium);
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr); */
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap:1rem .75rem;
+}
+.flex-list:not(:last-child){
+     flex-basis: calc(50% - 10px);
+     box-sizing: border-box; 
+}
