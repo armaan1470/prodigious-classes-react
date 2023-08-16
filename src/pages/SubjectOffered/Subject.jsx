@@ -3,6 +3,7 @@ import logo from "../../assets/IGCSE Content/Subjects Offered at IGCSE/5.png";
 import ilust1 from "../../assets/IGCSE Content/Subjects Offered at IGCSE/1.png";
 import ilust2 from "../../assets/IGCSE Content/Subjects Offered at IGCSE/2.png";
 import "./Subject.css";
+import ButtonModal from "../../components/ButtonModal/ButtonModal";
 
 const Subject = () => {
   return (
@@ -107,6 +108,16 @@ const Subject = () => {
         <div className="igsce_ilust_container  ">
           <img src={ilust2} alt="ilustration" />
         </div>
+      </div>
+      <div className="book_in_container">
+      <div className="book_in_detail">
+        <small>Free demo lecture</small>
+        <h1>
+          Ready to dive in?<br/>
+          Attain your Free Demo Lecture today.
+        </h1>
+      </div>
+        <ButtonModal name="BOOK NOW" bg="white" clr="orange" bld="600"/>
       </div>
     </div>
   );
