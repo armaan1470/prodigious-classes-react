@@ -1,0 +1,12 @@
+.list-header{
+    color:black;
+    font-weight: normal;
+}
+.list-header::before{
+    content: url("../../assets/IGCSE Content/Why Choose IGCSE/Right tick bullet.svg");
+    width:10px;
+    height: 10px;
+    position: absolute;
+    left:-3px;
+    top:3px;
+}
