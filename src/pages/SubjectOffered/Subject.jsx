@@ -109,15 +109,18 @@ const Subject = () => {
           <img src={ilust2} alt="ilustration" />
         </div>
       </div>
-      <div className="book_in_container">
-      <div className="book_in_detail">
-        <small>Free demo lecture</small>
-        <h1>
-          Ready to dive in?<br/>
-          Attain your Free Demo Lecture today.
-        </h1>
-      </div>
-        <ButtonModal name="BOOK NOW" bg="white" clr="orange" bld="600"/>
+      <div className="book_in_wrapper">
+        <div className="book_in_container">
+          <div className="book_in_detail">
+            <small>Free Demo Lecture</small>
+            <h1>
+              Ready to dive in?
+              <br />
+              Attain your Free Demo Lecture today.
+            </h1>
+          </div>
+          <ButtonModal name="BOOK NOW" bg="white" clr="orange" bld="600" />
+        </div>
       </div>
     </div>
   );

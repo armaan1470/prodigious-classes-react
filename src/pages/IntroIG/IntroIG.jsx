@@ -13,19 +13,6 @@ const IntroIG = () => {
     <div className="main_container">
       <img src={idea} alt="art" className="art1"/>
       <img src={dna} alt="art" className="art2"/>
-      {/* <div className="header">
-        <img src={banner} alt="banner" className="banner" />
-        <div className="content-holder">
-          <div className="details">
-            <h1>IGCSE Tuition</h1>
-            <p>
-              World Class and Certified IGCSE Tutors at Your Fingertips. Get
-              Individualized, Focused Tuition Classes and Ace your Assessment.
-            </p>
-          </div>
-          <img src={logo} alt="logo" />
-        </div>
-      </div> */}
       <div className="banner">
 
         <div className="banner_content_area">

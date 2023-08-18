@@ -230,16 +230,16 @@ function Navbar() {
                       className="sub-sub-nav-links"
                       onClick={closeMobileMenu}
                     >
-                      Benefits of IGCSE
+                      Subjects we offer
                     </NavLink>
                   </li>
                   <li className="dropdown-item">
                     <NavLink
-                      to="/about-ib"
+                      to="/why-to-choose"
                       className="sub-sub-nav-links"
                       onClick={closeMobileMenu}
                     >
-                      IGCSE Programs
+                      Why to chosse
                     </NavLink>
                   </li>
                 </ul>
