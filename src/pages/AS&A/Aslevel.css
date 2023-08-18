@@ -1,0 +1,8 @@
+.content_header2 h1{
+    font-size: var(--para-h);
+    color:#FB5604;
+    font-weight: 600;
+}
+.igsce_content2 .content-detail{
+    width:90%;
+}

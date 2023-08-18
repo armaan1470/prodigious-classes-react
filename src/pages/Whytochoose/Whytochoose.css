@@ -1,8 +1,11 @@
-.list-header{
+.list-header2{
     color:black;
     font-weight: normal;
+    list-style: none;
+    position: relative;
+    padding-left: 22px;
 }
-.list-header::before{
+.list-header2::before{
     content: url("../../assets/IGCSE Content/Why Choose IGCSE/Right tick bullet.svg");
     width:10px;
     height: 10px;

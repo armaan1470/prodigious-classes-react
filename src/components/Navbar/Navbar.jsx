@@ -327,7 +327,7 @@ function Navbar() {
           {/* drop down for Career  Counselling */}
           <li className="nav-item">
             <NavLink
-              to="/writing-support"
+              to="/ASlevel"
               className="nav-links"
               onClick={closeMobileMenu}
             >

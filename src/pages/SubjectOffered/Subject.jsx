@@ -85,7 +85,7 @@ const Subject = () => {
                   <li>Business Studies (9-1) – 0986</li>
                 </ul>
               </ul>
-              <ul className="flex-list">
+              <ul className="flex-list fl-span">
                 <li className="list-header">Mathematics</li>
                 <ul className="list-inner">
                   <li>Mathematics - 0580</li>

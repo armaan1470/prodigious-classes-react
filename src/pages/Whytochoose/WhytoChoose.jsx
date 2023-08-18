@@ -70,16 +70,16 @@ const WhytoChoose = () => {
               <br />
               <br />
               <ul className="subject-list">
-                <li className="list-header">Subject Content</li>
-                <li className="list-header">
+                <li className="list-header2">Subject Content</li>
+                <li className="list-header2">
                   Applying knowledge and understanding to new as well as
                   familiar situations
                 </li>
-                <li className="list-header">Flexibility and responsiveness to change</li>
-                <li className="list-header">Working and communicating in English</li>
-                <li className="list-header">Influencing outcomes</li>
-                <li className="list-header">Intellectual enquiry</li>
-                <li className="list-header">Cultural awareness</li>
+                <li className="list-header2">Flexibility and responsiveness to change</li>
+                <li className="list-header2">Working and communicating in English</li>
+                <li className="list-header2">Influencing outcomes</li>
+                <li className="list-header2">Intellectual enquiry</li>
+                <li className="list-header2">Cultural awareness</li>
               </ul>
               <br />
               <br />

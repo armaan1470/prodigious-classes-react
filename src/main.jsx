@@ -15,6 +15,7 @@ import BenefitsIB from "./pages/BenefitIB/BenefitsIB";
 import IntroIG from "./pages/IntroIG/IntroIG";
 import Subject from "./pages/SubjectOffered/Subject";
 import WhytoChoose from "./pages/Whytochoose/WhytoChoose";
+import Aslevel from "./pages/AS&A/Aslevel";
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -30,6 +31,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/about-ig" element={<IntroIG />} />
         <Route path="/subject-ig" element={<Subject />} />
         <Route path="/why-to-choose" element={<WhytoChoose />} />
+        <Route path="/ASlevel" element={<Aslevel />} />
         <Route path="/benefit-ib" element={<BenefitsIB />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
