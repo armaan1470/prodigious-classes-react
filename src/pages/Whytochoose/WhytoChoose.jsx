@@ -4,11 +4,16 @@ import ilust1 from "../../assets/IGCSE Content/Why Choose IGCSE/1.png";
 import ilust2 from "../../assets/IGCSE Content/Why Choose IGCSE/2.png";
 import ButtonModal from "../../components/ButtonModal/ButtonModal";
 import "./Whytochoose.css";
+import art1 from "../../assets/IGCSE Content/Why Choose IGCSE/4.png"
+import art2 from "../../assets/IGCSE Content/Why Choose IGCSE/7.png"
 
 const WhytoChoose = () => {
   return (
     <div className="main_container">
-      <div className="banner">
+      <img src={art1} alt="art" className="art1" />
+      <img src={art2} alt="art" className="art2" />
+
+      <div className="banner b2">
         <div className="banner_content_area">
           <div className="banner_text_content_area">
             <div className="banner_heading">Why Choose IGCSE</div>
@@ -75,8 +80,12 @@ const WhytoChoose = () => {
                   Applying knowledge and understanding to new as well as
                   familiar situations
                 </li>
-                <li className="list-header2">Flexibility and responsiveness to change</li>
-                <li className="list-header2">Working and communicating in English</li>
+                <li className="list-header2">
+                  Flexibility and responsiveness to change
+                </li>
+                <li className="list-header2">
+                  Working and communicating in English
+                </li>
                 <li className="list-header2">Influencing outcomes</li>
                 <li className="list-header2">Intellectual enquiry</li>
                 <li className="list-header2">Cultural awareness</li>
@@ -107,7 +116,6 @@ const WhytoChoose = () => {
           <ButtonModal name="BOOK NOW" bg="white" clr="orange" bld="600" />
         </div>
       </div>
-      {/* <div className="bottom_space"></div> */}
     </div>
   );
 };

@@ -16,6 +16,11 @@ import IntroIG from "./pages/IntroIG/IntroIG";
 import Subject from "./pages/SubjectOffered/Subject";
 import WhytoChoose from "./pages/Whytochoose/WhytoChoose";
 import Aslevel from "./pages/AS&A/Aslevel";
+import CareerRelated from "./pages/Career/CareerRelated";
+import Diploma from "./pages/Diploma/Diploma";
+import IntroIB from "./pages/IntroIB/IntroIB";
+import Middleyears from "./pages/MiddleYears/Middleyears";
+import PrimaryYears from "./pages/PrimaryYears/PrimaryYears";
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -33,6 +38,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/why-to-choose" element={<WhytoChoose />} />
         <Route path="/ASlevel" element={<Aslevel />} />
         <Route path="/benefit-ib" element={<BenefitsIB />} />
+        <Route path="/intro-ib" element={<IntroIB />} />
+        <Route path="/middle-year" element={<Middleyears />} />
+        <Route path="/primary-year" element={<PrimaryYears />} />
+        <Route path="/career" element={<CareerRelated />} />
+        <Route path="/diploma" element={<Diploma />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>

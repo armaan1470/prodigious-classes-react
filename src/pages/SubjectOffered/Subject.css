@@ -5,10 +5,13 @@
     margin-top: 20px;
 }
 .igsce_ilust_container img{
-    width:85%;
+    width:80%;
 }
 .subject-list{
     font-size: var(--detail-medium);
+}
+.banner.b1{
+    background-image: url("../../assets/IGCSE Content/Subjects Offered at IGCSE/3.jpg");
 }
 .list-header{
     color:#2464a2;

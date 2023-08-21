@@ -73,7 +73,7 @@ const Aslevel = () => {
 
       <div className="intro_igsce2">
         <div className="igsce_content2">
-          <div className="content-detail">
+          <div className="content-detail modified3">
             <div className="content_header2">
                 <h1>Learning Environment at Philomathean</h1>
             </div>

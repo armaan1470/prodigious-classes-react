@@ -4,11 +4,15 @@ import ilust1 from "../../assets/IGCSE Content/Subjects Offered at IGCSE/1.png";
 import ilust2 from "../../assets/IGCSE Content/Subjects Offered at IGCSE/2.png";
 import "./Subject.css";
 import ButtonModal from "../../components/ButtonModal/ButtonModal";
+import art1 from "../../assets/IGCSE Content/Subjects Offered at IGCSE/6.png";
+import art2 from "../../assets/IGCSE Content/Subjects Offered at IGCSE/3.png";
 
 const Subject = () => {
   return (
     <div className="main_container">
-      <div className="banner">
+      <img src={art1} alt="art" className="art1" />
+      <img src={art2} alt="art" className="art2" />
+      <div className="banner b1">
         <div className="banner_content_area">
           <div className="banner_text_content_area">
             <div className="banner_heading">Subjects Offreed in IGCSE</div>
@@ -55,7 +59,7 @@ const Subject = () => {
 
       <div className="intro_igsce2">
         <div className="igsce_content2">
-          <div className="content-detail">
+          <div className="content-detail modified3">
             <div className="list-container">
               <ul className="flex-list">
                 <li className="list-header">Biology</li>
