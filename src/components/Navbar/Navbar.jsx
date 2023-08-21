@@ -230,7 +230,7 @@ function Navbar() {
                       className="sub-sub-nav-links"
                       onClick={closeMobileMenu}
                     >
-                      Subjects we offer
+                      Subjects offered
                     </NavLink>
                   </li>
                   <li className="dropdown-item">
@@ -239,7 +239,7 @@ function Navbar() {
                       className="sub-sub-nav-links"
                       onClick={closeMobileMenu}
                     >
-                      Why to chosse
+                      Why choose
                     </NavLink>
                   </li>
                 </ul>
@@ -413,6 +413,7 @@ function Navbar() {
               Contact
             </NavLink>
           </li>
+         
         </ul>
       </div>
     </nav>
