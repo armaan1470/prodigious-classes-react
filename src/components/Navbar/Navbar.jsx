@@ -212,7 +212,7 @@ function Navbar() {
                       className="sub-sub-nav-links"
                       onClick={closeMobileMenu}
                     >
-                      IB Programs
+                      Primary year
                     </NavLink>
                   </li>
                 </ul>

@@ -13,7 +13,7 @@ const Middleyears = () => {
         <div className="banner_content_area">
           <div className="banner_text_content_area">
             <div className="banner_heading">
-              IB Middle Years Programme (MYP)
+              IB Middle Years <br/>Programme (MYP)
             </div>
           </div>
           <div className="banner_img_content_area">
