@@ -119,13 +119,13 @@ const Middleyears = () => {
           </div>
         </div>
         <div className="igsce_ilust_container">
-          <img src={ilust3} alt="ilustration" />
+          <img src={ilust2} alt="ilustration" />
         </div>
       </div>
 
       <div className="intro_igsce1 third">
         <div className="igsce_ilust_container">
-          <img src={ilust2} alt="ilustration" />
+          <img src={ilust3} alt="ilustration" />
         </div>
         <div className="igsce_content1">
           <div className="content-detail">
