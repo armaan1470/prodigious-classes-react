@@ -172,7 +172,43 @@ function Navbar() {
                   </li>
                   <li className="dropdown-item">
                     <NavLink
-                      to="/about-ib"
+                      to="/intro-ib"
+                      className="sub-sub-nav-links"
+                      onClick={closeMobileMenu}
+                    >
+                      IB Programs
+                    </NavLink>
+                  </li>
+                  <li className="dropdown-item">
+                    <NavLink
+                      to="/career"
+                      className="sub-sub-nav-links"
+                      onClick={closeMobileMenu}
+                    >
+                      Career
+                    </NavLink>
+                  </li>
+                  <li className="dropdown-item">
+                    <NavLink
+                      to="/diploma"
+                      className="sub-sub-nav-links"
+                      onClick={closeMobileMenu}
+                    >
+                      Diploma
+                    </NavLink>
+                  </li>
+                  <li className="dropdown-item">
+                    <NavLink
+                      to="/middle-year"
+                      className="sub-sub-nav-links"
+                      onClick={closeMobileMenu}
+                    >
+                      Middle Years
+                    </NavLink>
+                  </li>
+                  <li className="dropdown-item">
+                    <NavLink
+                      to="/primary-year"
                       className="sub-sub-nav-links"
                       onClick={closeMobileMenu}
                     >
@@ -413,7 +449,6 @@ function Navbar() {
               Contact
             </NavLink>
           </li>
-         
         </ul>
       </div>
     </nav>
