@@ -185,7 +185,7 @@ function Navbar() {
                       className="sub-sub-nav-links"
                       onClick={closeMobileMenu}
                     >
-                      Career
+                      Career-Related Programme
                     </NavLink>
                   </li>
                   <li className="dropdown-item">
@@ -194,7 +194,7 @@ function Navbar() {
                       className="sub-sub-nav-links"
                       onClick={closeMobileMenu}
                     >
-                      Diploma
+                      Diploma Programme
                     </NavLink>
                   </li>
                   <li className="dropdown-item">
@@ -203,7 +203,7 @@ function Navbar() {
                       className="sub-sub-nav-links"
                       onClick={closeMobileMenu}
                     >
-                      Middle Years
+                      Middle Year Programme
                     </NavLink>
                   </li>
                   <li className="dropdown-item">
@@ -212,7 +212,7 @@ function Navbar() {
                       className="sub-sub-nav-links"
                       onClick={closeMobileMenu}
                     >
-                      Primary year
+                      Primary Year Programme 
                     </NavLink>
                   </li>
                 </ul>
@@ -257,7 +257,7 @@ function Navbar() {
                       className="sub-sub-nav-links"
                       onClick={closeMobileMenu}
                     >
-                      Intro to IGCSE
+                      Introduction
                     </NavLink>
                   </li>
                   <li className="dropdown-item">
@@ -275,7 +275,7 @@ function Navbar() {
                       className="sub-sub-nav-links"
                       onClick={closeMobileMenu}
                     >
-                      Why choose
+                      Why Choose IGCSE
                     </NavLink>
                   </li>
                 </ul>

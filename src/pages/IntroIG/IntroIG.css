@@ -48,7 +48,7 @@
 }
 
 .banner_img_content{
-    width: clamp(8.125rem, 7.2321rem + 4.4643vw, 11.25rem);
+    width: clamp(8.125rem, 6.875rem + 6.25vw, 12.5rem);
 }
 
 .banner_heading{

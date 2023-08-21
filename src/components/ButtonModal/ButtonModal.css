@@ -1,11 +1,11 @@
 
 .book_btn {
-  padding: 14px 22px;
+  padding: 14px 26px;
   font-size: 1.1rem;
   font-family: "biennalemedium";
   border: none;
   border-radius: 5px;
-  box-shadow: 0 3.5px 0px #d11f00;
+  box-shadow: 0 5px 0px #cb4f00;
   margin: clamp(10px, 2vw, 16px) 0;
   transition: 0.2s ease-in-out;
 }

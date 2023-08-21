@@ -15,7 +15,7 @@ const Subject = () => {
       <div className="banner b1">
         <div className="banner_content_area">
           <div className="banner_text_content_area">
-            <div className="banner_heading">Subjects Offreed in IGCSE</div>
+            <div className="banner_heading">Subjects Offered in IGCSE</div>
           </div>
           <div className="banner_img_content_area">
             <img src={logo} alt="logo" className="banner_img_content" />
