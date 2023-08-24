@@ -4,11 +4,17 @@ import logo from "../../assets/IB/Middle Years Programme/4.png";
 import ilust1 from "../../assets/IB/Middle Years Programme/2.png";
 import ilust2 from "../../assets/IB/Middle Years Programme/1.png";
 import ilust3 from "../../assets/IB/Middle Years Programme/3.png";
+import art1 from "../../assets/IGCSE Content/Why Choose IGCSE/7.png"
+import art2 from "../../assets/IGCSE Content/Why Choose IGCSE/6.png"
+import art3 from "../../assets/IGCSE Content/Why Choose IGCSE/4.png"
 import "./middleyear.css"
 
 const Middleyears = () => {
   return (
     <div className="main_container">
+      <img src={art1} alt="" className="icon2" />
+      <img src={art2} alt="" className="icon1" />
+      <img src={art3} alt="" className="icon3" />
       <div className="banner b6">
         <div className="banner_content_area">
           <div className="banner_text_content_area">

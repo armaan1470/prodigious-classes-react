@@ -154,7 +154,7 @@ function Navbar() {
                 >
                   <li className="dropdown-item">
                     <NavLink
-                      to="/about-ib"
+                      to="/intro-ib"
                       className="sub-sub-nav-links"
                       onClick={closeMobileMenu}
                     >
@@ -168,15 +168,6 @@ function Navbar() {
                       onClick={closeMobileMenu}
                     >
                       Benefits of IB
-                    </NavLink>
-                  </li>
-                  <li className="dropdown-item">
-                    <NavLink
-                      to="/intro-ib"
-                      className="sub-sub-nav-links"
-                      onClick={closeMobileMenu}
-                    >
-                      IB Programs
                     </NavLink>
                   </li>
                   <li className="dropdown-item">

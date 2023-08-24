@@ -7,6 +7,7 @@
     list-style: none;
     position: relative;
     padding-left: 22px;
+    margin-bottom:10px ;
 }
 .list-header2::before{
     content: url("../../assets/IGCSE Content/Why Choose IGCSE/Right tick bullet.svg");

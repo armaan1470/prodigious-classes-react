@@ -4,10 +4,17 @@ import ilust1 from "../../assets/IB/IB Diploma Programme/1.png";
 import ilust2 from "../../assets/IB/IB Diploma Programme/3.png";
 import "./Diploma.css";
 import ButtonModal from "../../components/ButtonModal/ButtonModal";
+import art1 from "../../assets/images/dna.png"
+import art2 from "../../assets/images/idea.png"
+import art3 from "../../assets/IGCSE Content/Why Choose IGCSE/7.png"
+
 
 const Diploma = () => {
   return (
     <div className="main_container">
+      <img src={art1} alt="" className="icon1"/>
+      <img src={art3} alt="" className="icon2"/>
+      <img src={art2} alt="" className="icon3"/>
       <div className="banner b4">
         <div className="banner_content_area">
           <div className="banner_text_content_area">

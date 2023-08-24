@@ -1,6 +1,5 @@
 import React from "react";
 import "./IntroIG.css";
-import banner from "../../assets/igcsepagecontent/4.jpg";
 import logo from "../../assets/igcsepagecontent/5.png";
 import ilust1 from "../../assets/igcsepagecontent/1.png";
 import ilust2 from "../../assets/igcsepagecontent/2.png";

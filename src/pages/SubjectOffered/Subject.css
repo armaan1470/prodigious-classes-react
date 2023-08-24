@@ -19,6 +19,7 @@
     list-style: none;
     position: relative;
     padding-left: 22px;
+    margin-bottom: 10px;
 }
 .list-header::before{
     content: url("../../assets/IGCSE Content/Subjects Offered at IGCSE/Right tick.svg");
@@ -31,6 +32,7 @@
 .list-inner > li{
     list-style-type: disc;
     list-style-position: inside;
+    margin-bottom: 10px;
 }
 .list-inner > li::marker{
     color:orange;

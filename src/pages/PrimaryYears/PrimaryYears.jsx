@@ -3,17 +3,23 @@ import ButtonModal from "../../components/ButtonModal/ButtonModal";
 import logo from "../../assets/IB/Primary Years Programme/3.png";
 import ilust1 from "../../assets/IB/Primary Years Programme/2.png";
 import ilust2 from "../../assets/IB/Primary Years Programme/1.png";
-import "./Primary.css"
-
+import "./Primary.css";
+import art1 from "../../assets/IGCSE Content/Why Choose IGCSE/7.png";
+import art2 from "../../assets/IGCSE Content/Why Choose IGCSE/6.png";
+import art3 from "../../assets/IGCSE Content/Why Choose IGCSE/4.png";
 
 const PrimaryYears = () => {
   return (
-    <div className="main_contaienr">
-      <div className="banner">
+    <div className="main_container">
+      <img src={art1} alt="" className="icon2" />
+      <img src={art2} alt="" className="icon1" />
+      <img src={art3} alt="" className="icon3" />
+      <div className="banner b7">
         <div className="banner_content_area">
           <div className="banner_text_content_area">
             <div className="banner_heading">
-              IB Primary Years <br/>Programme (PYP)
+              IB Primary Years <br />
+              Programme (PYP)
             </div>
           </div>
           <div className="banner_img_content_area">

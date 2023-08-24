@@ -4,10 +4,19 @@ import logo from "../../assets/IB/Career-Related Programme/1.png";
 import ilust1 from "../../assets/IB/Career-Related Programme/2.png";
 import ilust2 from "../../assets/IB/Career-Related Programme/3.png";
 import ButtonModal from "../../components/ButtonModal/ButtonModal";
+import art1 from "../../assets/images/dna.png"
+import art2 from "../../assets/IGCSE Content/Why Choose IGCSE/7.png"
+import art3 from "../../assets/images/idea.png"
+
 
 const CareerRelated = () => {
   return (
     <div className="main_container">
+      <img src={art1} alt="" className="icon1"/>
+      <img src={art2} alt="" className="icon2"/>
+      <img src={art3} alt="" className="icon3"/>
+      
+
       <div className="banner b3">
         <div className="banner_content_area">
           <div className="banner_text_content_area">
