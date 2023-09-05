@@ -9,8 +9,12 @@ import art2 from "../../assets/IGCSE Content/Why Choose IGCSE/7.png"
 import art3 from "../../assets/IGCSE Content/Subjects Offered at IGCSE/4.png";
 import art4 from "../../assets/IGCSE Content/Subjects Offered at IGCSE/6.png";
 import "./IntroIB.css";
+import useAnimation from "../../Hooks/useAnimation";
 
 const IntroIB = () => {
+
+  useAnimation("animation")
+
   return (
     <div className="main_container">
       <img src={art1} alt="" className="icon1"/>
@@ -35,10 +39,10 @@ const IntroIB = () => {
       </div>
 
       <div className="intro_igsce1">
-        <div className="igsce_ilust_container">
+        <div className="igsce_ilust_container animation animation_2">
           <img src={ilust3} alt="ilustration" />
         </div>
-        <div className="igsce_content1">
+        <div className="igsce_content1 animation animation_1">
           <div className="content_header">
             <p>IB TUTION</p>
             <h1>Introduction to IB Programmes</h1>
@@ -70,7 +74,7 @@ const IntroIB = () => {
       </div>
 
       <div className="intro_igsce2">
-        <div className="igsce_content2">
+        <div className="igsce_content2 animation animation_1">
           <div className="content-detail ">
             <p>
               In addition, the IB program places a greater emphasis on
@@ -96,17 +100,17 @@ const IntroIB = () => {
             </p>
           </div>
         </div>
-        <div className="igsce_ilust_container">
+        <div className="igsce_ilust_container animation animation_2">
           <img src={ilust1} alt="ilustration" />
         </div>
       </div>
 
       <div className="intro_igsce1 third">
-        <div className="igsce_ilust_container">
+        <div className="igsce_ilust_container animation animation_2">
           <img src={ilust2} alt="ilustration" />
         </div>
         <div className="igsce_content1">
-          <div className="content-detail">
+          <div className="content-detail animation animation_1">
             <p>
               Programs like the IBDP make it easier for institutions to evaluate
               applicants by providing a single, globally accepted curriculum
