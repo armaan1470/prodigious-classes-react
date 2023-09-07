@@ -1,18 +1,15 @@
 import React from "react";
-import icon1 from "../../assets/images/icon-1.svg";
-import icon2 from "../../assets/images/icon-2.svg";
-import icon3 from "../../assets/images/icon-3.svg";
-import banner from "../../assets/images/bg.jpg"
-import wwoff_illus from "../../assets/images/model.png"
-import bef_transparent_image from "../../assets/images/abstract.svg"
-import green_tick from "../../assets/images/right tick.svg"
-import myp_icon_1 from "../../assets/images/icon-4.svg"
-import myp_icon_2 from "../../assets/images/icon-5.svg"
-import myp_icon_3 from "../../assets/images/icon-6.svg"
-import myp_icon_4 from "../../assets/images/icon-7.svg"
-import green_star from "../../assets/images/star.svg"
+import icon1 from "../../../assets/images/icon-1.svg";
+import banner from "../../../assets/images/bg.jpg"
+import wwoff_illus from "../../../assets/images/model.png"
+import bef_transparent_image from "../../../assets/images/abstract.svg"
+import green_tick from "../../../assets/images/right tick.svg"
+import myp_icon_1 from "../../../assets/images/icon-4.svg"
+import myp_icon_2 from "../../../assets/images/icon-5.svg"
+import myp_icon_3 from "../../../assets/images/icon-6.svg"
+import myp_icon_4 from "../../../assets/images/icon-7.svg"
+import green_star from "../../../assets/images/star.svg"
 import "./BenefitsIB.css";
-import Footer from "../../components/Footer/Footer";
 
 function BenefitIB() {
   return (

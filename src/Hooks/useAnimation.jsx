@@ -7,12 +7,14 @@ export default function useAnimation(classname) {
       const { top } = element.getBoundingClientRect();
       const windowHeight = window.innerHeight;
       if (top < windowHeight * 1) {
-        if (element.classList.contains("animation_1")) {
+        if (element.classList.contains("slide_right")) {
           element.classList.add("animate_2");
-        } else if (element.classList.contains("animation_2")) {
+        } else if (element.classList.contains("slide_left")) {
           element.classList.add("animate_3");
-        } else if (element.classList.contains("animation_3")) {
+        } else if (element.classList.contains("fade_in")) {
           element.classList.add("fadein");
+        } else if (element.classList.contains("slide_up")) {
+          element.classList.add("animate");
         }
       }
     });

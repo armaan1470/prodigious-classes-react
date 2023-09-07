@@ -1,15 +1,19 @@
 import React from "react";
-import ButtonModal from "../../components/ButtonModal/ButtonModal";
-import logo from "../../assets/IB/Middle Years Programme/4.png";
-import ilust1 from "../../assets/IB/Middle Years Programme/2.png";
-import ilust2 from "../../assets/IB/Middle Years Programme/1.png";
-import ilust3 from "../../assets/IB/Middle Years Programme/3.png";
-import art1 from "../../assets/IGCSE Content/Why Choose IGCSE/7.png"
-import art2 from "../../assets/IGCSE Content/Why Choose IGCSE/6.png"
-import art3 from "../../assets/IGCSE Content/Why Choose IGCSE/4.png"
+import ButtonModal from "../../../components/ButtonModal/ButtonModal";
+import logo from "../../../assets/IB/Middle Years Programme/4.png";
+import ilust1 from "../../../assets/IB/Middle Years Programme/2.png";
+import ilust2 from "../../../assets/IB/Middle Years Programme/1.png";
+import ilust3 from "../../../assets/IB/Middle Years Programme/3.png";
+import art1 from "../../../assets/IGCSE Content/Why Choose IGCSE/7.png"
+import art2 from "../../../assets/IGCSE Content/Why Choose IGCSE/6.png"
+import art3 from "../../../assets/IGCSE Content/Why Choose IGCSE/4.png"
 import "./middleyear.css"
+import useAnimation from "../../../Hooks/useAnimation"
 
 const Middleyears = () => {
+
+  useAnimation("animation")
+
   return (
     <div className="main_container">
       <img src={art1} alt="" className="icon2" />
@@ -29,10 +33,10 @@ const Middleyears = () => {
       </div>
 
       <div className="intro_igsce1">
-        <div className="igsce_ilust_container">
+        <div className="igsce_ilust_container animation slide_left">
           <img src={ilust1} alt="ilustration" />
         </div>
-        <div className="igsce_content1">
+        <div className="igsce_content1 animation slide_up">
           <div className="content_header">
             <p>IB TUTION</p>
             <h1>Middle Years Programmes</h1>
@@ -68,9 +72,9 @@ const Middleyears = () => {
       </div>
 
       <div className="intro_igsce2">
-        <div className="igsce_content2">
+        <div className="igsce_content2 animation slide_left">
           <div className="content-detail ">
-            <p>
+            
               <p className="mr-b">According to research, MYP participants:</p>
               <ul className="subject-list">
                 <li className="list-header2">
@@ -112,28 +116,29 @@ const Middleyears = () => {
                 <li className="list-header">Design</li>
                 <li className="list-header">Physical and health education</li>
               </ul>
-              <br />
-              <br />
-              In each year of the MYP, each topic group must get at least 50
-              hours of instruction. Students in years 4 and 5 have the choice of
-              taking courses from six of the eight subject areas, subject to
-              specific restrictions, in order to suit local criteria and
-              particular student learning needs. Every year, MYP students
-              participate in at least one collaboratively created
-              interdisciplinary unit involving at least two subject groups.
-            </p>
+              <br/>
+              <p className="mr-b">
+                In each year of the MYP, each topic group must get at least 50
+                hours of instruction. Students in years 4 and 5 have the choice of
+                taking courses from six of the eight subject areas, subject to
+                specific restrictions, in order to suit local criteria and
+                particular student learning needs. Every year, MYP students
+                participate in at least one collaboratively created
+                interdisciplinary unit involving at least two subject groups.
+              </p>
+
           </div>
         </div>
-        <div className="igsce_ilust_container">
+        <div className="igsce_ilust_container animation slide_up">
           <img src={ilust2} alt="ilustration" />
         </div>
       </div>
 
       <div className="intro_igsce1 third">
-        <div className="igsce_ilust_container">
+        <div className="igsce_ilust_container animation slide_up">
           <img src={ilust3} alt="ilustration" />
         </div>
-        <div className="igsce_content1">
+        <div className="igsce_content1 animation slide_right">
           <div className="content-detail">
             <div className="content_header2 mr-b">
               <h1>Why choose MYP?</h1>

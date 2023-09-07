@@ -21,7 +21,7 @@
     position: relative;
     height: 250px;
     /* height: 100%; */
-    background-image: url("../../assets/igcsepagecontent/4.jpg");
+    background-image: url("../../../assets/igcsepagecontent/4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -198,7 +198,7 @@
 }
 
 .book_in_wrapper{
-    background-image:url("../../assets/igcsepagecontent/3.jpg");
+    background-image:url("../../../assets/igcsepagecontent/3.jpg");
     background-size: cover;
     height:200px;
     font-family: var(--font-secondary);

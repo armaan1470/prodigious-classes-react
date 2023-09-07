@@ -1,14 +1,17 @@
 import React from "react";
-import ButtonModal from "../../components/ButtonModal/ButtonModal";
-import logo from "../../assets/IB/Primary Years Programme/3.png";
-import ilust1 from "../../assets/IB/Primary Years Programme/2.png";
-import ilust2 from "../../assets/IB/Primary Years Programme/1.png";
+import ButtonModal from "../../../components/ButtonModal/ButtonModal";
+import logo from "../../../assets/IB/Primary Years Programme/3.png";
+import ilust1 from "../../../assets/IB/Primary Years Programme/2.png";
+import ilust2 from "../../../assets/IB/Primary Years Programme/1.png";
 import "./Primary.css";
-import art1 from "../../assets/IGCSE Content/Why Choose IGCSE/7.png";
-import art2 from "../../assets/IGCSE Content/Why Choose IGCSE/6.png";
-import art3 from "../../assets/IGCSE Content/Why Choose IGCSE/4.png";
+import art1 from "../../../assets/IGCSE Content/Why Choose IGCSE/7.png";
+import art2 from "../../../assets/IGCSE Content/Why Choose IGCSE/6.png";
+import art3 from "../../../assets/IGCSE Content/Why Choose IGCSE/4.png";
+import useAnimation from "../../../Hooks/useAnimation"
 
 const PrimaryYears = () => {
+
+  useAnimation("animation")
   return (
     <div className="main_container">
       <img src={art1} alt="" className="icon2" />
@@ -29,10 +32,10 @@ const PrimaryYears = () => {
       </div>
 
       <div className="intro_igsce1">
-        <div className="igsce_ilust_container">
+        <div className="igsce_ilust_container animation fade_in">
           <img src={ilust1} alt="ilustration" />
         </div>
-        <div className="igsce_content1">
+        <div className="igsce_content1 animation slide_up">
           <div className="content_header">
             <p>IB TUTION</p>
             <h1>Primary Year Programme</h1>
@@ -68,7 +71,7 @@ const PrimaryYears = () => {
         </div>
       </div>
       <div className="intro_igsce2">
-        <div className="igsce_content2">
+        <div className="igsce_content2 animation slide_up">
           <div className="content-detail ">
             <p>
               The PYP emphasizes the growth of the complete child as an
@@ -103,12 +106,12 @@ const PrimaryYears = () => {
             </p>
           </div>
         </div>
-        <div className="igsce_ilust_container">
+        <div className="igsce_ilust_container animation slide_right">
           <img src={ilust2} alt="ilustration" />
         </div>
       </div>
       <div className="book_in_wrapper">
-        <div className="book_in_container">
+        <div className="book_in_container ">
           <div className="book_in_detail">
             <small>Free Demo Lecture</small>
             <h1>

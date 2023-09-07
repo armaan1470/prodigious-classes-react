@@ -1,15 +1,15 @@
 import React from "react";
-import ButtonModal from "../../components/ButtonModal/ButtonModal";
-import logo from "../../assets/IB/Introdution to IB/4.png";
-import ilust1 from "../../assets/IB/Introdution to IB/2.png";
-import ilust2 from "../../assets/IB/Introdution to IB/3.png";
-import ilust3 from "../../assets/IB/Introdution to IB/1.png";
-import art1 from "../../assets/images/dna.png";
-import art2 from "../../assets/IGCSE Content/Why Choose IGCSE/7.png"
-import art3 from "../../assets/IGCSE Content/Subjects Offered at IGCSE/4.png";
-import art4 from "../../assets/IGCSE Content/Subjects Offered at IGCSE/6.png";
+import ButtonModal from "../../../components/ButtonModal/ButtonModal";
+import logo from "../../../assets/IB/Introdution to IB/4.png";
+import ilust1 from "../../../assets/IB/Introdution to IB/2.png";
+import ilust2 from "../../../assets/IB/Introdution to IB/3.png";
+import ilust3 from "../../../assets/IB/Introdution to IB/1.png";
+import art1 from "../../../assets/images/dna.png";
+import art2 from "../../../assets/IGCSE Content/Why Choose IGCSE/7.png"
+import art3 from "../../../assets/IGCSE Content/Subjects Offered at IGCSE/4.png";
+import art4 from "../../../assets/IGCSE Content/Subjects Offered at IGCSE/6.png";
 import "./IntroIB.css";
-import useAnimation from "../../Hooks/useAnimation";
+import useAnimation from "../../../Hooks/useAnimation";
 
 const IntroIB = () => {
 
@@ -39,10 +39,10 @@ const IntroIB = () => {
       </div>
 
       <div className="intro_igsce1">
-        <div className="igsce_ilust_container animation animation_2">
+        <div className="igsce_ilust_container animation slide_left">
           <img src={ilust3} alt="ilustration" />
         </div>
-        <div className="igsce_content1 animation animation_1">
+        <div className="igsce_content1 animation slide_up">
           <div className="content_header">
             <p>IB TUTION</p>
             <h1>Introduction to IB Programmes</h1>
@@ -74,7 +74,7 @@ const IntroIB = () => {
       </div>
 
       <div className="intro_igsce2">
-        <div className="igsce_content2 animation animation_1">
+        <div className="igsce_content2 animation slide_left">
           <div className="content-detail ">
             <p>
               In addition, the IB program places a greater emphasis on
@@ -100,17 +100,17 @@ const IntroIB = () => {
             </p>
           </div>
         </div>
-        <div className="igsce_ilust_container animation animation_2">
+        <div className="igsce_ilust_container animation slide_right">
           <img src={ilust1} alt="ilustration" />
         </div>
       </div>
 
       <div className="intro_igsce1 third">
-        <div className="igsce_ilust_container animation animation_2">
+        <div className="igsce_ilust_container animation slide_up">
           <img src={ilust2} alt="ilustration" />
         </div>
         <div className="igsce_content1">
-          <div className="content-detail animation animation_1">
+          <div className="content-detail animation slide_right">
             <p>
               Programs like the IBDP make it easier for institutions to evaluate
               applicants by providing a single, globally accepted curriculum

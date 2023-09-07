@@ -1,5 +1,5 @@
 .banner.b2{
-    background-image:url("../../assets//IGCSE Content/Why Choose IGCSE/3.jpg");
+    background-image:url("../../../assets/IGCSE Content/Why Choose IGCSE/3.jpg");
 }
 .list-header2{
     color:black;
@@ -10,7 +10,7 @@
     margin-bottom:10px ;
 }
 .list-header2::before{
-    content: url("../../assets/IGCSE Content/Why Choose IGCSE/Right tick bullet.svg");
+    content: url("../../../assets/IGCSE Content/Why Choose IGCSE/Right tick bullet.svg");
     width:10px;
     height: 10px;
     position: absolute;

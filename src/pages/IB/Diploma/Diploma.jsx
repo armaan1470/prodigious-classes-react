@@ -1,15 +1,17 @@
 import React from "react";
-import logo from "../../assets/IB/IB Diploma Programme/2.png";
-import ilust1 from "../../assets/IB/IB Diploma Programme/1.png";
-import ilust2 from "../../assets/IB/IB Diploma Programme/3.png";
+import logo from "../../../assets/IB/IB Diploma Programme/2.png";
+import ilust1 from "../../../assets/IB/IB Diploma Programme/1.png";
+import ilust2 from "../../../assets/IB/IB Diploma Programme/3.png";
 import "./Diploma.css";
-import ButtonModal from "../../components/ButtonModal/ButtonModal";
-import art1 from "../../assets/images/dna.png"
-import art2 from "../../assets/images/idea.png"
-import art3 from "../../assets/IGCSE Content/Why Choose IGCSE/7.png"
+import ButtonModal from "../../../components/ButtonModal/ButtonModal";
+import art1 from "../../../assets/images/dna.png"
+import art2 from "../../../assets/images/idea.png"
+import art3 from "../../../assets/IGCSE Content/Why Choose IGCSE/7.png"
+import useAnimation from "../../../Hooks/useAnimation";
 
 
 const Diploma = () => {
+  useAnimation("animation")
   return (
     <div className="main_container">
       <img src={art1} alt="" className="icon1"/>
@@ -30,10 +32,10 @@ const Diploma = () => {
       </div>
 
       <div className="intro_igsce1">
-        <div className="igsce_ilust_container">
+        <div className="igsce_ilust_container animation fade_in">
           <img src={ilust1} alt="ilustration" />
         </div>
-        <div className="igsce_content1">
+        <div className="igsce_content1 animation slide_up">
           <div className="content_header">
             <p>IB TUTION</p>
             <h1>IB Diploma Programme</h1>
@@ -92,7 +94,7 @@ const Diploma = () => {
       </div>
 
       <div className="intro_igsce2">
-        <div className="igsce_content2">
+        <div className="igsce_content2 animation slide_left">
           <div className="content-detail">
             <p className="mr-b">
               IB DP students must fulfill three ‘Core' requirements in addition
@@ -140,7 +142,7 @@ const Diploma = () => {
             </p>
           </div>
         </div>
-        <div className="igsce_ilust_container">
+        <div className="igsce_ilust_container animation slide_up">
           <img src={ilust2} alt="ilustration" />
         </div>
       </div>

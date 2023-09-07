@@ -10,17 +10,17 @@ import Navbar from "./components/Navbar/Navbar";
 import Aboutus from "./pages/Aboutus/Aboutus";
 import Courses from "./pages/Courses/Courses";
 import Contact from "./pages/Contact/Contact";
-import AboutIB from "./pages/AboutIB/AboutIB";
-import BenefitsIB from "./pages/BenefitIB/BenefitsIB";
-import IntroIG from "./pages/IntroIG/IntroIG";
-import Subject from "./pages/SubjectOffered/Subject";
-import WhytoChoose from "./pages/Whytochoose/WhytoChoose";
+import AboutIB from "./pages/IB/AboutIB/AboutIB";
+import BenefitsIB from "./pages/IB/BenefitIB/BenefitsIB";
+import IntroIG from "./pages/IGCSE/IntroIG/IntroIG";
+import Subject from "./pages/IGCSE/SubjectOffered/Subject";
+import WhytoChoose from "./pages/IGCSE/Whytochoose/WhytoChoose";
 import Aslevel from "./pages/AS&A/Aslevel";
-import CareerRelated from "./pages/Career/CareerRelated";
-import Diploma from "./pages/Diploma/Diploma";
-import IntroIB from "./pages/IntroIB/IntroIB";
-import Middleyears from "./pages/MiddleYears/Middleyears";
-import PrimaryYears from "./pages/PrimaryYears/PrimaryYears";
+import CareerRelated from "./pages/IB/Career/CareerRelated";
+import Diploma from "./pages/IB/Diploma/Diploma";
+import IntroIB from "./pages/IB/IntroIB/IntroIB";
+import Middleyears from "./pages/IB/MiddleYears/Middleyears";
+import PrimaryYears from "./pages/IB/PrimaryYears/PrimaryYears";
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(

@@ -1,11 +1,11 @@
 import React from "react";
-import logo from "../../assets/IGCSE Content/Subjects Offered at IGCSE/5.png";
-import ilust1 from "../../assets/IGCSE Content/Subjects Offered at IGCSE/1.png";
-import ilust2 from "../../assets/IGCSE Content/Subjects Offered at IGCSE/2.png";
+import logo from "../../../assets/IGCSE Content/Subjects Offered at IGCSE/5.png";
+import ilust1 from "../../../assets/IGCSE Content/Subjects Offered at IGCSE/1.png";
+import ilust2 from "../../../assets/IGCSE Content/Subjects Offered at IGCSE/2.png";
 import "./Subject.css";
-import ButtonModal from "../../components/ButtonModal/ButtonModal";
-import art1 from "../../assets/IGCSE Content/Subjects Offered at IGCSE/6.png";
-import art2 from "../../assets/IGCSE Content/Subjects Offered at IGCSE/3.png";
+import ButtonModal from "../../../components/ButtonModal/ButtonModal";
+import art1 from "../../../assets/IGCSE Content/Subjects Offered at IGCSE/6.png";
+import art2 from "../../../assets/IGCSE Content/Subjects Offered at IGCSE/3.png";
 
 const Subject = () => {
   return (
