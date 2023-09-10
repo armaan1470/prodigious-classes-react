@@ -205,7 +205,8 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  width: 300px;
+  /* width: 300px; */
+  max-width: 300px;
   height: 45px;
   font-style: normal;
 
@@ -499,7 +500,7 @@
   }
 
   .wwoff_content{
-    padding-right: 0;
+    padding: 20px;
     text-align: left;
     display: flex;
     gap: 1rem;
