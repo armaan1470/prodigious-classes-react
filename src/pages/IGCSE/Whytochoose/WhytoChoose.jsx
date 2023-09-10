@@ -1,11 +1,11 @@
 import React from "react";
-import logo from "../../assets/igcsepagecontent/5.png";
-import ilust1 from "../../assets/IGCSE Content/Why Choose IGCSE/1.png";
-import ilust2 from "../../assets/IGCSE Content/Why Choose IGCSE/2.png";
-import ButtonModal from "../../components/ButtonModal/ButtonModal";
+import logo from "../../../assets/igcsepagecontent/5.png";
+import ilust1 from "../../../assets/IGCSE Content/Why Choose IGCSE/1.png";
+import ilust2 from "../../../assets/IGCSE Content/Why Choose IGCSE/2.png";
+import ButtonModal from "../../../components/ButtonModal/ButtonModal";
 import "./Whytochoose.css";
-import art1 from "../../assets/IGCSE Content/Why Choose IGCSE/4.png"
-import art2 from "../../assets/IGCSE Content/Why Choose IGCSE/7.png"
+import art1 from "../../../assets/IGCSE Content/Why Choose IGCSE/4.png"
+import art2 from "../../../assets/IGCSE Content/Why Choose IGCSE/7.png"
 
 const WhytoChoose = () => {
   return (

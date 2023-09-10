@@ -92,8 +92,8 @@ function Navbar() {
 
   return (
     <nav
-      className={`navbar ${isScrolled ? "navbar-fixed" : ""}`}
-      stlye={{ animation: click ? "none" : "slideDown 0.8s " }}
+    className={`navbar ${isScrolled ? "navbar-fixed" : ""} ${click ? "navbar-fixed":""}`}
+    style={{ animation: click ? "none" : ""}}
     >
       <div className="navbar-container">
         <NavLink to="/" className="logo" onClick={reloadPage}>

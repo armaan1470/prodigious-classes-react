@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from "react";
-import banner from "../../assets/images/aboutIB_header.jpg";
+import banner from "../../../assets/images/aboutIB_header.jpg";
 import "./Aboutib.css";
-import logo from "../../assets/images/aboutib_logo.png";
-import ilust1 from "../../assets/images/aboutin_illust1.png";
-import ilust2 from "../../assets/images/aboutib_ilust2.png"
-import ButtonModal from "../../components/ButtonModal/ButtonModal";
+import logo from "../../../assets/images/aboutib_logo.png";
+import ilust1 from "../../../assets/images/aboutin_illust1.png";
+import ilust2 from "../../../assets/images/aboutib_ilust2.png"
+import ButtonModal from "../../../components/ButtonModal/ButtonModal";
 
 const AboutIB = () => {
   const bannerText = useRef(null);

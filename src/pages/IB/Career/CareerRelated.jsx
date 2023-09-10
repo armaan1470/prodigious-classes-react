@@ -1,15 +1,18 @@
 import React from "react";
 import "./Career.css";
-import logo from "../../assets/IB/Career-Related Programme/1.png";
-import ilust1 from "../../assets/IB/Career-Related Programme/2.png";
-import ilust2 from "../../assets/IB/Career-Related Programme/3.png";
-import ButtonModal from "../../components/ButtonModal/ButtonModal";
-import art1 from "../../assets/images/dna.png"
-import art2 from "../../assets/IGCSE Content/Why Choose IGCSE/7.png"
-import art3 from "../../assets/images/idea.png"
+import logo from "../../../assets/IB/Career-Related Programme/1.png";
+import ilust1 from "../../../assets/IB/Career-Related Programme/2.png";
+import ilust2 from "../../../assets/IB/Career-Related Programme/3.png";
+import ButtonModal from "../../../components/ButtonModal/ButtonModal";
+import art1 from "../../../assets/images/dna.png"
+import art2 from "../../../assets/IGCSE Content/Why Choose IGCSE/7.png"
+import art3 from "../../../assets/images/idea.png"
+import useAnimation from "../../../Hooks/useAnimation";
 
 
 const CareerRelated = () => {
+  useAnimation("animation")
+
   return (
     <div className="main_container">
       <img src={art1} alt="" className="icon1"/>
@@ -32,10 +35,10 @@ const CareerRelated = () => {
       </div>
 
       <div className="intro_igsce1">
-        <div className="igsce_ilust_container">
+        <div className="igsce_ilust_container animation fade_in">
           <img src={ilust1} alt="ilustration" />
         </div>
-        <div className="igsce_content1">
+        <div className="igsce_content1 animation slide_up">
           <div className="content_header">
             <p>IB TUTION</p>
             <h1>
@@ -72,7 +75,7 @@ const CareerRelated = () => {
       </div>
 
       <div className="intro_igsce2">
-        <div className="igsce_content2">
+        <div className="igsce_content2 animation slide_left">
           <div className="content-detail">
             <div className="content_header2 mr-b">
               <h1>Career-Related Programme helps students to:</h1>
@@ -124,7 +127,7 @@ const CareerRelated = () => {
 
           </div>
         </div>
-        <div className="igsce_ilust_container">
+        <div className="igsce_ilust_container animation slide_right">
           <img src={ilust2} alt="ilustration" />
         </div>
       </div>

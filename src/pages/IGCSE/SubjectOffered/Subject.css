@@ -11,7 +11,7 @@
     font-size: var(--detail-medium);
 }
 .banner.b1{
-    background-image: url("../../assets/IGCSE Content/Subjects Offered at IGCSE/3.jpg");
+    background-image: url("../../../assets/IGCSE Content/Subjects Offered at IGCSE/3.jpg");
 }
 .list-header{
     color:#2464a2;
@@ -22,7 +22,7 @@
     margin-bottom: 10px;
 }
 .list-header::before{
-    content: url("../../assets/IGCSE Content/Subjects Offered at IGCSE/Right tick.svg");
+    content: url("../../../assets/IGCSE Content/Subjects Offered at IGCSE/Right tick.svg");
     width:10px;
     height: 10px;
     position: absolute;
