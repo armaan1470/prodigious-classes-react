@@ -37,6 +37,7 @@
 
 .benefit_header_text {
   font-size: var(--banner-h);
+  font-weight: 500;
   color: white;
   font-family: var(--font-secondary);
   position: absolute;
@@ -79,10 +80,10 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  font-size: var(--detail-large);
+  font-size: 24px;
   text-align: center;
   font-family: var(--font-primary);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .benefit_main_card:first-child {
@@ -95,9 +96,9 @@
 
 .benefit_top_card .img_container {
   background-color: white;
-  width: 100px;
+  width: 30%;
   border-radius: 50%;
-  padding: 10px;
+  padding: 15px 10px 10px 10px;
 }
 
 .benefit_top_card .img_container img {
@@ -108,7 +109,7 @@
 .benefit_bottom_card {
   background-color: white;
   padding: 20px 30px;
-  height: 480px;
+  height: 400px;
   font-size: var(--detail-small);
   font-family: var(--font-primary);
   line-height: var(--detail-lh2);
@@ -169,6 +170,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 1rem;
   /* padding-top: 20px; */
 }
 
@@ -178,9 +180,10 @@
   /* text-align: center; */
   font-family: var(--font-secondary);
   font-size: var(--content-h);
+  line-height: var(--content-lh);
   font-style: normal;
-  font-weight: 500;
-  line-height: 124%;
+  font-weight: 600;
+  /* line-height: 124%; */
 }
 
 .wwoff_content_text{
@@ -198,6 +201,7 @@
   flex-direction: column;
   padding-top: 30px;
   gap:40px;
+  font-weight: 600;
 }
 
 
@@ -284,6 +288,7 @@
   padding: 20px 0 20px clamp(1.25rem, 0.3697rem + 3.7559vw, 3.75rem);
   font-size: var(--content-h);
   font-family: var(--font-secondary);
+  font-weight: 600;
 }
 
 .benefit_detail_body_container{
@@ -302,10 +307,10 @@
 .benefit_detail_body span{
   color: #6C6C6A;
   font-family: var(--font-primary);
-  font-size: var(--detail-large);
+  font-size: var(--detail-medium);
+  line-height: var(--detail-lh1);
   font-style: normal;
   font-weight: 500;
-  line-height: 124%;
 }
 
 
