@@ -39,6 +39,10 @@ import Carousel from "../../components/Carousel/Carousel";
 // import Slider from "../../components/Slider/Slider";
 import Footer from "../../components/Footer/Footer";
 import CourseContainer from "../../components/CourseContainer/CourseContainer";
+import benefits1 from '../../assets/images/benefit-1.png';
+import benefits2 from '../../assets/images/benefit-2.png';
+import benefits3 from '../../assets/images/benefit-3.png'
+import benefits4 from '../../assets/images/benefit-4.png';
 import ButtonModal from "../../components/ButtonModal/ButtonModal";
 import BannerSlider from '../../components/BannerSlider/BannerSlider';
 import testimonialBg from "../../assets/images/testimonial-background.jpg"
@@ -98,7 +102,7 @@ function Home() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
-          if (entry.target.classList.contains("ilustrate-3")) {
+          if (entry.target.classList.contains("second_half")) {
             entry.target.classList.add("animate_2");
           } else if (entry.target.classList.contains("qoute_text_animation")) {
             entry.target.style.animation = "fadein forwards 1s";
@@ -165,11 +169,17 @@ function Home() {
             </p>
           </div>
           <div
-            className="second_half ilustrate-3"
+            className="second_half "
             ref={(el) => (aniElement.current[2] = el)}
 
           >
-            <img src={illustration3} alt="" />
+            <div className="four_benefits_icon_container">
+              <img src={benefits1} alt={benefits1} />
+              <img src={benefits2} alt={benefits2} />
+              <img src={benefits3} alt={benefits3} />
+              <img src={benefits4} alt={benefits4} />
+            </div>
+
           </div>
         </div>
 
