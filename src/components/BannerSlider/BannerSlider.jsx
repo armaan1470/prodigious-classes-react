@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import banner1 from "../../assets/images/banner-1.jpg";
+import banner1 from "../../assets/images/slider-1.jpg";
 import './BannerSlider.css'; // Import a CSS file for custom styles
 import Counter from "../../components/Counter/Counter";
 
