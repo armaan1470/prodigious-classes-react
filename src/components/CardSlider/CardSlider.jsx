@@ -13,6 +13,8 @@ import test7 from "../../assets/images/test-7.png";
 import test8 from "../../assets/images/test-8.png";
 import test9 from "../../assets/images/test-9.png";
 import test10 from "../../assets/images/test-10.png";
+import prevbtn from "../../assets/images/slider button 4.png";
+import nextbtn from "../../assets/images/slider button 5.png";
 // import test1 from "../../assets/images/review-1.png";
 // import test2 from "../../assets/images/review-2.png";
 // import test3 from "../../assets/images/review-3.png";
@@ -26,17 +28,36 @@ import test10 from "../../assets/images/test-10.png";
 
 
 const CardSlider = () => {
+
+  // Define your custom previous button component
+  const CustomPrevArrow = (props) => (
+    <button {...props} className='testPrevBtn'>
+      <img src={prevbtn} alt="Previous" />
+    </button>
+  );
+
+  // Define your custom next button component
+  const CustomNextArrow = (props) => (
+    <button {...props}  className='testNextBtn'>
+      <img src={nextbtn} alt="Next" />
+    </button>
+  );
+
   const settings = {
     dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     centerMode: true,
     centerPadding: "0",
+    prevArrow: <CustomPrevArrow />, // Specify your custom previous button component
+    nextArrow: <CustomNextArrow />, // Specify your custom next button component
   };
+
+
 
   return (
     <div className="card-slider-container">

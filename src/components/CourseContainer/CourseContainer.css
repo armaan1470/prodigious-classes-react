@@ -4,13 +4,15 @@
   width: 100%;
   display: grid;
   place-items: center;
+  margin: auto;
 }
 .course_container p {
-  font-family: "biennalemedium";
+  font-family: var(--font-secondary);
   font-size: 3rem;
+  font-weight: 700;
   text-align: center;
   margin: auto;
-  color: #ff5400;
+  color: #ff7b00;
   padding: 1rem 0;
 }
 .course_container p span {
@@ -49,7 +51,7 @@
 
 .courses_home img {
   border-radius: 12px;
-  width: 19.1rem;
+  width: 15rem;
   margin: 2.4rem 2.4rem 0 0;
   transition: all 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   opacity: 0;

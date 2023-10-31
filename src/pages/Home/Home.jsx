@@ -132,6 +132,9 @@ function Home() {
       <BannerSlider />
 
 
+      <CourseContainer />
+
+
 
 
       {/* learning at philomathean */}
