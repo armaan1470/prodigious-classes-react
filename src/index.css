@@ -45,7 +45,7 @@
 :root{
   --font-primary: "Poppins", sans-serif;
   --font-secondary: 'Schibsted Grotesk', sans-serif;
-  --detail-medium: 16px;
+  --detail-medium: 15px;
   --detail-small:13px;
   --detail-large: 20px;
   --detail-lh1: 1.6;
@@ -90,5 +90,5 @@ border: 1px solid black;
 }
 
 .bottom_space{
-  height: 200px;
+  height: 2000px;
 }

@@ -4,13 +4,14 @@
   width: 90%;
   display: flex;
   justify-content: space-around;
-  box-shadow: 10px 10px 93px -39px rgba(173, 173, 173, 0.75);
+  box-shadow: 0px 4px 0px 4px rgb(209 209 209 / 75%);
   border-radius: 5px;
   background-color: white;
   max-width: 1200px;
-  /* position: relative; */
-  top: 200px;
-  margin: clamp(30px, 6vw, 7rem) 0 0 0 ;
+  position: relative;
+  top: -50px;
+  margin: auto;
+  /* margin: clamp(30px, 6vw, 7rem) 0 0 0 ; */
 }
 .counter-div .n1 {
   padding: 1.7rem;
@@ -37,42 +38,26 @@
 }
 
 .lp1 p:first-child {
-  background-image: -webkit-linear-gradient(
-    180deg,
-    rgb(246, 60, 125) 30%,
-    rgb(255, 123, 110) 70%
-  );
+  background-color: #056bce;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .lp2 p:first-child {
-  background-image: -webkit-linear-gradient(
-    180deg,
-    rgb(44, 191, 199) 20%,
-    rgb(70, 238, 170)
-  );
+  background-color: #056bce;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .lp3 p:first-child {
-  background-image: -webkit-linear-gradient(
-    150deg,
-    rgb(18, 112, 227) 30%,
-    rgb(99, 194, 255)
-  );
+  background-color: #056bce;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .lp4 p:first-child {
-  background-image: -webkit-linear-gradient(
-    180deg,
-    rgb(129, 34, 239) 20%,
-    rgb(255, 99, 224)
-  );
+  background-color: #056bce;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -83,18 +68,19 @@
   font-size: 2.5rem;
   position: absolute;
   top: -10px;
-  -webkit-text-fill-color: rgb(246, 60, 125);
+  -webkit-text-fill-color: #ff7b00;
 }
 .n1:is(.lp2) p:first-child::after {
-  -webkit-text-fill-color: rgb(44, 191, 199);
+  -webkit-text-fill-color: #ff7b00;
 }
 .n1:is(.lp3) p:first-child::after {
-  -webkit-text-fill-color: rgb(18, 112, 227);
+  -webkit-text-fill-color: #ff7b00;
 }
 .n1:is(.lp4) p:first-child::after {
-  -webkit-text-fill-color: rgb(129, 34, 239);
+  -webkit-text-fill-color: #ff7b00;
 }
 .counter-div p:last-child {
+  color: #056bce;
   font-family: "biennalemedium";
   font-size: 1.1rem;
 }

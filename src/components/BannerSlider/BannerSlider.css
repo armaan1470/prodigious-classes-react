@@ -1,0 +1,13 @@
+BannerSlider.css
+.slider-container {
+    display: flex;
+    justify-content: center; /* Center the slider horizontally */
+    width: 100%; /* Make the slider take the full width of the screen */
+  }
+  
+  .slider-image {
+    width: 100%; /* Make the image take the full width of its container */
+    height: 100%; /* Set the image height to 100% */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire space */
+  }
+  

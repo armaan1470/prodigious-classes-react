@@ -1,0 +1,80 @@
+/* CardSlider.css */
+.card-slider-container {
+    width: 100%;
+    max-width: 920px;
+    margin: 70px auto;
+  }
+  
+  .card-slider-container .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%; /* Default size of the cards */
+    transform: scale(0.84); /* Default scale for smaller cards */
+    opacity: 1; /* Default opacity for smaller cards */
+    position: relative;
+  }
+  
+  .card-slider-container .slick-current {
+    width: 40%; /* Larger size for the centered card (middle card) */
+    transform: scale(0.96); /* Normal scale for the centered card */
+    opacity: 1; /* Normal opacity for the centered card */
+
+    z-index: 99;
+  }
+
+
+  .card-slider-container .slick-current .card .card-img{
+    box-shadow: 0px 0px 93px -40px rgba(173, 173, 173, 0.75);
+  }
+  
+
+  /* Hide default slick slider buttons */
+  .slick-prev:before, .slick-next:before{
+  display: none;
+}
+
+
+.testPrevBtn{
+  position: absolute;
+  top: 175px;
+  left: -80px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+}
+
+.testNextBtn{
+  position: absolute;
+  top: 175px;
+  right: -80px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+}
+
+
+.testPrevBtn img{
+  width: 100%;
+  height: 100%;
+}
+
+.testNextBtn img{
+  width: 100%;
+  height: 100%;
+}
+
+/* Add smooth transition to the card slider */
+.card-slider-container .slick-slide {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  /* Adjust the transition duration (0.3s) and easing function (ease-in-out) as needed */
+}
+
+.card-slider-container .slick-current {
+  transform: scale(0.96);
+  opacity: 1;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  /* Adjust the transition duration (0.3s) and easing function (ease-in-out) as needed */
+}

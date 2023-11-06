@@ -9,7 +9,7 @@ function WhatsappChat() {
   return (
     <div className="whatsAppContainer">
 
-      <FloatingWhatsApp phoneNumber="+919769611995" accountName="Philomathean Classes" avatar={avatar1} textReply="Hello, I'm interested in your product."         
+      <FloatingWhatsApp phoneNumber="+919769611995" accountName="Philomathean Coaching" avatar={avatar1} textReply="Hello, I'm interested in your product."         
         allowEsc
         allowClickAway
         notification

@@ -1,12 +1,12 @@
 import React from 'react'
 import { useState, useEffect } from "react";
 import "./CourseContainer.css"
-import course1 from "../../assets/images/Courses.jpg";
-import course2 from "../../assets/images/Courses 2.jpg";
-import course3 from "../../assets/images/Courses 3.jpg";
-import course4 from "../../assets/images/Courses 4.jpg";
-import course5 from "../../assets/images/Courses 5.jpg";
-import course6 from "../../assets/images/Courses 6.jpg";
+import course1 from "../../assets/images/orange.png";
+import course2 from "../../assets/images/green.png";
+import course3 from "../../assets/images/voilet.png";
+import course4 from "../../assets/images/pink.png";
+import course5 from "../../assets/images/blue.png";
+import course6 from "../../assets/images/yellow.png";
 
 
 function CourseContainer() {
@@ -38,7 +38,7 @@ function CourseContainer() {
   return (
     <div className="course_container">
     <p>
-      Featured <span> Courses</span> at Philomathean
+      Courses at Philomathean
     </p>
     <div className={`courses_home ${visibleIndex !== -1 ? 'visible' : ''}`}>
       <img src={course1} alt="" style={{ animationDelay: '0.2s' }} />

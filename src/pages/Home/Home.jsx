@@ -1,6 +1,9 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
 import "./Home.css";
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import illustration1 from "../../assets/images/illustration-ani.png";
 import apple from "../../assets/images/apple.png";
 import box from "../../assets/images/box.png";
@@ -33,26 +36,73 @@ import tut5 from "../../assets/images/Team-5.jpg";
 import prevbtn2 from "../../assets/images/slider button 2.png";
 import nextbtn2 from "../../assets/images/slider button 3.png";
 import Carousel from "../../components/Carousel/Carousel";
-import Slider from "../../components/Slider/Slider";
+// import Slider from "../../components/Slider/Slider";
 import Footer from "../../components/Footer/Footer";
 import CourseContainer from "../../components/CourseContainer/CourseContainer";
+import benefits1 from '../../assets/images/benefit-1.png';
+import benefits2 from '../../assets/images/benefit-2.png';
+import benefits3 from '../../assets/images/benefit-3.png'
+import benefits4 from '../../assets/images/benefit-4.png';
 import ButtonModal from "../../components/ButtonModal/ButtonModal";
+import BannerSlider from '../../components/BannerSlider/BannerSlider';
+import testimonialBg from "../../assets/images/testimonial-background.jpg"
+import ReactCardSlider from 'react-card-slider-component';
+import CardSlider from '../../components/CardSlider/CardSlider';
+import funFact from '../../assets/images/fact.png'
+import avatar1 from "../../assets/images/Profile-1.png";
+import avatar2 from "../../assets/images/Profile-2.png";
+import avatar3 from "../../assets/images/Profile-3.png";
+import avatar4 from "../../assets/images/Profile-4.png";
+import avatar5 from "../../assets/images/Profile-5.png";
+import avatar6 from "../../assets/images/Profile-6.png";
+import stories1 from "../../assets/images/success stories-1.png";
+import stories2 from "../../assets/images/success stories-2.png";
+import stories3 from "../../assets/images/success stories-3.png";
+import stories4 from "../../assets/images/success stories-4.png";
+import stories5 from "../../assets/images/success stories-5.png";
+import stories6 from "../../assets/images/success stories-6.png";
 
 function Home() {
 
-  const [count, setCount] = useState(0);
-  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const elements = document.querySelectorAll(".t");
+      elements.forEach((element) => {
+        const { top, bottom } = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        if (top < windowHeight * 1) {
+          if (element.classList.contains("avatar_img")) {
+            element.style.animation = "popup forwards 0.5s";
+            const storiesImages = document.querySelectorAll(".stories_img");
+            storiesImages.forEach((img) => {
+              img.style.animation = "popup forwards 0.5s";
+              img.style.animationDelay = "0.5s";
+            });
+          } else if (element.classList.contains("primary_text") || element.classList.contains("secondary_text")) {
+            element.classList.add("typed");
+          }
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
 
   const aniElement = useRef([]);
 
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
-          if (entry.target.classList.contains("ilustrate-3")) {
+          if (entry.target.classList.contains("second_half")) {
             entry.target.classList.add("animate_2");
           } else if (entry.target.classList.contains("qoute_text_animation")) {
             entry.target.style.animation = "fadein forwards 1s";
@@ -74,96 +124,30 @@ function Home() {
       observer.disconnect();
     };
   }, []);
-  
+
+
+
+
+
 
   return (
     <>
-      <div className="body">
-        <div className="hero_container">
-          <div className="text_img_container">
-            <div className="first_half text">
-              <div>
-                <h1>
-                  Let's <span> Learn </span>
-                  <br />
-                  at the Comfort
-                  <br /> of our
-                  <span> Home </span>
-                </h1>
-              </div>
-              <div>
-                <p>
-                  Private group tution at your door step. <br /> We provide a
-                  flexible learning solution that <br /> makes learning easy and
-                  convinient
-                </p>
-                <ButtonModal name="Book a Demo"/>
-              </div>
-            </div>
-            <div className="second_half ill_position">
-              <img
-                src={illustration1}
-                alt="ilustrate"
-                className="illustrate"
-                width="70%"
-              />
-              <img src={apple} alt="apple" className="apple" />
-              <img src={box} alt="box" className="box" />
-              <img src={rings} alt="rings" className="rings" />
-              <img src={target} alt="target" className="target" />
-              <img src={pie} alt="pie" className="pie" />
-              <img src={bulb} alt="bulb" className="bulb" />
-              <img src={calculator} alt="calculator" className="calculator" />
-              <img src={hexagon} alt="hexagon" className="hexagon" />
-              <img src={scale} alt="scale" className="scale" />
-            </div>
-          </div>
-          <Counter />
-        </div>
-        {/*    */}
 
-        <div className="grad_back">
-          <div
-            className="graduation"
-            ref={(el) => (aniElement.current[0] = el)}
-          >
-            <p>
-              Our <span> International </span>Graduates
-            </p>
-            <Carousel
-              imgs={[igrad1, igrad2, igrad3, igrad4, igrad5, igrad6]}
-              btn={[prevbtn1, nextbtn1]}
-            />
-          </div>
-        </div>
-        {/* <div className="About-us">
-          <div className="ilustrate-2">
-            <img src={illustration2} alt="" />
-          </div>
-          <div className="text2">
-            <div>
-              <h1>
-                <span>About </span> Us
-              </h1>
-              <p>
-                We at Philomathean Career Institute <br />
-                understand that education is the most <br />
-                powerful weapon to help bring the <br />
-                desired change in our society and to <br />
-                contribute to the society at large.
-                <br />
-              </p>
-              <button className="btn">Book A Demo className</button>
-            </div>
-          </div>
-        </div> */}
+      <BannerSlider />
 
-        <CourseContainer />
 
-        <div className="benefits_container text_img_container">
+      <CourseContainer />
+
+
+
+
+      {/* learning at philomathean */}
+
+
+      <div className="benefits_container text_img_container">
           <div
             className="first_half text3"
-            style={{ flex: "50%" }}
+
             ref={(el) => (aniElement.current[1] = el)}
           >
             <h1>
@@ -174,86 +158,178 @@ function Home() {
               many <span>benefits</span>
             </h1>
             <p>
-              Students at Philomathean Career Institute <br />
-              are given personal attention. We help
-              <br />
-              them improve their overall performance.
-              <br />
+            Each Philomathean Career Institute student receives
+            personalized attention. Our goal is to help them
+            improve their overall performance. Our flexible timings
+            ensure that all students are taken care of. Additionally,
+            we conduct one-to-one student-teacher sessions.
+            We conduct weekly tests to ensure everything is up to
+            standard. Additionally, doubt-solving sessions are
+            conducted after weekly tests and before exams.
             </p>
-            <ButtonModal name="Book a Demo"/>
           </div>
           <div
-            className="second_half ilustrate-3"
+            className="second_half "
             ref={(el) => (aniElement.current[2] = el)}
-            style={{ flex: "50%" }}
+
           >
-            <img src={illustration3} alt="" />
-          </div>
-        </div>
-
-        <div className="qoute_container">
-          <div className="main-q">
-            <img src={leftcomma} width="10%" alt="" />
-            <p
-              className="qoute_text_animation"
-              ref={(el) => (aniElement.current[3] = el)}
-              style={{opacity:0}}
-            >
-              We are committed <br />
-              to providing the best education possible
-            </p>
-            <img src={rightcomma} width="10%" alt="" />
-          </div>
-          <div className="deco">
-            <img src={decor} className="deco_img" alt="" />
-          </div>
-        </div>
-
-        <div className="team" ref={(el) => (aniElement.current[4] = el)}>
-          <p>
-            Our Philomathean <span> Team </span>
-          </p>
-          <div className="wrapper">
-            <Carousel
-              imgs={[tut1, tut2, tut3, tut4, tut5]}
-              btn={[prevbtn2, nextbtn2]}
-              className="team_carousel"
-            />
-          </div>
-        </div>
-
-        <div className="testimonial_container">
-          <div className="testimonials">
-            <div className="text4" ref={el=>(aniElement.current[5] = el)}>
-              <p>testimonials</p>
-              <p>
-                What Our Students/Parents
-                <br />
-                are <span> saying </span>about us?
-              </p>
+            <div className="four_benefits_icon_container">
+              <img src={benefits1} alt={benefits1} />
+              <img src={benefits2} alt={benefits2} />
+              <img src={benefits3} alt={benefits3} />
+              <img src={benefits4} alt={benefits4} />
             </div>
-            <div className="ilustrate-4">
-              <div className="wrapper">
-                <Slider />
+
+          </div>
+        </div>
+
+
+
+
+
+
+      {/* success stories */}
+
+      <div className="stories_background">
+        <div className="stories_container">
+          <div className="stories_heading">Success Stories</div>
+          <div className="stories_card_container">
+            <div className="stories_cards">
+              <div className="card_img">
+                <img src={stories1} alt={stories1} className="stories_img t" />
+              </div>
+              <div className="card_desc">
+                <img src={avatar1} alt={avatar1} className="avatar_img t" />
+
+                <div className="card_details">
+                  <div className="primary_text t">Sikha Gupta</div>
+                  <div className="secondary_text t">Student, Class 10</div>
+                </div>
+              </div>
+            </div>
+            <div className="stories_cards">
+              <div className="card_img">
+                <img src={stories2} alt={stories2} className="stories_img t" />
+              </div>
+              <div className="card_desc">
+                <img src={avatar2} alt={avatar2} className="avatar_img t" />
+
+                <div className="card_details">
+                  <div className="primary_text t">Shriya Ganguly</div>
+                  <div className="secondary_text t">
+                    Student, Class 9 (IGCSE)
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="stories_cards">
+              <div className="card_img">
+                <img src={stories3} alt={stories3} className="stories_img t" />
+              </div>
+              <div className="card_desc">
+                <img src={avatar3} alt={avatar3} className="avatar_img t" />
+
+                <div className="card_details">
+                  <div className="primary_text t">Jitesh Singh</div>
+                  <div className="secondary_text t">Student, Class 10</div>
+                </div>
+              </div>
+            </div>
+            <div className="stories_cards">
+              <div className="card_img">
+                <img src={stories4} alt={stories4} className="stories_img t" />
+              </div>
+              <div className="card_desc">
+                <img src={avatar4} alt={avatar4} className="avatar_img t" />
+
+                <div className="card_details">
+                  <div className="primary_text t">Suamya Kshirsagar</div>
+                  <div className="secondary_text t">
+                    Student, Class 9 (IGCSE)
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="stories_cards">
+              <div className="card_img">
+                <img src={stories5} alt={stories5} className="stories_img t" />
+              </div>
+              <div className="card_desc">
+                <img src={avatar5} alt={avatar5} className="avatar_img t" />
+
+                <div className="card_details">
+                  <div className="primary_text t">Khyati</div>
+                  <div className="secondary_text t">Owner, Pupils Academy</div>
+                </div>
+              </div>
+            </div>
+            <div className="stories_cards">
+              <div className="card_img">
+                <img src={stories6} alt={stories6} className="stories_img t" />
+              </div>
+              <div className="card_desc">
+                <img src={avatar6} alt={avatar6} className="avatar_img t" />
+
+                <div className="card_details">
+                  <div className="primary_text t">Vanshika Desai</div>
+                  <div className="secondary_text t">
+                    Student, Class 9 (IGCSE)
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      {/* <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-      >
-        
-        <Box sx={style}>
-          <Box sx={buttonContainerStyle}>
-            <Button style={buttonStyle} onClick={handleClose}>&times;</Button>
-          </Box>
-          <Form onCloseModal={handleClose} />
-        </Box>
-      </Modal> */}
+
+
+
+
+      {/* fun fact */}
+
+      <div className="funfact_container">
+        <img src={funFact} alt="fun_fact" />
+      </div>
+
+
+      <div className="testimonial_container">
+        <div className="testimonials">
+
+          <div className="text4">
+            <p>Testimonials</p>
+            <p>
+              What Our Students/Parents <br />
+              are saying about us?
+            </p>
+          </div>
+
+          {/* <ReactCardSlider slides={slides}/> */}
+
+          <CardSlider />
+
+        </div>
+      </div>
+
+      <div className="book_in_wrapper">
+        <div className="book_in_container">
+          <div className="book_in_detail">
+            <small>Free Demo Lecture</small>
+            <h1>
+              Ready to dive in?
+              <br />
+              Attain your Free Demo Lecture today.
+            </h1>
+          </div>
+          <ButtonModal name="BOOK NOW" bg="white" clr="orange" bld="600" />
+        </div>
+      </div>
+
+
+
+
+
+      {/* <div className="bottom_space"></div> */}
+
     </>
   );
 }

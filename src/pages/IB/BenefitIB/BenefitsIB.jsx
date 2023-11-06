@@ -1,5 +1,7 @@
 import React from "react";
 import icon1 from "../../../assets/images/icon-1.svg";
+import icon2 from "../../../assets/images/icon-2.svg";
+import icon3 from "../../../assets/images/icon-3.svg";
 import banner from "../../../assets/images/bg.jpg"
 import wwoff_illus from "../../../assets/images/model.png"
 import bef_transparent_image from "../../../assets/images/abstract.svg"
@@ -36,9 +38,9 @@ function BenefitIB() {
             <div className="benefit_main_card">
               <div className="benefit_top_card">
                 <div className="img_container">
-                  <img src={icon1} alt="cardimg" />
+                  <img src={icon2} alt="cardimg" />
                 </div>
-                <p>Global <br /> Recognition</p>
+                <p>University <br /> Preparation</p>
               </div>
               <div className="benefit_bottom_card">
                 The IB Diploma program improves your study skills and helps you prepare for university-level courses. It helps you polish your writing abilities and prepare for research work through its features such as Theory of Knowledge, Extended Essay, and CAS. It assists you in efficiently managing your time between study and other activities due to its rigorous workload. It instills good study habits that will aid you in a more successful academic career at university.
@@ -48,9 +50,9 @@ function BenefitIB() {
             <div className="benefit_main_card">
               <div className="benefit_top_card">
                 <div className="img_container">
-                  <img src={icon1} alt="cardimg" />
+                  <img src={icon3} alt="cardimg" />
                 </div>
-                <p>Global <br /> Recognition</p>
+                <p>Personal <br /> Development</p>
               </div>
               <div className="benefit_bottom_card">
                 The IB curriculum strives to encourage creativity in pupils through its CAS core element, while also emphasizing social and emotional development by integrating them in community service. It also aids in the development of soft skills such as collaboration and empathy. It enables them to investigate situations and concepts with both local and global implications.

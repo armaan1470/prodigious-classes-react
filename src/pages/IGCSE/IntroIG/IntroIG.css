@@ -19,8 +19,8 @@
 
 .banner{
     position: relative;
-    height: 250px;
-    /* height: 100%; */
+    /* height: 250px; */
+    height: 100%;
     background-image: url("../../../assets/igcsepagecontent/4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -44,7 +44,7 @@
 }
 
 .banner_img_content_area{
-    padding: 15px 0 0 0 ;
+    padding: 15px 0;
 }
 
 .banner_img_content{
@@ -175,14 +175,14 @@
 .igsce_content1 .content-detail{
     padding:0 clamp(1rem , 0.5714rem + 2.1429vw,2.5rem);
     font-family: var(--font-primary);
-    font-size: var(--detail-small);
+    font-size: var(--detail-medium);
     width: 71%;
 }
 
 .igsce_content2 .content-detail{
     padding:0 clamp(1rem , 0.5714rem + 2.1429vw,2.5rem);
     font-family: var(--font-primary);
-    font-size: var(--detail-small);
+    font-size: var(--detail-medium);
     width: 70%;
 }
 
