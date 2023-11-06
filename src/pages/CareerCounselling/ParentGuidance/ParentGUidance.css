@@ -1,0 +1,21 @@
+.content_header h2{
+    color:#0961c0;
+    font-size: var(--template-h);
+}
+.content_header .sub_text{
+    color:#ff6800 !important;
+}
+.footer_icon_text_container.updated{
+    color: #000;
+    font-size: var(--detail-large);
+    font-family: var(--font-secondary);
+    align-items: start;
+    line-height: 1.6;
+    padding:5px;
+
+}
+.list_icon_text_img{
+    color:#ff6800 !important;
+    padding-top:8px ;
+
+}

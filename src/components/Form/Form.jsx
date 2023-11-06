@@ -3,7 +3,7 @@ import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 import "./Form.css";
 
-function Form({onCloseModal}) {
+function Form({onCloseModal , heading}) {
 
     const [firstname, setFirstName] = useState('');
     const [lastname, setLastName] = useState('');
@@ -58,7 +58,7 @@ function Form({onCloseModal}) {
 
   return (
     <div className="contact_form_container">
-                <div className="contact_form_heading">Book a Demo / Enquiry</div>
+                <div className="contact_form_heading">{heading}</div>
                 <form onSubmit={handleSubmit} className='form_container'>
 
                     <div className="form_input_container">

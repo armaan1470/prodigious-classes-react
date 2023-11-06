@@ -401,7 +401,7 @@ function Navbar() {
                 >
                   <li className="dropdown-item">
                     <NavLink
-                      to="/parental-support"
+                      to="/parent"
                       className="sub-nav-links"
                       onClick={closeMobileMenu}
                     >
