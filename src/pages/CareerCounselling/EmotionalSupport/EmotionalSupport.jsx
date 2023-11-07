@@ -10,6 +10,7 @@ import art2 from "../../../assets/IGCSE Content/Why Choose IGCSE/7.png"
 import art3 from "../../../assets/IGCSE Content/Subjects Offered at IGCSE/4.png";
 import art4 from "../../../assets/IGCSE Content/Subjects Offered at IGCSE/6.png";
 import useAnimation from "../../../Hooks/useAnimation";
+import ButtonModal from "../../../components/ButtonModal/ButtonModal";
 
 const EmotionalSupport = () => {
     useAnimation("animation")
@@ -133,6 +134,20 @@ const EmotionalSupport = () => {
         </div>
         <div className="igsce_ilust_container animation slide_right">
           <img src={ilust2} alt="ilustration" />
+        </div>
+      </div>
+
+      <div className="book_in_wrapper">
+        <div className="book_in_container">
+          <div className="book_in_detail">
+            <small>Free Demo Lecture</small>
+            <h1>
+              Ready to dive in?
+              <br />
+              Attain your Free Demo Lecture today.
+            </h1>
+          </div>
+          <ButtonModal name="BOOK NOW" bg="white" clr="orange" bld="600" />
         </div>
       </div>
     </div>

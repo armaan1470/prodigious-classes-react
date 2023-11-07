@@ -417,6 +417,15 @@ function Navbar() {
                       Emotional Support
                     </NavLink>
                   </li>
+                  <li className="dropdown-item">
+                    <NavLink
+                      to="/Subject-selection"
+                      className="sub-nav-links"
+                      onClick={closeMobileMenu}
+                    >
+                      IB School & Subject Selection
+                    </NavLink>
+                  </li>
                 </ul>
               </div>
             )}

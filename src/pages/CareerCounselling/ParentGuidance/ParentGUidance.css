@@ -1,3 +1,7 @@
+.intro_igsce1.new{
+    padding-top : 0 !important;
+    padding-bottom: 6rem;
+} 
 .content_header h2{
     color:#0961c0;
     font-size: var(--template-h);
