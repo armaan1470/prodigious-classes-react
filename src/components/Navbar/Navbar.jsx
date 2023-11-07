@@ -410,7 +410,7 @@ function Navbar() {
                   </li>
                   <li className="dropdown-item">
                     <NavLink
-                      to="/emotional-support"
+                      to="/emotional"
                       className="sub-nav-links"
                       onClick={closeMobileMenu}
                     >

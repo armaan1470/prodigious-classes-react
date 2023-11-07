@@ -1,19 +1,18 @@
 import React from "react";
-import logo from "../../../assets/careercounselling/PG-3.png";
-import ilust1 from "../../../assets/careercounselling/PG-1.png";
-import ilust2 from "../../../assets/careercounselling/PG-2.png";
-import { FiPhone, FiMail } from "react-icons/fi";
-import "./ParentGUidance.css";
-import Form from "../../../components/Form/Form.jsx";
+import logo from "../../../assets/emotionalsupportcontent/1.png";
+import ilust1 from "../../../assets/emotionalsupportcontent/2.png";
+import ilust2 from "../../../assets/emotionalsupportcontent/3.png";
+import { FiMail, FiPhone } from "react-icons/fi";
 import { GoLocation } from "react-icons/go";
+import Form from "../../../components/Form/Form.jsx";
 import art1 from "../../../assets/images/dna.png";
 import art2 from "../../../assets/IGCSE Content/Why Choose IGCSE/7.png"
 import art3 from "../../../assets/IGCSE Content/Subjects Offered at IGCSE/4.png";
 import art4 from "../../../assets/IGCSE Content/Subjects Offered at IGCSE/6.png";
 import useAnimation from "../../../Hooks/useAnimation";
 
-const ParentGuidance = () => {
-  useAnimation("animation")
+const EmotionalSupport = () => {
+    useAnimation("animation")
   return (
     <div className="main_container">
       <img src={art1} alt="" className="icon1" />
@@ -21,10 +20,10 @@ const ParentGuidance = () => {
       <img src={art3} alt="" className="icon3" />
       <img src={art4} alt="" className="icon5" />
 
-      <div className="banner b6">
+      <div className="banner b7">
         <div className="banner_content_area">
           <div className="banner_text_content_area">
-            <div className="banner_heading">Parent Guidance</div>
+            <div className="banner_heading">Emotional Support</div>
           </div>
           <div className="banner_img_content_area">
             <img src={logo} alt={logo} className="banner_img_content" />
@@ -36,7 +35,7 @@ const ParentGuidance = () => {
         <div className="igsce_content1 animation slide_up">
           <div className="content_header">
             <p className="sub_text">Let's talk</p>
-            <h2>As an IB parent are you looing to more ways to be involved?</h2>
+            <h2>Seek help from our experienced IB educators</h2>
           </div>
           <div className="content-detail">
             <div className="footer_detail_text">
@@ -87,27 +86,23 @@ const ParentGuidance = () => {
         <div className="igsce_content1 animation slide_up">
           <div className="content_header">
             <p>CAREER COUNSELLING</p>
-            <h1>Parent Guidance</h1>
+            <h1>Emotional Support</h1>
           </div>
           <div className="content-detail">
             <p>
-              A parent’s or primary caregiver’s active, ongoing participation in
-              his or her child’s education is defined as successful parent
-              involvement. IB Parents can show their commitment at home by
-              reading with their children, assisting with homework, attending
-              school functions, or volunteering to send their children to IB
-              tutors for extra academic support outside of school.
+              We are a group of creative and successful IB educators committed
+              to improving education. We understand that everyone is a learner
+              from the moment they are born, and we understand how to design
+              classrooms and lessons where everyone can thrive. We know how to
+              reach out to children and teens, and how to inspire, support, and
+              educate them.
               <br />
               <br />
-              Despite being a needed component of many of our improvement
-              projects, IB parents’ involvement continues to provide a barrier
-              to educators. The advantages of parental involvement are obvious:
-              An increasing amount of evidence suggests that effective parent
-              involvement not only improves student behavior and attendance, but
-              also has a favorable impact on student achievement. Many schools
-              and tutoring institutes, however, continue to struggle with
-              defining and assessing genuine parental involvement, and many do
-              not believe their efforts are fruitful.
+              We, as IB specialist educators, advise parents to seek resources
+              that can help kids who are coping with stress, trauma, and other
+              mental health concerns as the world continues to engage in serious
+              discussions about school safety and servicing the mental health
+              needs of young people.
             </p>
           </div>
         </div>
@@ -117,19 +112,22 @@ const ParentGuidance = () => {
         <div className="igsce_content2 animation slide_left">
           <div className="content-detail ">
             <p>
-              Therefore, the Philomathean team communicates with IB Parents on a
-              regular basis and includes them in their child’s learning journey.
-              We believe that an IB student’s success is in both tutors’ and
-              families’ best interests. We imagine parents as partners in the
-              learning process, and then we figure out how to make that
-              relationship concrete.
+              We will continue to build tools around social-emotional learning
+              in the coming months, and we will support school teachers and
+              parents in helping their pupils regulate their emotions, cope with
+              stress, reduce the effects of harmful influences, and access
+              mental health support.
               <br />
               <br />
-              Our committed team of IB education experts collaborates closely
-              with parents. We are always accessible to answer any academic
-              questions and ensure that your child has a great emotional
-              experience. You will be kept fully informed about your child’s
-              progress, and we will provide customized solutions as needed.
+              We want teachers, learners, and parents to feel supported as
+              learning continues to adapt to changing circumstances. It is
+              critical to always look after your physical and mental health, but
+              especially during times of change. Our IB tutors do a variety of
+              things to help students manage their worries and motivate them to
+              return to formal teaching, including maintaining a daily schedule.
+              Learning experiences may differ from those previously had, and new
+              learning behaviors may take time and require assistance. Remember
+              to take time to speak, share, and reflect as a group.
             </p>
           </div>
         </div>
@@ -141,4 +139,4 @@ const ParentGuidance = () => {
   );
 };
 
-export default ParentGuidance;
+export default EmotionalSupport;
