@@ -11,20 +11,29 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 function LandingPopup() {
 
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
+  useEffect(() => {
+    // Use setTimeout to open the pop-up after 5 seconds
+    const timer = setTimeout(() => {
+      setOpen(true);
+    }, 4000);
+
+    return () => {
+      clearTimeout(timer); // Clear the timer if the component unmounts
+    };
+  }, []);
 
   const [currentCourse] = useTypewriter({
     words: [
       'IGCSE',
       'IB',
-      'AS & A Level',
+      'AS & A Levels',
       'IBDP',
-      'IIT-JEE',
-      'NEET (UG)',
     ],
-    loop: 0, 
+    loop: 0,
   })
+
 
   const handleOpen = () => {
     setOpen(true);
@@ -39,13 +48,14 @@ function LandingPopup() {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    bgcolor: "background.paper",
-    boxShadow: 24,
-    borderRadius: 5,
-    border: "13px solid #fff",
+    backgroundColor: "white", // Change bgcolor to backgroundColor
+    boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)", // Add a box shadow
+    borderRadius: "20px",
+    border: "10px solid #fff",
     display: "flex",
     flexDirection: "column",
-    userSelect: "none"
+    userSelect: "none",
+    minWidth: "615px",
   };
 
   const buttonContainerStyle = {
@@ -133,14 +143,19 @@ function LandingPopup() {
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
+
       >
-        <Box sx={style}>
+
+        <Box sx={style} className="landing-popup-modal">
+          <div className="close-button" onClick={handleClose}>
+            ✖
+          </div>
           <Box sx={buttonContainerStyle}>
             <form onSubmit={handleSubmit} className='landing_popup_container'>
               <div className="landing_popup_firsthalf">
 
                 <div className="landing_popup_heading">
-                  BOOK YOUR {currentCourse}<Cursor cursorColor='red' />  DEMO <br /> LECTURE NOW!
+                  BOOK YOUR {currentCourse}<Cursor cursorColor='#fff' />  DEMO <br /> LECTURE NOW!
                 </div>
 
                 <div>
