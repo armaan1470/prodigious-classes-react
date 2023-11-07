@@ -95,14 +95,13 @@ function Aboutus() {
               Established in 2012, Philomathean Career Institute started with a
               handful of students, a few sessions old, the institute scaled new
               heights of success by providing coaching for IB & IGCSE students
-              5th to 10th, ICSE and Engineering, and Medical entrance exam
-              preparation.
+              5th to 10th.
             </p>
 
             <p className="hero_subtext">
               New milestones were set each year and the institute achieved a
               remarkable landmark with excellent results. Besides IB & IGCSE
-              students 5th to10th, domain, prodigious career institute brought
+              students 5th to 10th, philomathean career institute brought
               outstanding results in the International Olympiads as well.
             </p>
 
@@ -136,8 +135,7 @@ function Aboutus() {
                 He is an expert in the field of mathematics and in preparing
                 students for various competitive exams. His experience coupled
                 with the impactful results of the institute makes him a
-                preferred choice among IB & IGCSE students 5th to10th &
-                Engineering and Medical aspirants.{" "}
+                preferred choice among IB & IGCSE students 5th to 10th, IBDP , AS&A Level{" "}
               </p>
               <p className="dir_subtext">
                 Mr. Satish in recognition of his contribution to the education

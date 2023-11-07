@@ -66,7 +66,7 @@ const ButtonModal = ({ name, bg="linear-gradient(rgb(255, 161, 0), rgb(255, 84, 
               &times;
             </Button>
           </Box>
-          <Form onCloseModal={handleClose} />
+          <Form onCloseModal={handleClose} heading="Book a Demo / Enquiry"/>
         </Box>
       </Modal>
     </>

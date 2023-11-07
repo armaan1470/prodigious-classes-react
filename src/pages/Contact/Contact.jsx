@@ -80,7 +80,7 @@ function Contact() {
             </div>
 
             <div className="form_component_container">
-                <Form />
+                <Form heading="Book a Demo / Enquiry"/>
             </div>
 
             <div className="map_container">
