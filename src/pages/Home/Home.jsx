@@ -61,6 +61,7 @@ import stories3 from "../../assets/images/success stories-3.png";
 import stories4 from "../../assets/images/success stories-4.png";
 import stories5 from "../../assets/images/success stories-5.png";
 import stories6 from "../../assets/images/success stories-6.png";
+import LandingPopup from "../../components/LandingPopup/LandingPopup";
 
 function Home() {
 
@@ -323,6 +324,8 @@ function Home() {
           <ButtonModal name="BOOK NOW" bg="white" clr="orange" bld="600" />
         </div>
       </div>
+
+      <LandingPopup />
 
 
 
