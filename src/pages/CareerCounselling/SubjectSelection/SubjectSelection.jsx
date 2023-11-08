@@ -197,7 +197,7 @@ const SubjectSelection = () => {
       <div className="intro_igsce1 new mr-b">
         <div className="igsce_content1 animation slide_up">
           <div className="content_header">
-            <p className="sub_text">Let's Connect</p>
+            <p className="sub_text">LET'S CONNECT</p>
             <h2>Let Our IB specialists help you</h2>
           </div>
           <div className="content-detail">

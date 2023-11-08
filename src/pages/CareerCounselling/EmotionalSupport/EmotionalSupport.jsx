@@ -35,7 +35,7 @@ const EmotionalSupport = () => {
       <div className="intro_igsce1">
         <div className="igsce_content1 animation slide_up">
           <div className="content_header">
-            <p className="sub_text">Let's talk</p>
+            <p className="sub_text">LET'S TALK</p>
             <h2>Seek help from our experienced IB educators</h2>
           </div>
           <div className="content-detail">
