@@ -426,6 +426,15 @@ function Navbar() {
                       IB School & Subject Selection
                     </NavLink>
                   </li>
+                  <li className="dropdown-item">
+                    <NavLink
+                      to="/Admission-Advice"
+                      className="sub-nav-links"
+                      onClick={closeMobileMenu}
+                    >
+                      University Admission Advice
+                    </NavLink>
+                  </li>
                 </ul>
               </div>
             )}

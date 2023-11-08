@@ -54,7 +54,7 @@ const Diploma = () => {
             <br />
             <br />
             <p className="highlighted">
-              At Philomathean Career Institute, we build children who :
+              At Philomathean Career Institute, we build children who:
             </p>
             <ul className="subject-list">
               <li className="list-header2 ">

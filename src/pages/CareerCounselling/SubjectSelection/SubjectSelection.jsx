@@ -26,7 +26,7 @@ const SubjectSelection = () => {
       <div className="banner b6">
         <div className="banner_content_area">
           <div className="banner_text_content_area">
-            <div className="banner_heading">IB School & Subject Selection</div>
+            <div className="banner_heading">IB School & <br/>Subject Selection</div>
           </div>
           <div className="banner_img_content_area">
             <img src={logo} alt={logo} className="banner_img_content" />

@@ -24,6 +24,7 @@ import PrimaryYears from "./pages/IB/PrimaryYears/PrimaryYears";
 import ParentGuidance from "./pages/CareerCounselling/ParentGuidance/ParentGuidance";
 import EmotionalSupport from "./pages/CareerCounselling/EmotionalSupport/EmotionalSupport";
 import SubjectSelection from "./pages/CareerCounselling/SubjectSelection/SubjectSelection";
+import AdmissionAdvice from "./pages/CareerCounselling/AdmissionAdvice/AdmissionAdvice";
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -50,6 +51,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/parent" element={<ParentGuidance />} />
         <Route path="/emotional" element={<EmotionalSupport />} />
         <Route path="/Subject-selection" element={<SubjectSelection />} />
+        <Route path="/Admission-Advice" element={<AdmissionAdvice />} />
       </Routes>
     </div>
     <WhatsappChat />
