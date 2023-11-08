@@ -1,9 +1,9 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
 import "./Home.css";
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import illustration1 from "../../assets/images/illustration-ani.png";
 import apple from "../../assets/images/apple.png";
 import box from "../../assets/images/box.png";
@@ -39,16 +39,16 @@ import Carousel from "../../components/Carousel/Carousel";
 // import Slider from "../../components/Slider/Slider";
 import Footer from "../../components/Footer/Footer";
 import CourseContainer from "../../components/CourseContainer/CourseContainer";
-import benefits1 from '../../assets/images/benefit-1.png';
-import benefits2 from '../../assets/images/benefit-2.png';
-import benefits3 from '../../assets/images/benefit-3.png'
-import benefits4 from '../../assets/images/benefit-4.png';
+import benefits1 from "../../assets/images/benefit-1.png";
+import benefits2 from "../../assets/images/benefit-2.png";
+import benefits3 from "../../assets/images/benefit-3.png";
+import benefits4 from "../../assets/images/benefit-4.png";
 import ButtonModal from "../../components/ButtonModal/ButtonModal";
-import BannerSlider from '../../components/BannerSlider/BannerSlider';
-import testimonialBg from "../../assets/images/testimonial-background.jpg"
-import ReactCardSlider from 'react-card-slider-component';
-import CardSlider from '../../components/CardSlider/CardSlider';
-import funFact from '../../assets/images/fact.png'
+import BannerSlider from "../../components/BannerSlider/BannerSlider";
+import testimonialBg from "../../assets/images/testimonial-background.jpg";
+import ReactCardSlider from "react-card-slider-component";
+import CardSlider from "../../components/CardSlider/CardSlider";
+import funFact from "../../assets/images/fact.png";
 import avatar1 from "../../assets/images/Profile-1.png";
 import avatar2 from "../../assets/images/Profile-2.png";
 import avatar3 from "../../assets/images/Profile-3.png";
@@ -64,8 +64,6 @@ import stories6 from "../../assets/images/success stories-6.png";
 import LandingPopup from "../../components/LandingPopup/LandingPopup";
 
 function Home() {
-
-
   useEffect(() => {
     const handleScroll = () => {
       const elements = document.querySelectorAll(".t");
@@ -81,7 +79,10 @@ function Home() {
               img.style.animation = "popup forwards 0.5s";
               img.style.animationDelay = "0.5s";
             });
-          } else if (element.classList.contains("primary_text") || element.classList.contains("secondary_text")) {
+          } else if (
+            element.classList.contains("primary_text") ||
+            element.classList.contains("secondary_text")
+          ) {
             element.classList.add("typed");
           }
         }
@@ -95,99 +96,82 @@ function Home() {
     };
   }, []);
 
-
   const aniElement = useRef([]);
 
-
   useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
-          if (entry.target.classList.contains("second_half")) {
-            entry.target.classList.add("animate_2");
-          } else if (entry.target.classList.contains("qoute_text_animation")) {
-            entry.target.style.animation = "fadein forwards 1s";
-            entry.target.style.animationDelay = "0.2s";
-          } else if (entry.target.classList.contains("text4")) {
-            entry.target.classList.add("animate_test_text");
-          } else {
-            entry.target.classList.add("animate");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+            if (entry.target.classList.contains("second_half")) {
+              entry.target.classList.add("animate_2");
+            } else if (
+              entry.target.classList.contains("qoute_text_animation")
+            ) {
+              entry.target.style.animation = "fadein forwards 1s";
+              entry.target.style.animationDelay = "0.2s";
+            } else if (entry.target.classList.contains("text4")) {
+              entry.target.classList.add("animate_test_text");
+            } else {
+              entry.target.classList.add("animate");
+            }
           }
-        }
-      });
-    }, { threshold: 0.5 });
-  
+        });
+      },
+      { threshold: 0.5 }
+    );
+
     aniElement.current.forEach((element, index) => {
       observer.observe(element);
     });
-  
+
     return () => {
       observer.disconnect();
     };
   }, []);
 
-
-
-
-
-
   return (
     <>
-
       <BannerSlider />
-
 
       <CourseContainer />
 
-
-
-
       {/* learning at philomathean */}
 
-
       <div className="benefits_container text_img_container">
-          <div
-            className="first_half text3"
-
-            ref={(el) => (aniElement.current[1] = el)}
-          >
-            <h1>
-              Learning at
-              <br />
-              Philomathean has
-              <br />
-              many <span>benefits</span>
-            </h1>
-            <p>
-            Each Philomathean Career Institute student receives
-            personalized attention. Our goal is to help them
-            improve their overall performance. Our flexible timings
-            ensure that all students are taken care of. Additionally,
-            we conduct one-to-one student-teacher sessions.
-            We conduct weekly tests to ensure everything is up to
-            standard. Additionally, doubt-solving sessions are
-            conducted after weekly tests and before exams.
-            </p>
-          </div>
-          <div
-            className="second_half "
-            ref={(el) => (aniElement.current[2] = el)}
-
-          >
-            <div className="four_benefits_icon_container">
-              <img src={benefits1} alt={benefits1} />
-              <img src={benefits2} alt={benefits2} />
-              <img src={benefits3} alt={benefits3} />
-              <img src={benefits4} alt={benefits4} />
-            </div>
-
+        <div
+          className="first_half text3"
+          ref={(el) => (aniElement.current[1] = el)}
+        >
+          <h1>
+            Learning at
+            <br />
+            Philomathean has
+            <br />
+            many <span>benefits</span>
+          </h1>
+          <p>
+            Each Philomathean Career Institute student receives personalized
+            attention. Our goal is to help them improve their overall
+            performance. Our flexible timings ensure that all students are taken
+            care of. Additionally, we conduct one-to-one student-teacher
+            sessions. We conduct weekly tests to ensure everything is up to
+            standard. Additionally, doubt-solving sessions are conducted after
+            weekly tests and before exams.
+          </p>
+        </div>
+        <div
+          className="second_half "
+          ref={(el) => (aniElement.current[2] = el)}
+        >
+          <div className="four_benefits_icon_container">
+            <img src={benefits1} alt={benefits1} />
+            <img src={benefits2} alt={benefits2} />
+            <img src={benefits3} alt={benefits3} />
+            <img src={benefits4} alt={benefits4} />
           </div>
         </div>
-
-
-
-
-
+      </div>
 
       {/* success stories */}
 
@@ -283,19 +267,14 @@ function Home() {
         </div>
       </div>
 
-
-
-
       {/* fun fact */}
 
       <div className="funfact_container">
         <img src={funFact} alt="fun_fact" />
       </div>
 
-
       <div className="testimonial_container">
         <div className="testimonials">
-
           <div className="text4">
             <p>Testimonials</p>
             <p>
@@ -307,7 +286,6 @@ function Home() {
           {/* <ReactCardSlider slides={slides}/> */}
 
           <CardSlider />
-
         </div>
       </div>
 
@@ -327,12 +305,7 @@ function Home() {
 
       <LandingPopup />
 
-
-
-
-
       {/* <div className="bottom_space"></div> */}
-
     </>
   );
 }

@@ -42,33 +42,17 @@
 
 .hero_text_heading{
     text-align: center;
-    font-size: var(--content-h);
+    font-size: var(--para-h);
     line-height: var(--detail-lh3);
+    font-weight: 600;
 }
 
 
-.hero_text_heading span:first-child{
-    background: -webkit-linear-gradient(
-        180deg,
-        rgb(0, 121, 255) 20%,
-        rgb(0, 187, 225)
-      );
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+.hero_text_heading span{
+   color:#ff7b00;
 }
-
-.hero_text_heading span:last-child {
-    position: relative;
-    background: -webkit-linear-gradient(yellow, red);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-decoration: none;
-    padding-bottom: 5px;
-  }
   
-  .hero_text_heading span:last-child::before {
+  /* .hero_text_heading span:last-child::before {
     content: '';
     position: absolute;
     bottom: 8px;
@@ -81,7 +65,7 @@
     background-position: left bottom;
     transform: rotate(180deg);
   }
-  
+   */
 
 
 /* .hero_text_heading span:last-child::after{
@@ -110,6 +94,7 @@
 .hero_subtext{
     text-align: justify;
     margin: 10px 0;
+    font-family: var(--font-primary);
     font-size: var(--detail-medium);
     line-height: var(--detail-lh1);
     color: #6c6c6a;
@@ -313,9 +298,9 @@
     font-size: var(--content-h);
     padding: 9rem 0 2.9rem 0;
     line-height: var(--detail-lh1);
-    color: #00028a;
+    color: #ff7b00;
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
     position: relative;
 }
 .team_heading p{
@@ -332,17 +317,12 @@
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
-    top: -10px;
+    top: 0px;
     left: -20px;
   }
 
 .team_heading span{
-    background: -webkit-linear-gradient(135deg, red, rgb(255, 150, 0) 80%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 3rem;
-    position: relative;
+    color:#056bce;
 }
 
 .team_heading span::after {
@@ -350,9 +330,9 @@
     position: absolute;
     background-image: url("../../assets/images/line.svg");
     background-size: contain;
-    width: 150px;
+    width: 120px;
     height: 8px;
-    bottom: -10px;
+    bottom: 0px;
     right: -10px;
   }
   

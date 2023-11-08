@@ -172,20 +172,11 @@ function Navbar() {
                   </li>
                   <li className="dropdown-item">
                     <NavLink
-                      to="/career"
+                      to="/primary-year"
                       className="sub-sub-nav-links"
                       onClick={closeMobileMenu}
                     >
-                      Career-Related Programme
-                    </NavLink>
-                  </li>
-                  <li className="dropdown-item">
-                    <NavLink
-                      to="/diploma"
-                      className="sub-sub-nav-links"
-                      onClick={closeMobileMenu}
-                    >
-                      Diploma Programme
+                      Primary Year Programme 
                     </NavLink>
                   </li>
                   <li className="dropdown-item">
@@ -199,11 +190,20 @@ function Navbar() {
                   </li>
                   <li className="dropdown-item">
                     <NavLink
-                      to="/primary-year"
+                      to="/diploma"
                       className="sub-sub-nav-links"
                       onClick={closeMobileMenu}
                     >
-                      Primary Year Programme 
+                      Diploma Programme
+                    </NavLink>
+                  </li>
+                  <li className="dropdown-item">
+                    <NavLink
+                      to="/career"
+                      className="sub-sub-nav-links"
+                      onClick={closeMobileMenu}
+                    >
+                      Career-Related Programme
                     </NavLink>
                   </li>
                 </ul>
@@ -257,7 +257,7 @@ function Navbar() {
                       className="sub-sub-nav-links"
                       onClick={closeMobileMenu}
                     >
-                      Subjects offered
+                      Subjects Offered
                     </NavLink>
                   </li>
                   <li className="dropdown-item">

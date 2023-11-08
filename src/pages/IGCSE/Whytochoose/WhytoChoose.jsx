@@ -30,7 +30,7 @@ const WhytoChoose = () => {
         </div>
         <div className="igsce_content1">
           <div className="content_header">
-            <p>IGCSE TUTION</p>
+            <p>IGCSE TUITION</p>
             <h1>Why Choose IGCSE?</h1>
           </div>
           <div className="content-detail">

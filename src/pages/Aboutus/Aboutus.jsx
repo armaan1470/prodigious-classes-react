@@ -23,9 +23,12 @@ import stories3 from "../../assets/images/success stories-3.png";
 import stories4 from "../../assets/images/success stories-4.png";
 import stories5 from "../../assets/images/success stories-5.png";
 import stories6 from "../../assets/images/success stories-6.png";
+import logo from "../../assets/universityadmissionadvice/2.png";
+
 import line from "../../assets/images/underline_about us.png";
 import Footer from "../../components/Footer/Footer";
 import WhatsappChat from "../../components/WhatsappChat/WhatsappChat";
+import ButtonModal from "../../components/ButtonModal/ButtonModal";
 
 function Aboutus() {
   useEffect(() => {
@@ -154,98 +157,6 @@ function Aboutus() {
           </div>
         </div>
 
-        <div className="stories_background">
-          <div className="stories_container">
-            <div className="stories_heading">Success Stories</div>
-            <div className="stories_card_container">
-              <div className="stories_cards">
-                <div className="card_img">
-                  <img src={stories1} alt={stories1} className="stories_img t" />
-                </div>
-                <div className="card_desc">
-                  <img src={avatar1} alt={avatar1} className="avatar_img t" />
-
-                  <div className="card_details">
-                    <div className="primary_text t">Sikha Gupta</div>
-                    <div className="secondary_text t">Student, Class 10</div>
-                  </div>
-                </div>
-              </div>
-              <div className="stories_cards">
-                <div className="card_img">
-                  <img src={stories2} alt={stories2} className="stories_img t" />
-                </div>
-                <div className="card_desc">
-                  <img src={avatar2} alt={avatar2} className="avatar_img t" />
-
-                  <div className="card_details">
-                    <div className="primary_text t">Shriya Ganguly</div>
-                    <div className="secondary_text t">
-                      Student, Class 9 (IGCSE)
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="stories_cards">
-                <div className="card_img">
-                  <img src={stories3} alt={stories3} className="stories_img t" />
-                </div>
-                <div className="card_desc">
-                  <img src={avatar3} alt={avatar3} className="avatar_img t" />
-
-                  <div className="card_details">
-                    <div className="primary_text t">Jitesh Singh</div>
-                    <div className="secondary_text t">Student, Class 10</div>
-                  </div>
-                </div>
-              </div>
-              <div className="stories_cards">
-                <div className="card_img">
-                  <img src={stories4} alt={stories4} className="stories_img t" />
-                </div>
-                <div className="card_desc">
-                  <img src={avatar4} alt={avatar4} className="avatar_img t" />
-
-                  <div className="card_details">
-                    <div className="primary_text t">Suamya Kshirsagar</div>
-                    <div className="secondary_text t">
-                      Student, Class 9 (IGCSE)
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="stories_cards">
-                <div className="card_img">
-                  <img src={stories5} alt={stories5} className="stories_img t" />
-                </div>
-                <div className="card_desc">
-                  <img src={avatar5} alt={avatar5} className="avatar_img t" />
-
-                  <div className="card_details">
-                    <div className="primary_text t">Khyati</div>
-                    <div className="secondary_text t">Owner, Pupils Academy</div>
-                  </div>
-                </div>
-              </div>
-              <div className="stories_cards">
-                <div className="card_img">
-                  <img src={stories6} alt={stories6} className="stories_img t" />
-                </div>
-                <div className="card_desc">
-                  <img src={avatar6} alt={avatar6} className="avatar_img t" />
-
-                  <div className="card_details">
-                    <div className="primary_text t">Vanshika Desai</div>
-                    <div className="secondary_text t">
-                      Student, Class 9 (IGCSE)
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div className="team_container">
           <div className="team_heading">
              <p>Our Philomathean <span> Team </span></p>
@@ -258,6 +169,20 @@ function Aboutus() {
             <img src={tut5} alt={tut5} className="team_cards" />
           </div>
         </div>
+
+        <div className="book_in_wrapper">
+        <div className="book_in_container">
+          <div className="book_in_detail">
+            <small>Free Demo Lecture</small>
+            <h1>
+              Ready to dive in?
+              <br />
+              Attain your Free Demo Lecture today.
+            </h1>
+          </div>
+          <ButtonModal name="BOOK NOW" bg="white" clr="orange" bld="600" />
+        </div>
+      </div>
 
       </div>
     </>

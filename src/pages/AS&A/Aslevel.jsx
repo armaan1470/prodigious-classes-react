@@ -30,7 +30,7 @@ const Aslevel = () => {
         </div>
         <div className="igsce_content1">
           <div className="content_header">
-            <p>AS & A LEVELS TUTION</p>
+            <p>AS & A LEVELS TUITION</p>
             <h1>Exam Preparation for AS & A Levels</h1>
           </div>
           <div className="content-detail">

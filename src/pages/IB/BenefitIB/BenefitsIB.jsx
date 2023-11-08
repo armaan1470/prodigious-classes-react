@@ -12,6 +12,7 @@ import myp_icon_3 from "../../../assets/images/icon-6.svg"
 import myp_icon_4 from "../../../assets/images/icon-7.svg"
 import green_star from "../../../assets/images/star.svg"
 import "./BenefitsIB.css";
+import ButtonModal from "../../../components/ButtonModal/ButtonModal";
 
 function BenefitIB() {
   return (
@@ -214,7 +215,7 @@ function BenefitIB() {
           <div className="benefit_detail_body_container">
             <div className="benefit_detail_body">
               <span>
-                At IB Scholars, we have students who move through their entire five-year MYP program
+                At Philomathean, we have students who move through their entire five-year MYP program
                 (from age 11 to 16 years). As the curriculum requires them to complete studies in eight
                 subject areas, as well as an integrative subject and a Personal Project, we design our
                 classes according to the provided structure.
@@ -262,7 +263,7 @@ function BenefitIB() {
           <div className="benefit_detail_body_container">
             <div className="benefit_detail_body">
               <span>
-                IB Scholars offer trained and experienced IB PYP tutors in Dubai. The IB PYP is a curriculum
+                Philomathean offer trained and experienced IB PYP tutors in Dubai. The IB PYP is a curriculum
                 designed specifically for children aged 3 to 12. This curriculum encourages young children to
                 think for themselves and take responsibility for their education so that they can investigate
                 local and global issues and opportunities.
@@ -303,13 +304,21 @@ function BenefitIB() {
           </div>
         </div>
 
+        <div className="book_in_wrapper">
+        <div className="book_in_container">
+          <div className="book_in_detail">
+            <small>Free Demo Lecture</small>
+            <h1>
+              Ready to dive in?
+              <br />
+              Attain your Free Demo Lecture today.
+            </h1>
+          </div>
+          <ButtonModal name="BOOK NOW" bg="white" clr="orange" bld="600" />
+        </div>
+      </div>
 
       </div>
-      <div className="bottom_space">
-
-      </div>
-
-
     </>
   );
 }

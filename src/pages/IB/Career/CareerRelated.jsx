@@ -40,7 +40,7 @@ const CareerRelated = () => {
         </div>
         <div className="igsce_content1 animation slide_up">
           <div className="content_header">
-            <p>IB TUTION</p>
+            <p>IB TUITION</p>
             <h1>
               IB Career-Related
               <br /> Programme

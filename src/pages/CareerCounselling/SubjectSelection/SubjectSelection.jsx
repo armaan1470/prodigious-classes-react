@@ -162,7 +162,7 @@ const SubjectSelection = () => {
               <br />
               <br />
               There are no topic prerequisites for many tertiary academic
-              fields, however students should double-check with the IB Scholars’
+              fields, however students should double-check with the Philomathean’
               Career Counsellor and/or institution websites to be sure. Those
               who are still undecided about their future careers should keep the
               following guidelines in mind:

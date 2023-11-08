@@ -37,7 +37,7 @@ const PrimaryYears = () => {
         </div>
         <div className="igsce_content1 animation slide_up">
           <div className="content_header">
-            <p>IB TUTION</p>
+            <p>IB TUITION</p>
             <h1>Primary Year Programme</h1>
           </div>
           <div className="content-detail">

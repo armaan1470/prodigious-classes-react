@@ -39,7 +39,7 @@ const IntroIG = () => {
         </div>
         <div className="igsce_content1 animation slide_up">
           <div className="content_header">
-            <p>IGCSE TUTION</p>
+            <p>IGCSE TUITION</p>
             <h1>Introduction to IGCSE</h1>
           </div>
           <div className="content-detail">
