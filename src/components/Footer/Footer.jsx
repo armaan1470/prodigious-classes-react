@@ -47,7 +47,7 @@ function Footer() {
                     <NavLink to="parent">Career Counselling</NavLink>
                   </li>
                   <li className="footer_links">
-                    <NavLink to="#">Writing Support</NavLink>
+                    <NavLink to="Writing-support">Writing Support</NavLink>
                   </li>
                 </ul>
               </div>

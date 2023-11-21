@@ -133,11 +133,8 @@ function Home() {
   return (
     <>
       <BannerSlider />
-
       <CourseContainer />
-
       {/* learning at philomathean */}
-
       <div className="benefits_container text_img_container">
         <div
           className="first_half text3"
@@ -165,26 +162,34 @@ function Home() {
           ref={(el) => (aniElement.current[2] = el)}
         >
           <div className="four_benefits_icon_container">
-            <img src={benefits1} alt={benefits1} />
-            <img src={benefits2} alt={benefits2} />
-            <img src={benefits3} alt={benefits3} />
-            <img src={benefits4} alt={benefits4} />
+            <img src={benefits1} alt={benefits1} loading="lazy" />
+            <img src={benefits2} alt={benefits2} loading="lazy" />
+            <img src={benefits3} alt={benefits3} loading="lazy" />
+            <img src={benefits4} alt={benefits4} loading="lazy" />
           </div>
         </div>
       </div>
-
       {/* success stories */}
-
       <div className="stories_background">
         <div className="stories_container">
           <div className="stories_heading">Success Stories</div>
           <div className="stories_card_container">
             <div className="stories_cards">
               <div className="card_img">
-                <img src={stories1} alt={stories1} className="stories_img t" />
+                <img
+                  src={stories1}
+                  alt={stories1}
+                  className="stories_img t"
+                  loading="lazy"
+                />
               </div>
               <div className="card_desc">
-                <img src={avatar1} alt={avatar1} className="avatar_img t" />
+                <img
+                  src={avatar1}
+                  alt={avatar1}
+                  className="avatar_img t"
+                  loading="lazy"
+                />
 
                 <div className="card_details">
                   <div className="primary_text t">Sikha Gupta</div>
@@ -194,10 +199,20 @@ function Home() {
             </div>
             <div className="stories_cards">
               <div className="card_img">
-                <img src={stories2} alt={stories2} className="stories_img t" />
+                <img
+                  src={stories2}
+                  alt={stories2}
+                  className="stories_img t"
+                  loading="lazy"
+                />
               </div>
               <div className="card_desc">
-                <img src={avatar2} alt={avatar2} className="avatar_img t" />
+                <img
+                  src={avatar2}
+                  alt={avatar2}
+                  className="avatar_img t"
+                  loading="lazy"
+                />
 
                 <div className="card_details">
                   <div className="primary_text t">Shriya Ganguly</div>
@@ -209,10 +224,20 @@ function Home() {
             </div>
             <div className="stories_cards">
               <div className="card_img">
-                <img src={stories3} alt={stories3} className="stories_img t" />
+                <img
+                  src={stories3}
+                  alt={stories3}
+                  className="stories_img t"
+                  loading="lazy"
+                />
               </div>
               <div className="card_desc">
-                <img src={avatar3} alt={avatar3} className="avatar_img t" />
+                <img
+                  src={avatar3}
+                  alt={avatar3}
+                  className="avatar_img t"
+                  loading="lazy"
+                />
 
                 <div className="card_details">
                   <div className="primary_text t">Jitesh Singh</div>
@@ -222,10 +247,20 @@ function Home() {
             </div>
             <div className="stories_cards">
               <div className="card_img">
-                <img src={stories4} alt={stories4} className="stories_img t" />
+                <img
+                  src={stories4}
+                  alt={stories4}
+                  className="stories_img t"
+                  loading="lazy"
+                />
               </div>
               <div className="card_desc">
-                <img src={avatar4} alt={avatar4} className="avatar_img t" />
+                <img
+                  src={avatar4}
+                  alt={avatar4}
+                  className="avatar_img t"
+                  loading="lazy"
+                />
 
                 <div className="card_details">
                   <div className="primary_text t">Suamya Kshirsagar</div>
@@ -237,10 +272,20 @@ function Home() {
             </div>
             <div className="stories_cards">
               <div className="card_img">
-                <img src={stories5} alt={stories5} className="stories_img t" />
+                <img
+                  src={stories5}
+                  alt={stories5}
+                  className="stories_img t"
+                  loading="lazy"
+                />
               </div>
               <div className="card_desc">
-                <img src={avatar5} alt={avatar5} className="avatar_img t" />
+                <img
+                  src={avatar5}
+                  alt={avatar5}
+                  className="avatar_img t"
+                  loading="lazy"
+                />
 
                 <div className="card_details">
                   <div className="primary_text t">Khyati</div>
@@ -250,10 +295,20 @@ function Home() {
             </div>
             <div className="stories_cards">
               <div className="card_img">
-                <img src={stories6} alt={stories6} className="stories_img t" />
+                <img
+                  src={stories6}
+                  alt={stories6}
+                  className="stories_img t"
+                  loading="lazy"
+                />
               </div>
               <div className="card_desc">
-                <img src={avatar6} alt={avatar6} className="avatar_img t" />
+                <img
+                  src={avatar6}
+                  alt={avatar6}
+                  className="avatar_img t"
+                  loading="lazy"
+                />
 
                 <div className="card_details">
                   <div className="primary_text t">Vanshika Desai</div>
@@ -266,13 +321,10 @@ function Home() {
           </div>
         </div>
       </div>
-
       {/* fun fact */}
-
       <div className="funfact_container">
         <img src={funFact} alt="fun_fact" />
       </div>
-
       <div className="testimonial_container">
         <div className="testimonials">
           <div className="text4">
@@ -288,7 +340,6 @@ function Home() {
           <CardSlider />
         </div>
       </div>
-
       <div className="book_in_wrapper">
         <div className="book_in_container">
           <div className="book_in_detail">
@@ -302,9 +353,7 @@ function Home() {
           <ButtonModal name="BOOK NOW" bg="white" clr="orange" bld="600" />
         </div>
       </div>
-
       <LandingPopup />
-
       {/* <div className="bottom_space"></div> */}
     </>
   );

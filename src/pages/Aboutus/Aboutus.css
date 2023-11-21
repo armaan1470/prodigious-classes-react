@@ -8,6 +8,10 @@
     /* padding-top: 85px; */
 }
 
+.banner.b13{
+    background-image:url("../../assets//images/About us banner.jpg")
+}
+
 .about_us_hero{
     /* border: 1px solid black; */
     width: 1050px;

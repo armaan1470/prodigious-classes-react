@@ -1,10 +1,8 @@
 import React, { useEffect } from "react";
 import "./Courses.css";
+import logo from "../../assets/images/Courses logo.png";
 import bgdesign1 from "../../assets/images/bg design.png";
 import bgdesign from "../../assets/images/bg design 1.png";
-import Footer from "../../components/Footer/Footer";
-import WhatsappChat from "../../components/WhatsappChat/WhatsappChat";
-import { element } from "prop-types";
 
 function Courses() {
   useEffect(() => {
@@ -34,6 +32,16 @@ function Courses() {
 
   return (
     <>
+      <div className="banner b12">
+        <div className="banner_content_area">
+          <div className="banner_text_content_area">
+            <div className="banner_heading">Our Courses</div>
+          </div>
+          <div className="banner_img_content_area">
+            <img src={logo} alt={logo} className="banner_img_content" />
+          </div>
+        </div>
+      </div>
       <div className="courses">
         <div className="courses_container">
           <div className="courses_card">
@@ -122,9 +130,7 @@ function Courses() {
                 alt={bgdesign}
                 style={{ borderTopLeftRadius: "15px" }}
               />
-              <div className="card_heading_text ">
-                AS & A Level
-              </div>
+              <div className="card_heading_text ">AS & A Level</div>
               <img
                 src={bgdesign1}
                 alt={bgdesign}
@@ -220,8 +226,6 @@ function Courses() {
             </div>
           </div>
         </div>
-
-
       </div>
     </>
   );

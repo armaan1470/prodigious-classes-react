@@ -23,7 +23,7 @@ import stories3 from "../../assets/images/success stories-3.png";
 import stories4 from "../../assets/images/success stories-4.png";
 import stories5 from "../../assets/images/success stories-5.png";
 import stories6 from "../../assets/images/success stories-6.png";
-import logo from "../../assets/universityadmissionadvice/2.png";
+import logo from "../../assets/images/About US logo.png";
 
 import line from "../../assets/images/underline_about us.png";
 import Footer from "../../components/Footer/Footer";
@@ -80,6 +80,16 @@ function Aboutus() {
 
   return (
     <>
+    <div className="banner b13">
+        <div className="banner_content_area">
+          <div className="banner_text_content_area">
+            <div className="banner_heading">About Us</div>
+          </div>
+          <div className="banner_img_content_area">
+            <img src={logo} alt={logo} className="banner_img_content" />
+          </div>
+        </div>
+      </div>
       <div className="about_us">
         <div className="about_us_hero">
           <div className="hero_img">

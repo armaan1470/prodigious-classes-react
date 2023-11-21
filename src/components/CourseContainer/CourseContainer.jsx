@@ -7,6 +7,7 @@ import course3 from "../../assets/images/voilet.png";
 import course4 from "../../assets/images/pink.png";
 import course5 from "../../assets/images/blue.png";
 import course6 from "../../assets/images/yellow.png";
+import { Link } from 'react-router-dom';
 
 
 function CourseContainer() {
@@ -41,12 +42,12 @@ function CourseContainer() {
       Courses at Philomathean
     </p>
     <div className={`courses_home ${visibleIndex !== -1 ? 'visible' : ''}`}>
-      <img src={course1} alt="" style={{ animationDelay: '0.2s' }} />
-      <img src={course2} alt="" style={{ animationDelay: '0.4s' }} />
-      <img src={course3} alt="" style={{ animationDelay: '0.6s' }} />
-      <img src={course4} alt="" style={{ animationDelay: '0.8s' }} />
-      <img src={course5} alt="" style={{ animationDelay: '1s' }} />
-      <img src={course6} alt="" style={{ animationDelay: '1.2s' }} />
+      <Link to="/about-ig"><img src={course1} alt="" style={{ animationDelay: '0.2s' }} loading='lazy'/></Link>
+      <Link to="/ASlevel"><img src={course2} alt="" style={{ animationDelay: '0.4s' }} loading='lazy'/></Link>
+      <Link to="/intro-ib"><img src={course3} alt="" style={{ animationDelay: '0.6s' }} loading='lazy'/></Link>
+      <Link to="/courses"><img src={course4} alt="" style={{ animationDelay: '0.8s' }} loading='lazy'/></Link>
+      <Link to="/courses"><img src={course5} alt="" style={{ animationDelay: '1s' }} loading='lazy'/></Link>
+      <Link to="/courses"><img src={course6} alt="" style={{ animationDelay: '1.2s' }} loading='lazy'/></Link>
     </div>
   </div>
   )

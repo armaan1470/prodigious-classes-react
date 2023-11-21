@@ -8,6 +8,9 @@
       /* padding-top: 85px; */
 
   }
+  .banner.b12{
+    background-image:url("../../assets/images/courses banner.jpg");
+  }
 
   .courses_container{
       /* border: 2px solid black; */

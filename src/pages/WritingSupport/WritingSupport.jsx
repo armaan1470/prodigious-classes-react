@@ -5,6 +5,7 @@ import ilust2 from "../../assets/writingsupport/writing support-2.png";
 import ilust3 from "../../assets/writingsupport/writing support-3.png";
 import ilust4 from "../../assets/writingsupport/writing support-4.png";
 import ilust5 from "../../assets/writingsupport/writing support-6.png";
+import ilust6 from "../../assets/writingsupport/writing support-7.png";
 import { FiPhone, FiMail } from "react-icons/fi";
 import Form from "../../components/Form/Form.jsx";
 import { GoLocation } from "react-icons/go";
@@ -96,6 +97,14 @@ const WritingSupport = () => {
               even create an appropriate essay format. They may also assist you
               in developing a distinctive strategy and demonstrating how to
               present it.
+              <br />
+              <br />
+              We provide original content as specialists. Our research is solely
+              for the purpose of gathering material, and once we have it, our
+              authors create a unique version. Our content is 100% original and
+              confidential. And, as a firm that takes its quality policy
+              seriously, we go to great lengths to ensure that you receive the
+              kind of service that you deserve.
             </p>
           </div>
         </div>
@@ -244,7 +253,7 @@ const WritingSupport = () => {
           </div>
         </div>
         <div className="igsce_ilust_container animation slide_right">
-          <img src={ilust2} alt="ilustration" />
+          <img src={ilust6} alt="ilustration" />
         </div>
       </div>
 

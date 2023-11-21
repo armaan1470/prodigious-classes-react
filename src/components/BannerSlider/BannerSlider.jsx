@@ -22,10 +22,10 @@ const BannerSlider = () => {
     <div className="slider-container">
       <Slider {...settings}>
         <div>
-          <img src={banner1} alt="Image 1" className="slider-image" />
+          <img src={banner1} alt="Image 1" className="slider-image" loading='lazy'/>
         </div>
         <div>
-          <img src={banner1} alt="Image 2" className="slider-image" />
+          <img src={banner1} alt="Image 2" className="slider-image" loading='lazy'/>
         </div>
         {/* Add more slides as needed */}
       </Slider>
