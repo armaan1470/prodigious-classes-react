@@ -40,6 +40,11 @@
   font-style: normal;
 }
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 /* declaring variables */
 
 :root{
@@ -62,12 +67,6 @@
   --sub-lh: 1.3;
 
 }
-
-
-
-
-
-
 
 
 
