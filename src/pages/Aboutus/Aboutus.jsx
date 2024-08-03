@@ -52,16 +52,18 @@ function Aboutus() {
               img.style.animation = "popup forwards 0.5s";
               img.style.animationDelay = "0.5s";
             });
-          } else if (element.classList.contains("primary_text") || element.classList.contains("secondary_text")){
+          } else if (
+            element.classList.contains("primary_text") ||
+            element.classList.contains("secondary_text")
+          ) {
             element.classList.add("typed");
-          }
-          else if(element.classList.contains("team_cards_container")){
+          } else if (element.classList.contains("team_cards_container")) {
             const TeamsImages = document.querySelectorAll(".team_cards");
             // console.log(TeamsImages)
-            TeamsImages.forEach((img,index) => {
+            TeamsImages.forEach((img, index) => {
               img.style.animation = "hoverable forwards 0.5s";
               img.style.animationDelay = `${1 + index}s`;
-              console.log("first")
+              console.log("first");
             });
           }
         }
@@ -75,12 +77,9 @@ function Aboutus() {
     };
   }, []);
 
-  
-  
-
   return (
     <>
-    <div className="banner b13">
+      <div className="banner b13">
         <div className="banner_content_area">
           <div className="banner_text_content_area">
             <div className="banner_heading">About Us</div>
@@ -105,10 +104,10 @@ function Aboutus() {
             </div>
 
             <p className="hero_subtext">
-              Established in 2012, Philomathean Career Institute started with a
+              Established in 2016, Philomathean Career Institute started with a
               handful of students, a few sessions old, the institute scaled new
-              heights of success by providing coaching for IB & IGCSE students
-              5th to 10th.
+              heights of success by providing coaching for IB & IGCSE students V{" "}
+              <sup>th</sup> to X <sup>th</sup>
             </p>
 
             <p className="hero_subtext">
@@ -148,7 +147,7 @@ function Aboutus() {
                 He is an expert in the field of mathematics and in preparing
                 students for various competitive exams. His experience coupled
                 with the impactful results of the institute makes him a
-                preferred choice among IB & IGCSE students 5th to 10th, IBDP , AS&A Level{" "}
+                preferred choice among IB & IGCSE students, IBDP , AS&A Level{" "}
               </p>
               <p className="dir_subtext">
                 Mr. Satish in recognition of his contribution to the education
@@ -169,31 +168,32 @@ function Aboutus() {
 
         <div className="team_container">
           <div className="team_heading">
-             <p>Our Philomathean <span> Team </span></p>
+            <p>
+              Our Philomathean <span> Team </span>
+            </p>
           </div>
           <div className="team_cards_container t">
             <img src={tut1} alt={tut1} className="team_cards" />
-            <img src={tut2} alt={tut2} className="team_cards" />
+            {/* <img src={tut2} alt={tut2} className="team_cards" /> */}
             <img src={tut3} alt={tut3} className="team_cards" />
-            <img src={tut4} alt={tut4} className="team_cards" />
-            <img src={tut5} alt={tut5} className="team_cards" />
+            {/* <img src={tut4} alt={tut4} className="team_cards" />
+            <img src={tut5} alt={tut5} className="team_cards" /> */}
           </div>
         </div>
 
         <div className="book_in_wrapper">
-        <div className="book_in_container">
-          <div className="book_in_detail">
-            <small>Free Demo Lecture</small>
-            <h1>
-              Ready to dive in?
-              <br />
-              Attain your Free Demo Lecture today.
-            </h1>
+          <div className="book_in_container">
+            <div className="book_in_detail">
+              <small>Free Demo Lecture</small>
+              <h1>
+                Ready to dive in?
+                <br />
+                Attain your Free Demo Lecture today.
+              </h1>
+            </div>
+            <ButtonModal name="BOOK NOW" bg="white" clr="orange" bld="600" />
           </div>
-          <ButtonModal name="BOOK NOW" bg="white" clr="orange" bld="600" />
         </div>
-      </div>
-
       </div>
     </>
   );

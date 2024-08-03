@@ -28,7 +28,7 @@
 }
 
 .contact_banner_text.slide_up {
-  bottom: -22.5px;
+  bottom: -15px;
   opacity: 1;
 }
 
@@ -207,11 +207,11 @@
 }
 
 @media screen and (max-width: 450px) {
-    .contact_link{
-        display: flex;
-        align-items: center;
-        justify-content:space-between
-    }
+  .contact_link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   .contact_banner_text.slide_up {
     bottom: -15px;
     opacity: 1;
@@ -226,7 +226,6 @@
   .contact_banner {
     height: 140px;
   }
-
 
   .contact_banner_text.animate {
     /* animation styles for banner text */
