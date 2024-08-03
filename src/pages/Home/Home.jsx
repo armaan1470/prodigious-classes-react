@@ -134,7 +134,7 @@ function Home() {
     <>
       <BannerSlider />
       <CourseContainer />
-      {/* learning at philomathean */}
+      {/* learning at philomathean start */}
       <div className="benefits_container text_img_container">
         <div
           className="first_half text3"
