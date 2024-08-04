@@ -42,7 +42,8 @@
 
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities;  
+
 
 
 /* declaring variables */
@@ -71,21 +72,15 @@
 
 
 * {
-  margin: 0;
-  padding: 0;
-  /* scroll-behavior: smooth; */
-  /* box-sizing: border-box;
-  background: #000 !important;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  /* background: #000 !important;
   color: #0f0 !important;
-  outline: solid #f00 1px !important; */
+  outline: solid #f00 1px !important;  */
 }
 
 :focus {
   outline: none;
-}
-
-html,body{
-  overflow-x: hidden;
 }
 
 .border{
@@ -93,5 +88,5 @@ border: 1px solid black;
 }
 
 .bottom_space{
-  height: 2000px;
+  height: 500px;
 }
